@@ -18,3 +18,5 @@ TakeAndHoldTweaker.Unzip.Me.zip/
 
 1. Import the `.deli` file (`TakeAndHoldTweaker.Unzip.Me.zip/Deli/mods/TakeAndHoldTweaker.deli`) using r2modman's `Import Local Mod` feature like you would any other `.deli` file.
 2. Copy the `TnHTweaker/` folder (`TakeAndHoldTweaker.Unzip.Me.zip/TnHTweaker/`) to your root `H3VR/` directory. You can get here by right-clicking on the game through steam and clicking `Browse local files` under the `Manage` sub-menu.
+
+Files generated using the Deli config option will be created inside of the root `H3VR/TnHTweaker` folder as of TnHTweaker 1.6.6.

@@ -105,3 +105,13 @@ Determine the mod type you are using, and extract the files to their correct pat
 For the most common problems, please see the [Why aren't my mods working?](https://github.com/ebkr/r2modmanPlus/wiki/Why-aren%27t-my-mods-working%3F) page provided by Ebkr.
 
 For less common problems, see the [Troubleshooting](Troubleshooting.md) file for more details before contacting someone in the H3VR discord channel #modding-help.
+
+## Configuring your mods
+
+Some mods may come with configuration files to change certain aspects of their behavior. Using r2modman's `Config editor` setting on the left, you can change any configuration files created.
+
+To make these files appear, simply run the game once with the mod fully loaded without errors. If you do have errors that prevent mods from loading, first fix those before trying to change configuration options.
+
+Below is a picture of where the `Config editor` feature is.
+
+![image](Images/Getting-Started-Config-Menu.png)
