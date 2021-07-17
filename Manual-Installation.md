@@ -1,6 +1,6 @@
 # Manual Installation
 
-This guide assumes you are a very stubborn, very stuck in their ways person. We all hate you. It also assumes you know the different [mod types](Mod-Types.md). It also assumes you are using Deli 0.3.2 and are missing out on all of the cool new things.
+This guide assumes you are a very stubborn, very stuck in their ways person. We all hate you. It also assumes you know the different [mod types](Mod-Types.md). It also assumes you are using Deli 0.3.2 and are missing out on all of the cool new things. (And also assumes you know how to install most dependencies).
 
 ## From Bonetome
 
