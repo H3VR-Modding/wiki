@@ -49,7 +49,7 @@ AMod.zip/
         asset2.h3mod
 ```
 
-If the zip you downloaded was from bonetome and not in the correct format, you can either install the mod manually (shown below), or use [Ebkr's BT2TS tool](https://h3vr.thunderstore.io/package/ebkr/BT2TS/). The folder generated will have the correct contents that just need to be packaged as a `.zip` file (done so by right-clicking on the selected files and pressing the `Compressed (zipped) file` option under the `Send To` sub-menu) and imported like normal.
+If the zip you downloaded was from bonetome and not in the correct format, you can either install the mod manually (shown below), or use [Ebkr's BT2TS tool](https://h3vr.thunderstore.io/package/ebkr/BT2TS/). When using it, make sure to select `(2) I want to import a mod using a mod manager.` and it will create a `.zip` file for you to import.
 
 The same goes for Deli mods. Below are some examples on which file structures are supported.
 
