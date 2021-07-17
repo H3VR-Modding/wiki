@@ -4,7 +4,7 @@ This guide assumes you are a very stubborn, very stuck in their ways person. We 
 
 ## From Bonetome
 
-All Bonetome mods come zipped or packaged as a `.rar` file. Inside these you will either find a folder, or the specific file for you to install.
+All Bonetome mods come zipped or packaged as a `.zip`, `.7z` or `.rar` file. Inside these you will either find a folder, or the specific file for you to install.
 
 - Deli
   - Files should be extracted to the `H3VR/Deli/mods/` folder.
