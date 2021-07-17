@@ -16,6 +16,8 @@ Please open the [Mod Types](Mod-Types.md) file in another tab and read over it. 
 
 **NOTE:** If you have installed mods previously from another storefront, please preform a clean install. Guide on how to do it is located [here](Starting-Fresh.md).
 
+**NOTE 2:** Mods are no longer installed to the root H3VR directory! Please read the tutorial carefully.
+
 Once you have installed r2modman and opened it, you will be greeted by a page asking you which game you would like to manage. In our case, we want to manage H3VR so click on that. It will ask you to create a profile or select the default one. Its up to you which you use, the default one cannot be deleted, but comes as an empty profile for new users.
 
 You will then be greeted to the main interface shown below. Every time you want to run the game with mods, you will ned to press the `Run Modded` button in the top left and your game will run with the mods listed under the `Installed` section on the left.
