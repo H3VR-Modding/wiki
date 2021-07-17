@@ -14,4 +14,4 @@ Sideloader mods require [Sideloader](https://h3vr.thunderstore.io/package/deniks
 
 ## Asset Bundles
 
-Asset bundles are loaded through [OtherLoader's](https://h3vr.thunderstore.io/package/devyndamonster/OtherLoader/) legacy loading and have no file extension (`MyFile.txt` has the `.txt` extension, while `MyFile` does not). These bundles are almost always a firearm of some sorts, and can be paired with an accompanying `.manifest` file. This file is not needed to load the mod.
+Asset bundles are loaded through [OtherLoader's](https://h3vr.thunderstore.io/package/devyndamonster/OtherLoader/) legacy loading and have no file extension (`MyFile.txt` has the `.txt` extension, while `MyFile` does not). These bundles are almost always a firearm of some sorts, and can be paired with an accompanying `.manifest` file. This `.manifest` file is not needed for load the mod.
