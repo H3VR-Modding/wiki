@@ -19,11 +19,13 @@ Please open the [Mod Types](Mod-Types.md) file in another tab and read over it. 
 Once you have installed r2modman and opened it, you will be greeted by a page asking you which game you would like to manage. In our case, we want to manage H3VR so click on that. It will ask you to create a profile or select the default one. Its recommended to use a new one, so create and select the one you just made.
 
 You will then be greeted to the main interface:
+
 ![image](Images/Getting-Started-Greeted.png)
 
 r2modman contains a built in list of mods in their `Online` section. Depending on what you download from the storefront, it will download any other mods it needs to run. This means all you need to worry about is the content mods you are downloading, and not whats needed to run it. The [Mod Types](Mod-Types.md) page goes over the basics on which mods require what. This process also works in reverse, if you were to uninstall a mod that other mods depend on, they will also be uninstalled.
 
 From that `Online` section in r2modman, install anything you want by clicking on it, then by clicking on the `Download` button. After that, any time you press the `Run Modded` button in the top left, your game will run with the mods listed under the `Installed` section on the left.
+
 ![image](Images/Gettings-Started-Wurstmod.png)
 
 ## Importing old mods
@@ -33,6 +35,7 @@ If you happen to obtain a mod from somewhere else and would like to install it, 
 The main way to install other mods not found through r2modman is to use the program's `Import Local Mod` feature. As of writing, this only works with `.deli` files, and `.zip` files that contain `.deli` files.
 
 Below is an image showing the button to import local mods:
+
 ![image](Images/Getting-Started-Import-Local.png)
 
 Simply click on the button, then select any `.deli` file or `.zip` containing any `.deli` file. This means you can import files like this:
@@ -68,6 +71,7 @@ If you do not have a `.deli` file, then installation is a little different. Plea
     mods.yaml
     ...
 ```
+
 ![image](Images/Getting-Started-Browse-Profile.png)
 
 Determine the mod type you are using, and extract the files to their correct path.types.
