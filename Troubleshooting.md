@@ -2,26 +2,17 @@
 
 The #1 way to find what is causing issues in your mod loading is by checking the log. After using r2modman's setting option to `Browse Profile Folder`, navigate to the `BepInEx/LogOutput.log` file and open it in any notepad program.
 
-## Null Reference Exception
+## "All of my mods stopped working after I installed X!"
 
-A mod, Unity, or BepInEx may throw something that looks like this:
+Certain mods effect Deli and cause it to stop loading. Please see the `Outdated/missing mods` section below for more information.
+
+After double checking through your log and you don't notice any error pertaining to missing or outdated mods, then you probably got something like this:
 
 ```log
-[Error : Unity log] NullReferenceException: Object not set to an instance of an object
+[Error  :   BepInEx] Failed to run [Deli.Bootstrap.PatcherEntrypoint] when patching [Assembly-CSharp]
 ```
 
-This is most likely a mod that is causing this issue, which could be creating lag or other unwanted effects. This does not cause mods to fail to load or for the game to crash.
-
-## Bad Image Format Exception
-
-Deli throws this error when it can't patch monomod. This is caused by a mod that is still trying to use Deli's patcher. Uninstall that mod and it will be fixed, and notify the author about this issue.
-
-This error causes Deli to stop loading mods, and will not load anything once encountered.
-
-Known offenders:
-
-- Deli.H3VR (a different mod than Deli)
-- Any mod that uses deli hookgen, this includes old versions of NToolbox, Portable Item Spawner, and Crossbow
+This happens before Deli throws a Bad Image format exception. Please see the `Bad Image Format Exception` section below for details.
 
 ## Outdated/missing mods
 
@@ -49,6 +40,27 @@ Similarly, a missing mod will also be noted:
 ```
 
 Make sure to fix these errors and running the game to see if there are any other Deli errors.
+
+## Bad Image Format Exception
+
+Deli throws this error when it can't patch monomod. This is caused by a mod that is still trying to use Deli's patcher. Uninstall that mod and it will be fixed, and notify the author about this issue.
+
+This error causes Deli to stop loading mods, and will not load anything once encountered.
+
+Known offenders:
+
+- Deli.H3VR (a different mod than Deli)
+- Any mod that uses deli hookgen, this includes old versions of NToolbox, Portable Item Spawner, and Crossbow
+
+## Null Reference Exception
+
+A mod, Unity, or BepInEx may throw something that looks like this:
+
+```log
+[Error : Unity log] NullReferenceException: Object not set to an instance of an object
+```
+
+This is most likely a mod that is causing this issue, which could be creating lag or other unwanted effects. This does not cause mods to fail to load or for the game to crash.
 
 ## Missing Monomod patcher files
 
