@@ -1,0 +1,119 @@
+[
+  {
+    "FirearmID": "SKSClassic",
+    "MagazineBlacklist": [
+      "MagazineSKSModern10rnd",
+      "MagazineSKSModern20rnd"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "MosinMini",
+    "MagazineBlacklist": [
+      "potatoesMagbox762_54"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "K98k",
+    "MagazineBlacklist": [
+      "potatoesMagbox762_54"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "RifBAGewher98SB",
+    "MagazineBlacklist": [
+      "potatoesMagbox762_54"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "PisBAGewher98ObrezCB",
+    "MagazineBlacklist": [
+      "potatoesMagbox762_54"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "RifBAGewher98CB",
+    "MagazineBlacklist": [
+      "potatoesMagbox762_54"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "G11TacMod",
+    "MagazineBlacklist": [
+      "MagazineTomacuziDrum"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "G11",
+    "MagazineBlacklist": [
+      "MagazineTomacuziDrum"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "Tomacuzi",
+    "MagazineBlacklist": [
+      "MagazineG11"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "MP203",
+    "MagazineBlacklist": [
+      "MagazineP5"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "P5Compact",
+    "MagazineBlacklist": [
+      "MagazineMP203"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "ModulMPX",
+    "MagazineBlacklist": [
+      "MagazineEvo3",
+      "MagazineEvo315rnd",
+      "MagazineEvo350rnd"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "Evo3",
+    "MagazineBlacklist": [
+      "MPXMag2",
+      "MPXMag3",
+      "MPXMag1"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "PPBizon",
+    "MagazineBlacklist": [
+      "PP1920"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "NTW20",
+    "MagazineBlacklist": [
+      "MagazineStoner63LMG"
+    ],
+    "ClipBlacklist": []
+  },
+  {
+    "FirearmID": "Stoner63LMG",
+    "MagazineBlacklist": [
+      "MagazineNTW20"
+    ],
+    "ClipBlacklist": []
+  }
+]
