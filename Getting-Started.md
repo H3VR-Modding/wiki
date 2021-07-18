@@ -34,7 +34,7 @@ From that `Online` section in r2modman, install anything you want by clicking on
 
 If you happen to obtain a mod from somewhere else and would like to install it, please follow the below instructions for steps. For specific mod installation instructions that are packaged differently, see [Specific Mod Installation](Specific-Mod-Installation.md).
 
-The main way to install other mods not found through r2modman is to use the program's `Import Local Mod` feature. As of writing, this only works with Deli Mods and Sideloader mods, although most Sideloader mods that are uploaded to other sites are incompatible with r2modman's importing feature and should be verified to have the correct folder structure before attempting to import them.
+The main way to install other mods not found through r2modman is to use the program's `Import Local Mod` feature. **CAUTION:** This does not work for all mods! As of writing, this only works with Deli Mods and Sideloader mods, although most Sideloader mods that are uploaded to other sites are incompatible with r2modman's importing feature and should be verified to have the correct folder structure before attempting to import them.
 
 Below is an image showing the button to import local mods:
 
@@ -80,9 +80,11 @@ In `Example 3`, the mods will all be installed under the same entry in r2modman.
 
 Files imported by r2modman are placed into the `BepInEx/plugins/` folder of the current profile under their own named folder, unless stated by a folder otherwise like with Sideloader mods.
 
+## Importing unsupported mods
+
 If you do not have a `.deli` file, then installation is a little different. Please see [Mod Types](Mod-Types.md) the the terms used below.
 
-1. From r2modman settings, search for `Browse Profile Folder` and click on it. A folder should have appeared that looks like this:
+From r2modman settings, search for `Browse Profile Folder` and click on it. A folder should have appeared that looks like this:
 
 ```text
 [Profile name you are using]/
@@ -93,12 +95,12 @@ If you do not have a `.deli` file, then installation is a little different. Plea
 
 ![image](Images/Getting-Started-Browse-Profile.png)
 
-Determine the mod type you are using, and extract the files to their correct path.types.
+Determine the mod type you are using, and extract the files to their correct paths. The `BepInEx/` folder is contained inside of your profile folder, which you just opened.
 
 - Sideloader mods go into the `BepInEx/Sideloader/` folder.
 - Asset bundles go into the `BepInEx/plugins/devyndamonster-otherloader/LegacyVirtualObjects/` folder.
 
-**NOTE:** If the aforementioned folders are not present, make sure you have run the game modded at least once without errors with the required mods installed.
+**NOTE:** If the aforementioned folders are not present, make sure you have run the game modded at least once without errors with the required mods installed. DO NOT create them yourself.
 
 ## Troubleshooting
 
@@ -115,3 +117,11 @@ To make these files appear, simply run the game once with the mod fully loaded w
 Below is a picture of where the `Config editor` feature is.
 
 ![image](Images/Getting-Started-Config-Menu.png)
+
+## Running your game with mods
+
+To run mods, you **must** press the `Run Modded` button within r2modman or TSMM.
+
+If you would like to run the game modded through steam, making the ease of use and usefulness of profiles irrelevant, please see the bottom of the `General` section of the `Help` menu on the left.
+
+![image](Images/Gettings-Started-Help.png)
