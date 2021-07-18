@@ -6,7 +6,7 @@
 
 Bonetome is old, and still has old installation instructions on the mod page. Please ignore these. It does however have a larger mod database, all compatible with the new installation method.
 
-Thunderstore is the current standard of installing mods, and is meant to be used with the mod manager [**r2modman**](https://h3vr.thunderstore.io/package/ebkr/r2modman/) or [Thunderstore mod manager](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager). It is ***highly*** recommended to use one of these when installing mods. Since they work essentially the same, whenever you see a reference to r2modman you can exchange it with TSMM.
+Thunderstore is the current standard of installing mods, and is meant to be used with the mod manager [**r2modman**](https://h3vr.thunderstore.io/package/ebkr/r2modman/) or [**Thunderstore mod manager**](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager). It is ***highly*** recommended to use one of these when installing mods. Since they work essentially the same, whenever you see a reference to r2modman you can exchange it with TSMM.
 
 The rest of this document assumes you have r2modman installed, please go to the [Manual Installation](Manual-Installation.md) section of this document if you would like to avoid using a mod manager.
 
