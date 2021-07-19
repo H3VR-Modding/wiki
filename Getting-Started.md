@@ -98,7 +98,7 @@ From r2modman settings, search for `Browse Profile Folder` and click on it. A fo
 Determine the mod type you are using, and extract the files to their correct paths. The `BepInEx/` folder is contained inside of your profile folder, which you just opened.
 
 - Sideloader mods go into the `BepInEx/Sideloader/` folder.
-- Asset bundles go into the `BepInEx/plugins/devyndamonster-otherloader/LegacyVirtualObjects/` folder.
+- Asset bundles go into the `BepInEx/plugins/devyndamonster-otherloader/LegacyVirtualObjects/` folder. **IMPORTANT:** Once Otherloader updates past 0.3.0, the folder will be changed to `BepInEx/LegacyVirtualObjects/`.
 
 **NOTE:** If the aforementioned folders are not present, make sure you have run the game modded at least once without errors with the required mods installed. DO NOT create them yourself.
 
