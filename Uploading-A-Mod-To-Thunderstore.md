@@ -2,6 +2,8 @@
 
 Thunderstore requires certain files to be present for it to even consider accepting your uploaded mod. Below are 3 sections, the first assumes you are making the files yourself, and the last 2 assume you want to use a tool to create them for you.
 
+If you would like to update your mod, please see [Updating Your TS Mod](Updating-Your-TS-Mod.md).
+
 - [Uploading a mod to Thunderstore](#uploading-a-mod-to-thunderstore)
   - [Required files for Thunderstore](#required-files-for-thunderstore)
   - [My mod is on Bonetome](#my-mod-is-on-bonetome)
