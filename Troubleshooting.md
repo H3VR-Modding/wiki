@@ -1,6 +1,6 @@
 # Troubleshooting
 
-The #1 way to find what is causing issues in your mod loading is by checking the log. After using r2modman's setting option to `Browse Profile Folder`, navigate to the `BepInEx/LogOutput.log` file and open it in any notepad program.
+The #1 way to find what is causing issues in your mod loading is by checking the log. After using r2modman's setting option to `Browse Profile Folder`, navigate to the `BepInEx/LogOutput.log` file and open it in any notepad program. It's recommended to search this page with the error you find.
 
 ## "All of my mods stopped working after I installed X!"
 
@@ -16,7 +16,7 @@ This happens before Deli throws a Bad Image format exception. Please see the `Ba
 
 ## Outdated/missing mods
 
-Since you already read Ebkr's document, you must have the correct mod versions right? If not, you can double check this list for whats needed for Deli 0.4.1+:
+Since you already read Ebkr's document, you must have the correct mod versions right? If not, you can double check this list for whats needed for Deli 0.4.1+ mods.
 
 - BepInEx 5.4.0+
 - Otherloader 0.3.0+
@@ -24,6 +24,7 @@ Since you already read Ebkr's document, you must have the correct mod versions r
 - HUtils 8.0.3+
 - Hook Gen Patcher 1.2.0+
 - Monomod 1.0.0+
+- Wurstmod 2.1.1+
 
 Please see the [Semantic Versioning](https://semver.org) website to understand what the different numbers mean for compatibility.
 
