@@ -1,10 +1,17 @@
 # Troubleshooting
 
+- [Troubleshooting](#troubleshooting)
+  - ["All of my mods stopped working after I installed X!"](#all-of-my-mods-stopped-working-after-i-installed-x)
+  - [Outdated/missing mods](#outdatedmissing-mods)
+  - [Bad Image Format Exception](#bad-image-format-exception)
+  - [Null Reference Exception](#null-reference-exception)
+  - [Missing Monomod patcher files](#missing-monomod-patcher-files)
+
 The #1 way to find what is causing issues in your mod loading is by checking the log. After using r2modman's setting option to `Browse Profile Folder`, navigate to the `BepInEx/LogOutput.log` file and open it in any notepad program. It's recommended to search this page with the error you find.
 
 ## "All of my mods stopped working after I installed X!"
 
-Certain mods effect Deli and cause it to stop loading. Please see the `Outdated/missing mods` section below for more information.
+Certain mods effect Deli and cause it to stop loading. Please see the [Outdated/missing mods](#outdatedmissing-mods) section below for more information.
 
 After double checking through your log and you don't notice any error pertaining to missing or outdated mods, then you probably got something like this:
 

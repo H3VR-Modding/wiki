@@ -1,5 +1,14 @@
 # Getting Started
 
+- [Getting Started](#getting-started)
+  - [Bonetome and Thunderstore](#bonetome-and-thunderstore)
+  - [Installing mods via r2modman](#installing-mods-via-r2modman)
+  - [Importing old mods](#importing-old-mods)
+  - [Importing unsupported mods](#importing-unsupported-mods)
+  - [Troubleshooting](#troubleshooting)
+  - [Configuring your mods](#configuring-your-mods)
+  - [Running your game with mods](#running-your-game-with-mods)
+
 ## Bonetome and Thunderstore
 
 [**Bonetome**](https://bonetome.com/h3vr/) and [**Thunderstore**](https://h3vr.thunderstore.io) are the two main sites to get mods from. Currently, you want to use Thunderstore first as Bonetome is being phased out.
