@@ -62,7 +62,7 @@ TSGen will prompt you for some general information about your mod:
 - Short description (displayed beside your mod in r2modman)
 - Long description (displayed in the README file on the main page of your mod)
 
-Next, it will prompt you for dependencies that your mod uses. 
+Next, it will prompt you for dependencies that your mod uses.
 
 ![image](Images/Uploading-A-Mod-To-Thunderstore-TSGen-Dependencies.png)
 
