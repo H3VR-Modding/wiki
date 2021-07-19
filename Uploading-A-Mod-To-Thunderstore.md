@@ -100,39 +100,39 @@ Depending on your mod type, you will need to package your mod differently by usi
   - No folder needed, place your `.deli` file inside of your mod folder
   
   ```text
-    [You mod name]/
-        asset1.deli
-        asset2.deli
-        icon.png
-        manifest.json
-        README.md
-    ```
+  [You mod name]/
+      asset1.deli
+      asset2.deli
+      icon.png
+      manifest.json
+      README.md
+  ```
 
 - Sideloader mods
   - Place your `.h3mod` or `.hotmod` file inside of a folder called `Sideloader` inside of your mod folder
 
   ```text
-    [You mod name]/
-        Sideloader/
-            asset1.h3mod
-            asset2.hotmod
-        icon.png
-        manifest.json
-        README.md
-    ```
+  [You mod name]/
+      Sideloader/
+          asset1.h3mod
+          asset2.hotmod
+      icon.png
+      manifest.json
+      README.md
+  ```
 
 - Asset bundles
   - These are unsupported as of Otherloader 0.3.0, please wait for an update for them to be compatible
   - Place your assets inside of a folder inside of your mod folder called `LegacyVirtualObjects/`.
 
-    ```text
-    [You mod name]/
-        LegacyVirtualObjects/
-            asset
-            asset.manifest (optional)
-        icon.png
-        manifest.json
-        README.md
-    ```
+  ```text
+  [You mod name]/
+      LegacyVirtualObjects/
+          asset
+          asset.manifest (optional)
+      icon.png
+      manifest.json
+      README.md
+  ```
 
 Now that your files are compiled together, zip your files together and head on over to [Thunderstore](https://h3vr.thunderstore.io) to upload your mod. Make sure to log in, then press the `Upload` button in the top left. Set it's category, drag your `.zip`, and hit upload.
