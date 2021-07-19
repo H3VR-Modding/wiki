@@ -1,12 +1,72 @@
 # Uploading a mod to Thunderstore
 
-Depending on your situation, please click on the section below:
+Thunderstore requires certain files to be present for it to even consider accepting your uploaded mod. Below are 3 sections, the first assumes you are making the files yourself, and the last 2 assume you want to use a tool to create them for you.
 
 - [Uploading a mod to Thunderstore](#uploading-a-mod-to-thunderstore)
+  - [Required files for Thunderstore](#required-files-for-thunderstore)
   - [My mod is on Bonetome](#my-mod-is-on-bonetome)
   - [My mod isn't on Bonetome](#my-mod-isnt-on-bonetome)
 
 **NOTE:** Windows defender or other antivirus programs may interfere with the mentioned programs, either run them as administrator or let them through temporarily.
+
+## Required files for Thunderstore
+
+Thunderstore requires 3 files to be present in your `.zip` upload:
+
+- An icon for your mod
+  - Must be 256x256 in dimensions
+  - Must be named `icon.png`
+  - It will be displayed on both r2modman and the main site, so make sure you don't have any small text
+- A README file
+  - Must be markdown called `README.md`
+  - This file is displayed on your main page and tells people about your mod, and lets you add pictures.
+  - It should follow [CommonMark](https://commonmark.org) syntax (although its just a formality)
+- A TS manifest called `manifest.json`
+  - This file requires a few fields to be filled out
+  - `name`
+    - Name of your mod, will be displayed beside your icon in the main page and on r2modman
+    - What is determined when uploading your mod, if you change the name it will be considered another mod
+    - Example: `"Cool mod 24"`
+  - `description`
+    - A short 250 character description of your mod
+    - Shown on the mod list and below your mod through r2modman
+    - Example: `"Some mod"`
+  - `version_number`
+    - The version of your mod in string format that follows [semantic versioning](https://semver.org)
+    - Example: `"1.1.1"`
+  - `dependencies`
+    - A list of dependency strings that your mod depends on
+    - These are found in the details section of the mod's main page
+    - Example:
+
+    ```json
+    [
+        "MythicManiac-TestMod-1.1.0",
+        "SomeAuthor-SomePackage-1.0.0",
+    ]
+    ```
+  
+  - `website_url`
+    - This is displayed on the main header of your mod page
+    - Most commonly github links
+    - Can be empty (use `""`)
+    - Example: `"https://example.com/"`
+  
+    Example manifest:
+
+    ```json
+    {
+        "name": "Cool mod 24",
+        "version_number": "1.0.0",
+        "website_url": "",
+        "description": "Cool mod",
+        "dependencies": [
+            "MythicManiac-TestMod-1.1.0"
+        ]
+    }
+    ```
+
+Please see the [Thunderstore Packaging](Thunderstore-Packaging.md) page for details on how to place your mod into this file structure. After which, all you need to do is zip the files inside of the mod folder and upload it.
 
 ## My mod is on Bonetome
 
@@ -94,45 +154,6 @@ Inside of the extracted TSGen folder, you should see a folder by the name of you
     README.md
 ```
 
-Depending on your mod type, you will need to package your mod differently by using folders:
-
-- Deli mods
-  - No folder needed, place your `.deli` file inside of your mod folder
-  
-  ```text
-  [You mod name]/
-      asset1.deli
-      asset2.deli
-      icon.png
-      manifest.json
-      README.md
-  ```
-
-- Sideloader mods
-  - Place your `.h3mod` or `.hotmod` file inside of a folder called `Sideloader` inside of your mod folder
-
-  ```text
-  [You mod name]/
-      Sideloader/
-          asset1.h3mod
-          asset2.hotmod
-      icon.png
-      manifest.json
-      README.md
-  ```
-
-- Asset bundles
-  - These are unsupported as of Otherloader 0.3.0, please wait for an update for them to be compatible
-  - Place your assets inside of a folder inside of your mod folder called `LegacyVirtualObjects/`.
-
-  ```text
-  [You mod name]/
-      LegacyVirtualObjects/
-          asset
-          asset.manifest (optional)
-      icon.png
-      manifest.json
-      README.md
-  ```
+Please see the [Thunderstore Packaging](Thunderstore-Packaging.md) page for details on how to place your mod into this file structure.
 
 Now that your files are compiled together, zip your files together and head on over to [Thunderstore](https://h3vr.thunderstore.io) to upload your mod. Make sure to log in, then press the `Upload` button in the top left. Set it's category, drag your `.zip`, and hit upload.
