@@ -2,7 +2,38 @@
 
 Specific mods that aren't currently updated yet have different installation instructions. This page assumes you know how to navigate to your r2modman profile folder to reach `BepInEx/`, and how to import local mods using r2modman.
 
-## TnHTweaker 1.6.6
+## LSIIC v1.4.0
+
+The release can be found [here](https://github.com/BlockBuilder57/LSIIC/releases/tag/v1.4).
+
+LSIIC (Lets see if it crashes) comes as the following `.zip` file:
+
+```text
+LSIIC-v1.4.zip/
+    BepInEx/
+        monomod/
+            LSIIC/
+                Assembly-CSharp.LSIIC.mm.dll
+        plugins/
+            LSIIC/
+                LSIIC.Core.dll
+                LSIIC.SmartPalming.dll
+                LSIIC.VirtualObjectsInjector.dll
+    Mods/
+        LSIIC.hotmod
+```
+
+To install, please follow the following steps:
+
+1. Install Sideloader through r2modman
+2. Run your game once until it has finished loading once using the `Run modded` button in r2modman.
+3. Click the `Browse profile folder` button in r2modman's settings menu to open your profile folder.
+4. Drag and drop the `LSIIC-v1.4.zip/BepInEx/` folder into your profile folder.
+5. Confirm that you now have `[your profile]/BepInEx/plugins/LSIIC/` and `[your profile]/BepInEx/monomod/LSIIC`.
+6. Extract the `LSIIC-v1.4.zip/Mods/LSIIC.hotmod` file to `[your profile]/BepInEx/Sideloader/`.
+7. (Optional) Run the game once to confirm that it has been installed by opening your BepInEx log at `[your profile folder]/BepInEx/LogOutput.log` and searching for "LSIIC", confirming there are no other errors.
+
+## TnHTweaker v1.6.6
 
 TnHTweaker comes as the following `.zip` file:
 
