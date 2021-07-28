@@ -1,5 +1,7 @@
 # Troubleshooting
 
+**This document may be out of date, if you need help, seek it.**
+
 - [Troubleshooting](#troubleshooting)
   - ["All of my mods stopped working after I installed X!"](#all-of-my-mods-stopped-working-after-i-installed-x)
   - [Outdated/missing mods](#outdatedmissing-mods)

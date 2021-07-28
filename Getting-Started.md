@@ -1,23 +1,18 @@
 # Getting Started
 
 - [Getting Started](#getting-started)
-  - [Bonetome and Thunderstore](#bonetome-and-thunderstore)
+  - [Thunderstore](#thunderstore)
   - [Installing mods via r2modman](#installing-mods-via-r2modman)
-  - [Importing old mods](#importing-old-mods)
-  - [Importing unsupported mods](#importing-unsupported-mods)
+  - [Installing mods not on Thunderstore](#installing-mods-not-on-thunderstore)
   - [Troubleshooting](#troubleshooting)
   - [Configuring your mods](#configuring-your-mods)
   - [Running your game with mods](#running-your-game-with-mods)
 
-## Bonetome and Thunderstore
+## Thunderstore
 
-[**Bonetome**](https://bonetome.com/h3vr/) and [**Thunderstore**](https://h3vr.thunderstore.io) are the two main sites to get mods from. Currently, you want to use Thunderstore first as Bonetome is being phased out.
-
-Bonetome is old, and still has old installation instructions on the mod page. Please ignore these. It does however have a larger mod database, all compatible with the new installation method.
+[**Thunderstore**](https://h3vr.thunderstore.io) is the main site to get mods from.
 
 Thunderstore is the current standard of installing mods, and is meant to be used with the mod manager [**r2modman**](https://h3vr.thunderstore.io/package/ebkr/r2modman/) or [**Thunderstore mod manager**](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager). It is ***highly*** recommended to use one of these when installing mods. Since they work essentially the same, whenever you see a reference to r2modman you can exchange it with TSMM.
-
-The rest of this document assumes you have r2modman installed, please go to the [Manual Installation](Manual-Installation.md) section of this document if you would like to avoid using a mod manager.
 
 ## Installing mods via r2modman
 
@@ -39,83 +34,15 @@ From that `Online` section in r2modman, install anything you want by clicking on
 
 ![image](Images/Gettings-Started-Wurstmod.png)
 
-## Importing old mods
+## Installing mods not on Thunderstore
 
-If you happen to obtain a mod from somewhere else and would like to install it, please follow the below instructions for steps. For specific mod installation instructions that are packaged differently, see [Specific Mod Installation](Specific-Mod-Installation.md).
-
-The main way to install other mods not found through r2modman is to use the program's `Import Local Mod` feature. **CAUTION:** This does not work for all mods! As of writing, this only works with Deli Mods and Sideloader mods, although most Sideloader mods that are uploaded to other sites are incompatible with r2modman's importing feature and should be verified to have the correct folder structure before attempting to import them.
-
-Below is an image showing the button to import local mods:
-
-![image](Images/Getting-Started-Import-Local.png)
-
-Here is the file structure required for Sideloader mods to be eligible for r2modman importing:
-
-```text
-AMod.zip/
-    Sideloader/
-        asset1.hotmod
-        asset2.h3mod
-```
-
-If the zip you downloaded was from bonetome and not in the correct format, you can either install the mod manually (shown below), or use [Ebkr's BT2TS tool](https://h3vr.thunderstore.io/package/ebkr/BT2TS/). When using it, make sure to select `(2) I want to import a mod using a mod manager.` and it will create a `.zip` file for you to import.
-
-The same goes for Deli mods. Below are some examples on which file structures are supported.
-
-Example 1:
-
-```text
-AMod.deli
-```
-
-Example 2:
-
-```text
-AZip.zip/
-    AMod.deli
-```
-
-Example 3:
-
-```text
-AZip.zip/
-    AMod.deli
-    BMod.deli
-    CMod.deli
-    IAmSuperCool.txt
-```
-
-In `Example 3`, the mods will all be installed under the same entry in r2modman.
-
-Files imported by r2modman are placed into the `BepInEx/plugins/` folder of the current profile under their own named folder, unless stated by a folder otherwise like with Sideloader mods.
-
-## Importing unsupported mods
-
-If you do not have a `.deli` file, then installation is a little different. Please see [Mod Types](Mod-Types.md) the the terms used below.
-
-From r2modman settings, search for `Browse Profile Folder` and click on it. A folder should have appeared that looks like this:
-
-```text
-[Profile name you are using]/
-    BepInEx/
-    mods.yaml
-    ...
-```
-
-![image](Images/Getting-Started-Browse-Profile.png)
-
-Determine the mod type you are using, and extract the files to their correct paths. The `BepInEx/` folder is contained inside of your profile folder, which you just opened.
-
-- Sideloader mods go into the `BepInEx/Sideloader/` folder.
-- Asset bundles go into the `BepInEx/plugins/devyndamonster-otherloader/LegacyVirtualObjects/` folder. **IMPORTANT:** Once Otherloader updates past 0.3.0, the folder will be changed to `BepInEx/LegacyVirtualObjects/`.
-
-**NOTE:** If the aforementioned folders are not present, make sure you have run the game modded at least once without errors with the required mods installed. DO NOT create them yourself.
+Please see the [Mods not on TS](Mods-Not-On-TS.md) doc for more information.
 
 ## Troubleshooting
 
 For the most common problems, please see the [Why aren't my mods working?](https://github.com/ebkr/r2modmanPlus/wiki/Why-aren%27t-my-mods-working%3F) page provided by Ebkr.
 
-For less common problems, see the [Troubleshooting](Troubleshooting.md) file for more details before contacting someone in the H3VR discord channel #modding-help.
+For less common problems, see the [Troubleshooting](Troubleshooting.md) file for more details before contacting someone in the H3VR discord channel #modding-help. Keep in mind new problems are found every day, and yours will most likely be on this page.
 
 ## Configuring your mods
 
