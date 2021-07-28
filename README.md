@@ -9,3 +9,5 @@ Coming from Deli Counter, Mod Installer, or manually installing mods? See [Start
 Uploading a mod? See the [Uploading a mod to Thunderstore](Uploading-A-Mod-To-Thunderstore.md) doc.
 
 Trying to update your mod? See the [Updating your TS mod](Updating-Your-TS-Mod.md) doc.
+
+Still need help after reading [Troubleshooting](Troubleshooting.md)? Ask a question in the main H3VR discord server channel #modding-help, or on the #h3vr channel in the official Thunderstore server.
