@@ -37,7 +37,8 @@ Place your assets inside of a folder inside of your mod folder called `LegacyVir
 
 ```text
 [You mod name]/
-    LegacyVirtualObjects/
+    plugins/
+      LegacyVirtualObjects/
         asset
         asset.manifest (optional)
     icon.png
