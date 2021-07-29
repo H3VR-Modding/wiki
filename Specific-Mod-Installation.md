@@ -20,7 +20,7 @@ LSIIC-v1.4.zip/
                 LSIIC.SmartPalming.dll
                 LSIIC.VirtualObjectsInjector.dll
     Mods/
-        LSIIC.hotmod
+        LSIIC.h3mod
 ```
 
 To install, please follow the following steps:
@@ -30,7 +30,7 @@ To install, please follow the following steps:
 3. Click the `Browse profile folder` button in r2modman's settings menu to open your profile folder.
 4. Drag and drop the `LSIIC-v1.4.zip/BepInEx/` folder into your profile folder.
 5. Confirm that you now have `[your profile]/BepInEx/plugins/LSIIC/` and `[your profile]/BepInEx/monomod/LSIIC`.
-6. Extract the `LSIIC-v1.4.zip/Mods/LSIIC.hotmod` file to `[your profile]/BepInEx/Sideloader/`.
+6. Extract the `LSIIC-v1.4.zip/Mods/LSIIC.h3mod` file to `[your profile]/BepInEx/Sideloader/`.
 7. (Optional) Run the game once to confirm that it has been installed by opening your BepInEx log at `[your profile folder]/BepInEx/LogOutput.log` and searching for "LSIIC", confirming there are no other errors.
 
 ## TnHTweaker v1.6.6
