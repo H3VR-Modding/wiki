@@ -1,83 +1,67 @@
 # Troubleshooting
 
-**This document may be out of date, if you need help, seek it.**
+If you are reading this and are not using [r2modman](https://h3vr.thunderstore.io/package/ebkr/r2modman/) or [Thunderstore mod manager](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager), it is no use to you, and no one in the community will help you with your problems. Make sure you read the [modding guide](Getting-Started.md) carefully and read all notes.
+
+This document was last re-written August 2, 2021. If significant time has passed, please seek help  in the main discord server channel `#modding-help`, in the `#h3vr` channel in the Thunderstore server, or `#general-help` in homebrew.
 
 - [Troubleshooting](#troubleshooting)
-  - ["All of my mods stopped working after I installed X!"](#all-of-my-mods-stopped-working-after-i-installed-x)
-  - [Outdated/missing mods](#outdatedmissing-mods)
-  - [Bad Image Format Exception](#bad-image-format-exception)
-  - [Null Reference Exception](#null-reference-exception)
-  - [Missing Monomod patcher files](#missing-monomod-patcher-files)
+  - ["Only some of my mods work"](#only-some-of-my-mods-work)
+  - [My controllers are not my actual controllers](#my-controllers-are-not-my-actual-controllers)
+  - [My controllers don't move](#my-controllers-dont-move)
 
-The #1 way to find what is causing issues in your mod loading is by checking the log. After using r2modman's setting option to `Browse Profile Folder`, navigate to the `BepInEx/LogOutput.log` file and open it in any notepad program. It's recommended to search this page with the error you find.
+The #1 way to find what is causing issues in your mod loading is by checking the log. After using r2modman's setting option to `Browse Profile Folder`, navigate to the `BepInEx/LogOutput.log` file and open it in any notepad program. It's recommended to use [VSCode](https://code.visualstudio.com), an advanced but simple to use text editor, and this guide assumes you have something similar installed that displays file specific formatting.
 
-## "All of my mods stopped working after I installed X!"
+## "Only some of my mods work"
 
-Certain mods effect Deli and cause it to stop loading. Please see the [Outdated/missing mods](#outdatedmissing-mods) section below for more information.
+This can be caused by a few things, but usually it is Deli/Stratum not finding a dependency required for a mod or a mod throwing an error while loading. This causes all related mods to stop loading.
 
-After double checking through your log and you don't notice any error pertaining to missing or outdated mods, then you probably got something like this:
+1. [Open your BepInEx Log](BepInEx-Log.md).
+2. Once open, look for large red blocks of text with the `[Error : Unity Log]` or `[Error : BepInEx Log]` tag. Sub-items below are examples, please read through them to see which one is most like your problem.
+    1. If you have TnHTweaker installed, you might see something like this:
 
-```log
-[Error  :   BepInEx] Failed to run [Deli.Bootstrap.PatcherEntrypoint] when patching [Assembly-CSharp]
-```
+        ```log
+        [Error  : Unity Log] ArgumentException: Undefined target method for patch method static bool 
+        TNHTweaker.Patches.TNHPatches::GenerateSentryPatrolPatch ...
+        ```
 
-This happens before Deli throws a Bad Image format exception. Please see the `Bad Image Format Exception` section below for details.
+        If so, you might also see:
 
-## Outdated/missing mods
+        ```log
+        [Error  : Unity Log] InvalidOperationException: Loader required for setup asset ...
+        ```
 
-Since you already read Ebkr's document, you must have the correct mod versions right? If not, you can double check this list for whats needed for Deli 0.4.1+ mods.
+        This means you are on an older version of the game that the mod cannot support anymore. Please update your game to at least build `7116219`. Check [this page](https://steamdb.info/app/450540/depots/) for more details on what branch you need to be on.
 
-- BepInEx 5.4.0+
-- Otherloader 0.3.0+
-- Sideloader 0.3.7+
-- HUtils 8.0.3+
-- Hook Gen Patcher 1.2.0+
-- Monomod 1.0.0+
-- Wurstmod 2.1.1+
+    2. If you have Wurstmod installed, you might see something like this:
 
-Please see the [Semantic Versioning](https://semver.org) website to understand what the different numbers mean for compatibility.
+        ```log
+        [Warning:      Deli] Could not load all types from WurstMod, Version=2.0.0.0, Culture=neutral ...
+        ```
 
-Mods that are out of date will be noted in a Deli error similar to this one:
+        Followed by:
 
-```log
-[Fatal : Deli] X Depends on Y x.x.x, but y.y.y is installed
-```
+        ```log
+        [Error  : Unity Log] Exception: This version of the game is not supported. Please update your game.```
+        ```
 
-Similarly, a missing mod will also be noted:
+        This means you are on an older version of the game that the mod cannot support anymore. Please update your game to at least build `7116219`. Check [this page](https://steamdb.info/app/450540/depots/) for more details on what branch you need to be on.
 
-```log
-[Fatal : Deli] X Depends on Y x.x.x, but it cannot be found
-```
+    3. You have deprecated mods installed. This includes, but is not limited to:
 
-Make sure to fix these errors and running the game to see if there are any other Deli errors.
+        - Deli.H3VR, not to be confused with [Deli](https://h3vr.thunderstore.io/package/DeliCollective/Deli/).
 
-## Bad Image Format Exception
+    4. You have outdated versions of mods. Please make sure you are using the latest dependency versions and are fully updated through r2modman (there will be icons next to those that are outdated, and a large yellow banner will say something is outdated).
 
-Deli throws this error when it can't patch monomod. This is caused by a mod that is still trying to use Deli's patcher. Uninstall that mod and it will be fixed, and notify the author about this issue.
+    You might see something like:
 
-This error causes Deli to stop loading mods, and will not load anything once encountered.
+    ```log
+    [Error : Deli] Mod depends on dependency 2.0.0, but only version present is @0.1.2
+    ```
 
-Known offenders:
+## My controllers are not my actual controllers
 
-- Deli.H3VR (a different mod than Deli)
-- Any mod that uses deli hookgen, this includes old versions of NToolbox, Portable Item Spawner, and Crossbow
+You have [AlternativeHands](https://h3vr.thunderstore.io/package/AshHat/AlternativeHands/) installed.
 
-## Null Reference Exception
+## My controllers don't move
 
-A mod, Unity, or BepInEx may throw something that looks like this:
-
-```log
-[Error : Unity log] NullReferenceException: Object not set to an instance of an object
-```
-
-This is most likely a mod that is causing this issue, which could be creating lag or other unwanted effects. This does not cause mods to fail to load or for the game to crash.
-
-## Missing Monomod patcher files
-
-This is the error message:
-
-```log
-MonoMod.Utils.RelinkTargetNotFoundException: MonoMod cannot map dependency X.dll
-```
-
-This is caused by multiple mods asking for the same file that hook gen patcher creates. The most common issue of this problem occurring is outdated versions of Sideloader and H3Utils. Make sure you are using versions 0.3.7+ and 8.0.3+ respectively.
+You have old versions of [Stratum](https://h3vr.thunderstore.io/package/Stratum/Stratum/) and [Mason](https://h3vr.thunderstore.io/package/Stratum/Mason/) installed, make sure you are using `1.0.1+` for both of them.

@@ -42,7 +42,7 @@ Please see the [Mods not on TS](Mods-Not-On-TS.md) doc for more information.
 
 For the most common problems, please see the [Why aren't my mods working?](https://github.com/ebkr/r2modmanPlus/wiki/Why-aren%27t-my-mods-working%3F) page provided by Ebkr.
 
-For less common problems, see the [Troubleshooting](Troubleshooting.md) file for more details before contacting someone in the H3VR discord channel #modding-help. Keep in mind new problems are found every day, and yours will most likely be on this page.
+For less common problems, see the [Troubleshooting](Troubleshooting.md) file for more details. Keep in mind new problems are found every day, and yours will most likely be on this page.
 
 ## Configuring your mods
 
