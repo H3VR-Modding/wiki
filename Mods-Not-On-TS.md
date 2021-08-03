@@ -8,7 +8,7 @@
 
 If you happen to obtain a mod from somewhere else and would like to install it, please follow the below instructions for steps. For specific mod installation instructions that are packaged differently, see [Specific Mod Installation](Specific-Mod-Installation.md).
 
-The main way to install other mods not found through r2modman is to use the program's `Import Local Mod` feature. **CAUTION:** This does not work for all mods! As of writing, this only works with Deli Mods and Sideloader mods, although most Sideloader mods that are uploaded to other sites are incompatible with r2modman's importing feature and should be verified to have the correct folder structure before attempting to import them.
+The main way to install other mods not found through r2modman is to use the program's `Import Local Mod` feature. **CAUTION:** This does not work for all mods! As of writing, this only works with Deli Mods.
 
 Below is an image showing the button to import local mods:
 
@@ -22,6 +22,18 @@ AMod.zip/
         asset1.hotmod
         asset2.h3mod
 ```
+
+Here is the structure required for asset bundles:
+
+```text
+AMod.zip/
+    LegacyVirtualObjects/
+        moda
+        modb
+        modb.manifest
+```
+
+Please note that the `.manifest` file is not required.
 
 The same goes for Deli mods. Below are some examples on which file structures are supported.
 
