@@ -20,4 +20,4 @@ Sideloader mods require them to be placed inside of the `BepInEx/Sideloader/` fo
 
 ### Asset bundles
 
-Asset bundles require to be placed inside of the `LegacyVirtualObjects/` folder. The location of which you will have to find yourself.
+Asset bundles require to be placed inside of the `BepInEx/plugins/LegacyVirtualObjects/` folder.
