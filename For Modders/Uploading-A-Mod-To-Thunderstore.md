@@ -82,15 +82,15 @@ Since your mod is on Bonetome, you can use [Ebkr](https://github.com/ebkr)'s too
 
 Once downloaded, place `BT2TS.exe` and its `src/` folder inside of a folder you have permissions for. This can be done easily by creating a folder inside of your `Downloads/` folder. After running `BT2TS.exe`, you will be greeted by this screen:
 
-![image](Images/Uploading-A-Mod-To-Thunderstore-Greeting.png)
+![image](../Images/Uploading-A-Mod-To-Thunderstore-Greeting.png)
 
 After you input the Bonetome link of your mod, it will respond with the name of it and prompt you to include a short description of your mod:
 
-![image](Images/Uploading-A-Mod-To-Thunderstore-Name.png)
+![image](../Images/Uploading-A-Mod-To-Thunderstore-Name.png)
 
 Once inputted, you can add a website that will be displayed at the header of your mod page. This is mostly used for github pages, so you can leave this part blank (just press enter without typing anything). Below is an example of where this link is located:
 
-![image](Images/Uploading-A-Mod-To-Thunderstore-Website.png)
+![image](../Images/Uploading-A-Mod-To-Thunderstore-Website.png)
 
 Afterwards, you will be prompted with whether you want to package it for Thunderstore, or to use it for personal use. Type `1` and hit enter to create our required files.
 
@@ -100,7 +100,7 @@ You may be prompted for extra information depending on which type of mod `BT2TS`
 
 If you had the correct permissions, it should create a folder beside `BT2TS.exe` called `[filenameOfYourMod]_build/`. Below is an example of a successful download:
 
-![image](Images/Uploading-A-Mod-To-Thunderstore-Build.png)
+![image](../Images/Uploading-A-Mod-To-Thunderstore-Build.png)
 
 If the program failed to create the folder of your mod, try running it as administrator or making sure your mods extension is supported by your OS.
 
@@ -116,7 +116,7 @@ Head on over to [TSGen](https://github.com/nayr31/TSGen)'s github and download t
 
 Running `TSGen.exe` will greet you with this page:
 
-![image](Images/Uploading-A-Mod-To-Thunderstore-Run-TSGen.png)
+![image](../Images/Uploading-A-Mod-To-Thunderstore-Run-TSGen.png)
 
 TSGen will prompt you for some general information about your mod:
 
@@ -128,7 +128,7 @@ TSGen will prompt you for some general information about your mod:
 
 Next, it will prompt you for dependencies that your mod uses.
 
-![image](Images/Uploading-A-Mod-To-Thunderstore-TSGen-Dependencies.png)
+![image](../Images/Uploading-A-Mod-To-Thunderstore-TSGen-Dependencies.png)
 
 Input the number that corresponds to the top level dependencies you need.
 
@@ -145,7 +145,7 @@ So Mod A's dependencies are:
 - Wurstmod
 ```
 
-![image](Images/Uploading-A-Mod-To-Thunderstore-TSGen-Finish.png)
+![image](../Images/Uploading-A-Mod-To-Thunderstore-TSGen-Finish.png)
 
 In the above picture you can see what the example would do in it's situation. You can close TSGen now by hitting enter or by closing the window.
 

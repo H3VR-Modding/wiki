@@ -1,18 +1,23 @@
 # Manual Installation
 
-This guide assumes you are a very stubborn, very stuck in their ways person. We all hate you. It also assumes you know the different [mod types](Mod-Types.md). It also assumes you are using Deli 0.3.2 and are missing out on all of the cool new things. (And also assumes you know how to install most dependencies).
+Manual installation is not recommended **AT ALL**. There is no reason for you to be doing so. Please use [r2modman](https://h3vr.thunderstore.io/package/ebkr/r2modman/) or [Thunderstore Mod manager](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager).
 
-## From Bonetome
+Reading past this point you agree to not receive help from those willing to give it.
 
-All Bonetome mods come zipped or packaged as a `.zip`, `.7z` or `.rar` file. Inside these you will either find a folder, or the specific file for you to install.
+This guide assumes you know how to read the dependencies of each mod and install them yourself, also what [Mod Types](Mod-Types.md) are which.
 
-- Deli
-  - Files should be extracted to the `H3VR/Deli/mods/` folder.
-- Sideloader
-  - Files should be extracted to the `H3VR/mods/` folder.
-- Assetbundles
-  - Files should be extracted to the `H3VR/Deli/mods/legacy/LegacyVirtualObjects/` folder.
+## Manual placement
 
-## From Thunderstore
+Installing mods requires certain mods to create their folders beforehand, if you fail to comply your mods will most likely be wiped from existence.
 
-Thunderstore mods are zipped similarly, and are installed the same. Keep in mind that BepInEx plugins are present. These have a singular `.dll` file and are placed into the `H3VR/BepInEx/plugins/` folder.
+### Deli Mods
+
+Deli mods require to placed inside of the `BepInEx/plugins/[a folder you need to make]/`
+
+### Sideloader mods
+
+Sideloader mods require them to be placed inside of the `BepInEx/Sideloader/` folder.
+
+### Asset bundles
+
+Asset bundles require to be placed inside of the `LegacyVirtualObjects/` folder. The location of which you will have to find yourself.

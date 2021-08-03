@@ -8,6 +8,7 @@ This document was last re-written August 2, 2021. If significant time has passed
   - ["Only some of my mods work"](#only-some-of-my-mods-work)
   - [My controllers are not my actual controllers](#my-controllers-are-not-my-actual-controllers)
   - [My controllers don't move](#my-controllers-dont-move)
+  - [Everything doesn't work](#everything-doesnt-work)
 
 The #1 way to find what is causing issues in your mod loading is by checking the log. After using r2modman's setting option to `Browse Profile Folder`, navigate to the `BepInEx/LogOutput.log` file and open it in any notepad program. It's recommended to use [VSCode](https://code.visualstudio.com), an advanced but simple to use text editor, and this guide assumes you have something similar installed that displays file specific formatting.
 
@@ -65,3 +66,9 @@ You have [AlternativeHands](https://h3vr.thunderstore.io/package/AshHat/Alternat
 ## My controllers don't move
 
 You have old versions of [Stratum](https://h3vr.thunderstore.io/package/Stratum/Stratum/) and [Mason](https://h3vr.thunderstore.io/package/Stratum/Mason/) installed, make sure you are using `1.0.1+` for both of them.
+
+## Everything doesn't work
+
+Make sure you are pressing the "Run Modded" button inside of r2modman. Launching from Steam will launch without mods.
+
+If you are pressing the "Run Modded" button inside of r2modman and mods still aren't loading, make sure that you don't have any mods left over from a previous installation of another mod manager such as Deli Counter or Mod Installer, or your previous attempts at manual installation. Here is a guide to [cleaning your H3VR folder](Starting-Fresh.md).
