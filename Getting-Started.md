@@ -18,9 +18,9 @@ Thunderstore is the current standard of installing mods, and is meant to be used
 
 Please open the [Mod Types](Mod-Types.md) file in another tab and read over it. It contains a list of the three different mod types contained within the modding community.
 
-**NOTE:** If you have installed mods previously from another storefront, please preform a clean install. Guide on how to do it is located [here](Starting-Fresh.md).
+### NOTE: If you have installed mods previously from another storefront, please preform a clean install. Guide on how to do it is located [here](Starting-Fresh.md).
 
-**NOTE 2:** Mods are no longer installed to the root H3VR directory! Please read the tutorial carefully.
+### NOTE 2: Mods are no longer installed to the root H3VR directory! Please read the tutorial carefully.
 
 Once you have installed r2modman and opened it, you will be greeted by a page asking you which game you would like to manage. In our case, we want to manage H3VR so click on that. It will ask you to create a profile or select the default one. Its up to you which you use, the default one cannot be deleted, but comes as an empty profile for new users.
 
