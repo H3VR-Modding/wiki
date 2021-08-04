@@ -82,6 +82,6 @@ From r2modman settings, search for `Browse Profile Folder` and click on it. A fo
 Determine the mod type you are using, and extract the files to their correct paths. The `BepInEx/` folder is contained inside of your profile folder, which you just opened.
 
 - Sideloader mods go into the `BepInEx/Sideloader/` folder.
-- Asset bundles go into the `BepInEx/plugins/LegacyVirtualObjects/` folder (this was changed as of [Otherloader 0.3.1](https://github.com/devyndamonster/OtherLoader/releases/tag/v0.3.1))
+- Asset bundles go into the `BepInEx/plugins/../LegacyVirtualObjects/` folder (this was changed as of [Otherloader 0.3.2](https://github.com/devyndamonster/OtherLoader/releases/tag/v0.3.2)). `/../` just means any folder. If you would like to avoid using profiles, you can place them into `H3VR/LegacyVirtualObjects/`.
 
 **NOTE:** If the aforementioned folders are not present, make sure you have run the game modded at least once without errors with the required mods installed. DO NOT create them yourself.
