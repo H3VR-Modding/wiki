@@ -31,8 +31,6 @@ Place your `.h3mod` or `.hotmod` file inside of a folder called `Sideloader` ins
 
 ## Asset bundles
 
-These are unsupported as of Otherloader 0.3.0, please wait for an update for them to be compatible.
-
 Place your assets inside of a folder inside of your mod folder called `LegacyVirtualObjects/`.
 
 ```text
