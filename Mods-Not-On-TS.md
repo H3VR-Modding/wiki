@@ -66,7 +66,7 @@ Files imported by r2modman are placed into the `BepInEx/plugins/` folder of the 
 
 ## Importing unsupported mods
 
-If you do not have a `.deli` file, then installation is a little different. Please see [Mod Types](Mod-Types.md) the the terms used below.
+If you do not have a `.deli` file, then installation is a little different. Please see [Mod Types](Mod-Types.md) the terms used below.
 
 From r2modman settings, search for `Browse Profile Folder` and click on it. A folder should have appeared that looks like this:
 
