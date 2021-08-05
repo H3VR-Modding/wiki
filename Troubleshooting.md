@@ -1,5 +1,7 @@
 # Troubleshooting
 
+First and foremost, please read [Ebkr's pfficial troubleshhoting guide](https://github.com/ebkr/r2modmanPlus/wiki/Why-aren%27t-my-mods-working%3F) (they made r2modman and Thunderstore mod manager).
+
 If you are reading this and are not using [r2modman](https://h3vr.thunderstore.io/package/ebkr/r2modman/) or [Thunderstore mod manager](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager), it is no use to you, and no one in the community will help you with your problems. Make sure you read the [modding guide](Getting-Started.md) carefully and read all notes.
 
 This document was last re-written August 2, 2021. If significant time has passed, please seek help  in the main discord server channel `#modding-help`, in the `#h3vr` channel in the Thunderstore server, or `#general-help` in homebrew.
