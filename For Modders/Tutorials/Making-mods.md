@@ -17,3 +17,4 @@ Here are some quick links:
     - This guide can be adapted for nearly *any* custom object and is highly recommended.
   - [gamernayr's Custom Ammo tutorial](https://docs.google.com/document/d/1bF66Tijdf5mwTXuIPWmnszSNMJ8u7Wxza9_PshheB2A/edit?usp=sharing)
   - [gamernayr's modular weapon tutorial](Making-Modul-Mods.md)
+  - [gamernayr's pre-attached attachments tutorial](Pre-Attached-Attachments.md)

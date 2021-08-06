@@ -3,15 +3,15 @@
 This document covers some tips and extra features that modular mods can take advantage of.
 
 - [Modular mods extended](#modular-mods-extended)
-  - [Item ID, Pre-Attached Attachments, and Take and Hold](#item-id-pre-attached-attachments-and-take-and-hold)
+  - [Item ID, using Pre-Attached Attachments, and Take and Hold](#item-id-using-pre-attached-attachments-and-take-and-hold)
 
-## Item ID, Pre-Attached Attachments, and Take and Hold
+## Item ID, using Pre-Attached Attachments, and Take and Hold
 
 The Item ID of your weapon is what makes it spawn correctly.
 
 The main problem of this is that your modular frame (and nothing else) will spawn in Take and Hold without any attachments (which is bad).
 
-Another interesting feature is having attachments pre-attached onto your receiver. This is done by using Cityrobo's [`PreattachedAttachment` script](https://github.com/cityrobo/H3VR_Mods/blob/master/PreattachedAttachment/PreattachedAttachment.cs). However, you can't simply use the script, as every time you vault a weapon with different attachments it will spawn both the default ones you specify and the new ones the user applied.
+Another interesting feature is having attachments pre-attached onto your receiver. This is done by using Cityrobo's [`PreattachedAttachment` script](https://github.com/cityrobo/H3VR_Mods/blob/master/PreattachedAttachment/PreattachedAttachment.cs) (more information in the [tutorial doc](Pre-Attacched-Attachments.md)). However, you can't simply use the script, as every time you vault a weapon with different attachments it will spawn both the default ones you specify and the new ones the user applied.
 
 The way to correctly get these features working is Item ID duping:
 
