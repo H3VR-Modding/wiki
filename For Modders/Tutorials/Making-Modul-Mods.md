@@ -6,13 +6,13 @@ You will need [AssetStudioGUI](https://drive.google.com/file/d/18P59DJL0tGRSTXax
 
 In this tutorial, I need to properly mount a dustcover on my modular SVD.
 
-![need a dustcover](../Images/Making%20modul%20mods/Need%20a%20dustcover.png)
+![need a dustcover](../../Images/Making%20modul%20mods/Need%20a%20dustcover.png)
 
 ## Importing prefabs
 
 The first thing we will need is the basis of where a dustcover sits, modular AK. Once you have obtained the mod and its `.manifest` file, place them in your Unity project's `Assets/` folder.
 
-![placed in assets](../Iamges/../Images/Making%20modul%20mods/In%20the%20assets%20tray.png)
+![placed in assets](../../Iamges/../Images/Making%20modul%20mods/In%20the%20assets%20tray.png)
 
 Then, I made another empty game object with the prefab loader script component. If you don't have one, you can right-click in the `Hierarchy` on the left and click the `Create Empty` button. Once selected, in the `Inspector` tab on the right click on the `Add Component` button and search for the prefab loader script.
 
@@ -24,7 +24,7 @@ Once you have a prefab loader object ready, fill it out with the fields you need
 
 For this example, my prefab loader looks like this:
 
-![prefab loader](../Images/Making%20modul%20mods/Prefab-loader.png)
+![prefab loader](../../Images/Making%20modul%20mods/Prefab-loader.png)
 
 ## Copying reference prefabs
 
@@ -47,13 +47,13 @@ To rip the mesh or materials:
 
 Drop in your clone into the hierarchy and navigate to where the creator placed their mesh and material in and fill them in. Below is an image of this process completed.
 
-![prefab imported](../Images/Making%20modul%20mods/Copied-prefab.png)
+![prefab imported](../../Images/Making%20modul%20mods/Copied-prefab.png)
 
 ## Placing the attachment mount
 
 Take note of what attachment mount your attachment uses. For this case, a dustcover would use the `Russian` type.
 
-![mount type](../Images/Making%20modul%20mods/Mount-type.png)
+![mount type](../../Images/Making%20modul%20mods/Mount-type.png)
 
 If yours is blank, then that means the creator used a custom enum for their mount type. This is used to make sure no other attachment can be placed in that spot. You will have to contact the creator of the mod for the enum number that they used for that attachment mount and fill in your `FVRFireArmAttachementMountType.cs` script with another entry with that number that they provide.
 
@@ -66,11 +66,11 @@ Either way, you still need to import another prefab. Lets go with option 1. In m
 
 Same as last time, pause play with the new `.manifest` path of the receiver in the prefab loader. This time however, all we need to do is save the attachment mount that mounts our attachment. In my case, that would be the one shown in the picture below:
 
-![dustcover mount](../Images/Making%20modul%20mods/Dustcover-mount.png)
+![dustcover mount](../../Images/Making%20modul%20mods/Dustcover-mount.png)
 
 Drag and drop that attachment mount (not the weapon itself) into your assets tray. Next, drag it onto your firearm that needs the mount, and then place the attachment that you want to make compatible as a child to it. Below is how mine would look:
 
-![dust child](../Images/Making%20modul%20mods/Dust-child.png)
+![dust child](../../Images/Making%20modul%20mods/Dust-child.png)
 
 Next, click on the attachment (in my case, `Bastion (Clone)`), and set the position of the transform to 0,0,0. Now move the mount point (in my case, `_RailMount_Dustcover`) so that it fits on your weapon like it looks like it should.
 
@@ -78,4 +78,10 @@ Delete the object reference, and apply your main prefab to save it. Make sure to
 
 Here is an example of a completed modular weapon with all of its mounts.
 
-![att list](../Images/Making%20modul%20mods/Att-List.png)
+![att list](../../Images/Making%20modul%20mods/Att-List.png)
+
+## Finishing notes
+
+Looking to get more out of your modular mod? Check the [extended document](Modul-mods-extended.md).
+
+If you have any questions about this guide, you can ask me on discord @gamernayr#8165 through the official H3VR discord.
