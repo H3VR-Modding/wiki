@@ -41,7 +41,7 @@ There are a few things you need to make sure you have on your main prefab (your 
 
 After you have those done, simply add a new component (in the inspector window) to an empty game object. If you did it right, it should show up like this:
 
-![script](../../Images/Pre-Attached-Attachments-Script.png)
+![script](images/Pre-Attached-Attachments-Script.png)
 
 Fill in the mount and the attachment its attaching to by dragging and dropping them.
 

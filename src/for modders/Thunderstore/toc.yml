@@ -1,0 +1,6 @@
+- name: Uploading a mod to Thunderstore
+  href: Uploading-A-Mod-To-Thunderstore.md
+- name: Updating your TS Mod
+  href: Updating-Your-TS-Mod.md
+- name: Thunderstore Packaging
+  href: Thunderstore-Packaging.md

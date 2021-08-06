@@ -6,13 +6,6 @@ If you are reading this and are not using [r2modman](https://h3vr.thunderstore.i
 
 This document was last re-written August 2, 2021. If significant time has passed, please seek help  in the main discord server channel `#modding-help`, in the `#h3vr` channel in the Thunderstore server, or `#general-help` in homebrew.
 
-- [Troubleshooting](#troubleshooting)
-  - [Only some of my mods work](#only-some-of-my-mods-work)
-  - [My controllers are not my actual controllers](#my-controllers-are-not-my-actual-controllers)
-  - [My controllers don't move](#my-controllers-dont-move)
-  - [Everything doesn't work](#everything-doesnt-work)
-  - [I have cursed installed, but it doesn't work](#i-have-cursed-installed-but-it-doesnt-work)
-
 The #1 way to find what is causing issues in your mod loading is by checking the log. After using r2modman's setting option to `Browse Profile Folder`, navigate to the `BepInEx/LogOutput.log` file and open it in any notepad program. It's recommended to use [VSCode](https://code.visualstudio.com), an advanced but simple to use text editor, and this guide assumes you have something similar installed that displays file specific formatting.
 
 If none of these solutions don't work, create a new profile inside of r2modman and try installing mods a few at a time.

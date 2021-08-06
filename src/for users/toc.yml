@@ -1,0 +1,16 @@
+- name: Getting Started
+  href: Getting-Started.md
+- name: Troubleshooting
+  href: Troubleshooting.md
+- name: Installing Mods not on TS
+  href: Mods-Not-On-TS.md
+- name: Specific Mod Installation
+  href: Specific-Mod-Installation.md
+- name: Cleaning your H3VR Folder
+  href: Starting-Fresh.md
+- name: BepInEx Log
+  href: BepInEx-Log.md
+- name: Mod Types
+  href: Mod-Types.md
+- name: Manual Installation
+  href: Manual-Installation.md

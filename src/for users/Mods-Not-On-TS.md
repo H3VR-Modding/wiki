@@ -1,8 +1,6 @@
 # Mods not on TS
 
-- [Mods not on TS](#mods-not-on-ts)
-  - [Importing supported mods](#importing-supported-mods)
-  - [Importing unsupported mods](#importing-unsupported-mods)
+Depending on your [Mod-Type](Mod-Types.md), mods you find outside of r2modman and Thunderstore mod manager need to be installed differently.
 
 ## Importing supported mods
 
@@ -12,7 +10,7 @@ The main way to install other mods not found through r2modman is to use the prog
 
 Below is an image showing the button to import local mods:
 
-![image](Images/Getting-Started-Import-Local.png)
+![image](images/getting-started/Import-Local.png)
 
 Here is the file structure required for Sideloader mods to be eligible for r2modman importing:
 
@@ -77,7 +75,7 @@ From r2modman settings, search for `Browse Profile Folder` and click on it. A fo
     ...
 ```
 
-![image](Images/Getting-Started-Browse-Profile.png)
+![image](images/Browse-Profile.png)
 
 Determine the mod type you are using, and extract the files to their correct paths. The `BepInEx/` folder is contained inside of your profile folder, which you just opened.
 

@@ -1,15 +1,5 @@
 # Getting Started
 
-- [Getting Started](#getting-started)
-  - [Thunderstore](#thunderstore)
-  - [Installing mods via r2modman](#installing-mods-via-r2modman)
-    - [NOTE: If you have installed mods previously from another storefront, please preform a clean install. Guide on how to do it is located here](#note-if-you-have-installed-mods-previously-from-another-storefront-please-preform-a-clean-install-guide-on-how-to-do-it-is-located-here)
-    - [NOTE 2: Mods are no longer installed to the root H3VR directory! Please read the tutorial carefully](#note-2-mods-are-no-longer-installed-to-the-root-h3vr-directory-please-read-the-tutorial-carefully)
-  - [Installing mods not on Thunderstore](#installing-mods-not-on-thunderstore)
-  - [Troubleshooting](#troubleshooting)
-  - [Configuring your mods](#configuring-your-mods)
-  - [Running your game with mods](#running-your-game-with-mods)
-
 ## Thunderstore
 
 [**Thunderstore**](https://h3vr.thunderstore.io) is the main site to get mods from.
@@ -20,28 +10,23 @@ Thunderstore is the current standard of installing mods, and is meant to be used
 
 Please open the [Mod Types](Mod-Types.md) file in another tab and read over it. It contains a list of the three different mod types contained within the modding community.
 
-> [!NOTE]
-> If you have installed mods previously from another storefront, please preform a clean install. Guide on how to do it is located [here](Starting-Fresh.md)
-
 > [!WARNING]
 > If you have installed mods previously from another storefront, please preform a clean install. Guide on how to do it is located [here](Starting-Fresh.md)
 
 > [!IMPORTANT]
-> If you have installed mods previously from another storefront, please preform a clean install. Guide on how to do it is located [here](Starting-Fresh.md)
-
-### NOTE 2: Mods are no longer installed to the root H3VR directory! Please read the tutorial carefully
+> Mods are no longer installed to the root H3VR directory! Please read the tutorial carefully
 
 Once you have installed r2modman and opened it, you will be greeted by a page asking you which game you would like to manage. In our case, we want to manage H3VR so click on that. It will ask you to create a profile or select the default one. Its up to you which you use, the default one cannot be deleted, but comes as an empty profile for new users.
 
 You will then be greeted to the main interface shown below. Every time you want to run the game with mods, you will ned to press the `Run Modded` button in the top left and your game will run with the mods listed under the `Installed` section on the left.
 
-![image](../images/Getting-Started-Greeted.png)
+![image](images/getting-started/Greeted.png)
 
 r2modman contains a built in list of mods in their `Online` section. Depending on what you download from the storefront, it will download any other mods it needs to run. This means all you need to worry about is the content mods you are downloading, and not whats needed to run it. The [Mod Types](Mod-Types.md) page goes over the basics on which mods require what. This process also works in reverse, if you were to uninstall a mod that other mods depend on, they will also be uninstalled.
 
 From that `Online` section in r2modman, install anything you want by clicking on it, then by clicking on the `Download` button. Below is a picture of the `Wurstmod` dependency as an example.
 
-![image](../images/Gettings-Started-Wurstmod.png)
+![image](images/getting-started/Wurstmod.png)
 
 ## Installing mods not on Thunderstore
 
@@ -61,7 +46,7 @@ To make these files appear, simply run the game once with the mod fully loaded w
 
 Below is a picture of where the `Config editor` feature is.
 
-![image](../images/Getting-Started-Config-Menu.png)
+![image](images/getting-started/Config-Menu.png)
 
 ## Running your game with mods
 
@@ -69,4 +54,4 @@ To run mods, you **must** press the `Run Modded` button within r2modman or TSMM.
 
 If you would like to run the game modded through steam, making the ease of use and usefulness of profiles irrelevant, please see the bottom of the `General` section of the `Help` menu on the left.
 
-![image](../images/Gettings-Started-Help.png)
+![image](images/getting-started/Help.png)

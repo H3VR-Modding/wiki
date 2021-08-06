@@ -35,7 +35,8 @@ To install, please follow the following steps:
 
 ## TnHTweaker v1.6.6
 
-[**THIS IS OUTDATED, PLEASE USE THE THUNDERSTORE RELEASE**](https://h3vr.thunderstore.io/package/devyndamonster/TakeAndHoldTweaker/)
+> ![CAUTION]
+> This version of TnHTweaker is outdated, please use the [THUNDERSTORE RELEASE](https://h3vr.thunderstore.io/package/devyndamonster/TakeAndHoldTweaker/)
 
 TnHTweaker comes as the following `.zip` file:
 
