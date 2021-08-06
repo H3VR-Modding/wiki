@@ -1,0 +1,27 @@
+name: pages
+
+on:
+  push:
+    branches:
+      - docfx
+
+jobs:
+  pages:
+    name: Build and Push to GitHub Pages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build
+        uses: nikeee/docfx-action@v1.0.0
+        with:
+          args: docfx/docfx.json
+
+      - name: Push to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docfx/_site
+          force_orphan: true
