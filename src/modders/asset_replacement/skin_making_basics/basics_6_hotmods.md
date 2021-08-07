@@ -127,5 +127,3 @@ Do keep a cautious eye for _MainTex names that seem a bit too broad!
 ***CONGRATS!*** You know the basics of making skins! You are now ready to make all sorts of skins!
 
 But! Stick around! There's more to learn about what you can do for your skins!
-
-There are some [Extras](extras.md) if you'd like.

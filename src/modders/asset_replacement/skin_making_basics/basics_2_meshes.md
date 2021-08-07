@@ -93,5 +93,3 @@ Save in a location close to those Texture files (If you have that dedicated fold
 
 > [!NOTE]
 > If your item uses a magazine, check under the 'magazine' containers for any additional meshes belonging to your item.
-
-On to [Step 3](basics_3_blender.md).
