@@ -13,6 +13,7 @@
       {
         "src": "../src",
         "files": [
+          "**/files/**",
           "**/images/**"
         ]
       }

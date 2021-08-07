@@ -1,0 +1,8 @@
+- name: Making mods
+  href: making_mods.md
+- name: Implementing
+  href: implementing/toc.yml
+  topicHref: implementing/the_basics.md
+- name: Thunderstore Packages
+  href: thunderstore/toc.yml
+  topicHref: thunderstore/creating.md

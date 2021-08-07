@@ -1,8 +1,0 @@
-- name: Making mods
-  href: Making-mods.md
-- name: Implementing
-  href: Implementing/toc.yml
-  topicHref: Implementing/The-Basics.md
-- name: Thunderstore
-  href: Thunderstore/toc.yml
-  topicHref: Thunderstore/Uploading-A-Mod-To-Thunderstore.md

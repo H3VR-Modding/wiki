@@ -1,0 +1,7 @@
+- name: The Basics
+  href: the_basics.md
+- name: Modul Weapons
+  href: modul/toc.yml
+  topicHref: modul/creation.md
+- name: Pre-Attached Attachments
+  href: pre-attached_attachments.md

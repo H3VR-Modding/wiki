@@ -7,9 +7,14 @@
             "label": "Build site",
             "type": "shell",
             "group" : "build",
-            "command": "serve.bat",
             "options": {
                 "cwd" : "docfx/",
+            },
+            "windows": {
+                "command": "serve.bat"
+            },
+            "linux": {
+                "command": "./serve.sh"
             }
         }
     ]
