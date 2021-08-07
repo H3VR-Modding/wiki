@@ -2,8 +2,9 @@
   href: getting_started.md
 - name: Troubleshooting
   href: troubleshooting.md
-- name: Installing Mods not on Thunderstore
-  href: mods_not_on_Thunderstore.md
+- name: Installing External Mods
+  href: importing/toc.yml
+  topicHref: importing/external_mods.md
 - name: Specific Mod Installation
   href: specific_mod_installation.md
 - name: Cleaning your H3VR Folder

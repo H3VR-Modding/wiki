@@ -1,5 +1,5 @@
 ---
-title: Installing Mods not on Thunderstore
+title: Installing External Mods
 ---
 
 Depending on your [mod type](mod_types.md), mods you find outside of r2modman and Thunderstore mod manager need to be installed differently.
@@ -8,59 +8,16 @@ Depending on your [mod type](mod_types.md), mods you find outside of r2modman an
 
 If you happen to obtain a mod from somewhere else and would like to install it, please follow the below instructions for steps. For specific mod installation instructions that are packaged differently, see [Specific Mod Installation](specific_mod_installation.md).
 
-The main way to install other mods not found through r2modman is to use the program's `Import Local Mod` feature. **CAUTION:** This does not work for all mods! As of writing, this only works with Deli Mods.
+The main way to install other mods not found through r2modman is to use the program's `Import Local Mod` feature.
 
 Below is an image showing the button to import local mods:
 
-![image](images/r2modman/settings/import_local_mod.png)
+![local mod import](../images/r2modman/settings/import_local_mod.png)
 
-Here is the file structure required for Sideloader mods to be eligible for r2modman importing:
+> [!WARNING]
+> Mods must be formatted in a certain way to be eligible for importing. If your package is not in this format, you **cannot** use the import feature.
 
-```text
-AMod.zip/
-    Sideloader/
-        asset1.hotmod
-        asset2.h3mod
-```
-
-Here is the structure required for asset bundles:
-
-```text
-AMod.zip/
-    LegacyVirtualObjects/
-        moda
-        modb
-        modb.manifest
-```
-
-Please note that the `.manifest` file is not required.
-
-The same goes for Deli mods. Below are some examples on which file structures are supported.
-
-Example 1:
-
-```text
-AMod.deli
-```
-
-Example 2:
-
-```text
-AZip.zip/
-    AMod.deli
-```
-
-Example 3:
-
-```text
-AZip.zip/
-    AMod.deli
-    BMod.deli
-    CMod.deli
-    IAmSuperCool.txt
-```
-
-In `Example 3`, the mods will all be installed under the same entry in r2modman.
+Please see the [Files Eligible for Import](import_eligible.md) document for more information on which files you are able to use the import local mod feature with.
 
 Files imported by r2modman are placed into the `BepInEx/plugins/` folder of the current profile under their own named folder, unless stated by a folder otherwise like with Sideloader mods.
 
@@ -77,9 +34,12 @@ From r2modman settings, search for `Browse Profile Folder` and click on it. A fo
     ...
 ```
 
-![image](images/r2modman/settings/browse_profile_folder.png)
+![browse profile folder](../images/r2modman/settings/browse_profile_folder.png)
 
 Determine the mod type you are using, and extract the files to their correct paths. The `BepInEx/` folder is contained inside of your profile folder, which you just opened.
+
+> [!NOTE]
+> If the below folders are not present, let the game make them for you. If they are not being created, make sure that you have run the game at least with Sideloader or Otherloader installed. Failure to do so will result in all of your mods within these folders to be wiped.
 
 - Sideloader mods go into the `BepInEx/Sideloader/` folder.
 - Asset bundles can go in two different places depending on what functions you want:
@@ -98,5 +58,3 @@ Determine the mod type you are using, and extract the files to their correct pat
     ```
 
   - If you want the mod to load no matter what (as long as OtherLoader is installed), then use `H3VR/LegacyVirtualObjects/`. This folder is in the root folder, and should be avoided if possible.
-
-**NOTE:** If the aforementioned folders are not present, make sure you have run the game modded at least once without errors with the required mods installed. DO NOT create them yourself.
