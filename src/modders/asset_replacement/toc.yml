@@ -1,0 +1,7 @@
+- name: Skin Making Basics
+  href: skin_making_basics/toc.yml
+  topicHref: skin_making_basics/basics_1_tools.md
+- name: Skin Making Advanced
+  href: skin_making_advanced/advanced.md
+- name: Animated Skins
+  href: skin_making_animated/animated.md

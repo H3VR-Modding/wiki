@@ -32,7 +32,7 @@ From that `Online` section in r2modman, install anything you want by clicking on
 
 ## Installing mods not on Thunderstore
 
-Please see the [Mods not on Thunderstore](mods_not_on_Thunderstore.md) doc for more information.
+Please see the [Mods not on Thunderstore](importing/external_mods.md) doc for more information.
 
 ## Troubleshooting
 

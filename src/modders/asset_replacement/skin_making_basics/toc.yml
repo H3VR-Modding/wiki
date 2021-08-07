@@ -1,0 +1,14 @@
+- name: Skin Making Basics 1 - Tools
+  href: basics_1_tools.md
+- name: Skin Making Basics 2 - Meshes and Textures
+  href: basics_2_meshes.md
+- name: Skin Making Basics 3 - Blender
+  href: basics_3_blender.md
+- name: Skin Making Basics 4 - Painting
+  href: basics_4_painting.md
+- name: Skin Making Basics 5 - Exporting
+  href: basics_5_exporting.md
+- name: Skin Making Basics 6 - Hotmods
+  href: basics_6_hotmods.md
+- name: Extras
+  href: extras.md
