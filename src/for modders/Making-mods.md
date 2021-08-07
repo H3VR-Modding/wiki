@@ -4,9 +4,6 @@ Each mod is created differently and because of that each have their own way of m
 
 In every case, it is recommended to open a mod that you want to emulate (if you want to make a skin, download a skin mod) using 7zip or winrar (`.hotmod`, `.h3mod`, and `.deli` files are just `.zip` files in disguise) and seeing what goes into making one.
 
-If you need assets and have no soul, try [Ripping Tarkov Assets](Implementing/Ripping-EFT-Assets.md).
-
-
 ## Custom skins/sounds
 
 | Tutorial                                                                                                  | Notes                                                                                                                                          |
