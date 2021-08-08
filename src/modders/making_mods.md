@@ -11,7 +11,7 @@ In every case, it is recommended to open a mod that you want to emulate (if you 
 | Tutorial                                                                                                  | Notes                                                                                                                                          |
 | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Sora101TD's Skin Making tutorial](asset_replacement/skin_making_basics/basics_1_tools.md)                     | This guide is useful for making sound replacements to, or changing the assets of any other object in H3VR such as the textures for clay pots. |
-| [Sora101TD's Custom TNH Hold Music tutorial](https://h3vrmodding.miraheze.org/wiki/Custom_TNH_Hold_Music) |                                                                                                                                                |
+| [Sora101TD's Custom TNH Hold Music tutorial](asset_replacement/tnh_music/hold_music.md) |                                                                                                                                                |
 
 ## Custom objects
 
