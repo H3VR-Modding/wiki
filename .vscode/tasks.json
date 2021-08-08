@@ -6,16 +6,20 @@
         {
             "label": "Build site",
             "type": "shell",
-            "group" : "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "options": {
-                "cwd" : "docfx/",
+                "cwd": "docfx/"
             },
             "windows": {
                 "command": "serve.bat"
             },
             "linux": {
                 "command": "./serve.sh"
-            }
+            },
+            "problemMatcher": []
         }
     ]
 }
