@@ -6,17 +6,23 @@
 		"Ebkr",
 		"LSIIC",
 		"Preattached",
+		"Redirector",
 		"Sideloader",
 		"TSMM",
 		"Tarkov",
 		"Thunderstore",
 		"foregrip",
+		"hotmod",
 		"infographic",
 		"modders",
 		"modman",
+		"modman's",
 		"modul",
 		"monomod",
 		"redownload",
 		"singleplayer"
-	]
+	],
+	"markdownlint.config": {
+		"MD025": false
+    }
 }

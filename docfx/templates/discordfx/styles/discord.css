@@ -60,18 +60,26 @@ h1,h2,h3,h4,h5
     position: relative;
 }
 
-h1, h2
+h1, h2, h3
 {
-    margin-block-start: 2em;
+    margin-block-start: 1.5em;
+}
+
+h1
+{
+    font-size: 3.5em;
+}
+
+h2
+{
+    font-size: 2.75em;
 }
 
 h3 
 {
-    margin-block-start: 1em;
-    font-weight: 300;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: 400;
     color: var(--h3-color);
-    margin-block-start: 3em;
 }
 
 h4 

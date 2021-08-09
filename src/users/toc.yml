@@ -2,14 +2,14 @@
   href: getting_started.md
 - name: Troubleshooting
   href: troubleshooting.md
-- name: Installing External Mods
-  href: importing/toc.yml
-  topicHref: importing/external_mods.md
+- name: External Mods
+  href: external/toc.yml
+  topicHref: external/importing.md
 - name: Specific Mod Installation
   href: specific_mod_installation.md
 - name: Cleaning your H3VR Folder
   href: starting_fresh.md
 - name: The BepInEx Log
   href: BepInEx_log.md
-- name: Mod Types
-  href: mod_types.md
+- name: Mod Formats
+  href: mod_formats.md

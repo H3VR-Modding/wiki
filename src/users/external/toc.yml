@@ -1,0 +1,6 @@
+- name: Importing
+  href: importing.md
+- name: Manual Installation
+  href: manual.md
+- name: Packaging
+  href: packaging.md

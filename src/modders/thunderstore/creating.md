@@ -2,7 +2,7 @@
 title: Creating a Thunderstore Package
 ---
 
-Depending on your [mod type](../../users/mod_types.md), you will need to package your mod differently by using folders:
+Depending on the [mod format](xref:formats), you will need to package your mod differently by using folders:
 
 ## Deli mods
 
