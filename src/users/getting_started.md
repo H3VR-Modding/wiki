@@ -5,8 +5,7 @@ title: Getting Started
 ## Thunderstore
 
 [**Thunderstore**](https://h3vr.thunderstore.io) is the site to find mods.  
-[**r2modman**](https://h3vr.thunderstore.io/package/ebkr/r2modman/) and [**Thunderstore Mod Manager**](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager) are mod managers meant to be used to manage mods from Thunderstore.  
-r2modman is the recommended mod manager, but Thunderstore Mod Manager is merely a tweaked r2modman and can be used in-place of it.
+[**r2modman**](https://h3vr.thunderstore.io/package/ebkr/r2modman/) and [**Thunderstore Mod Manager**](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager) are mod managers meant to be used to manage mods from Thunderstore. This site will refer to r2modman, but Thunderstore Mod Manager can be used with the same instructions.
 
 ## Installing Mods via r2modman
 
