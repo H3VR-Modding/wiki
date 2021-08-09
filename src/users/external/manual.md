@@ -19,16 +19,16 @@ A folder should have appeared that looks like this:
 
 Determine the format of the mod, and extract its files to the correct paths. The `BepInEx/` folder is contained inside of your profile folder, which you just opened.
 
-> [!NOTE]
-> If the below folders are not present, let the game make them for you. If they are not being created, ensure that you have run the game at least with Sideloader or OtherLoader installed. Failure to do so will result in all of your mods within these folders to be wiped.
-
 ## Sideloader
 
 Sideloader mods go into the `BepInEx/Sideloader/` folder.
 
+> [!NOTE]
+> If the folder is not present, let the game make it for you. If they are not being created, ensure that you have run the game at least once with Sideloader installed. Failure to do so will result in all of your Sideloader mods being wiped.
+
 ## Asset Bundles
 
-Asset bundles go into `BepInEx/plugins/*/LegacyVirtualObjects/`. `/*/` means any folder, but it's recommended to create one with a distinct name like `_LVO`.
+First, enter the `BepInEx/plugins/` folder. Then, create a new folder. It can be named anything, but it's recommended to create one with a distinct name like `_LVO`. Create a folder within that folder, and name it `LegacyVirtualObjects`.
 
 For example:
 
