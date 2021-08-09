@@ -25,3 +25,5 @@ So, for my SPAS skin, it'd be Spas 12 - Bloodspring.
 Make sure this folder is selected as the desired export location, then you are ready.
 
 Click on "Export"!
+
+Next up, [Step 6 - Hotmods](basics_6_hotmods.md).

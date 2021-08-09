@@ -51,3 +51,5 @@ Hit on "Select Normal Map", and locate that Normal Map you chose when you select
 ![exa 3](images/4_exa_3.png)
 
 If your project looks similar to this, your canvas is ready to be painted on!
+
+Next up, [Step 5 - Exporting](basics_5_exporting.md).

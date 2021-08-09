@@ -1,7 +1,9 @@
 - name: Skin Making Basics
-  href: skin_making_basics/basics.md
+  href: skin_making_basics/toc.yml
+  topicHref: skin_making_basics/basics_1_tools.md
 - name: Skin Making Advanced
-  href: skin_making_advanced/advanced.md
+  href: skin_making_advanced/toc.yml
+  topicHref: skin_making_advanced/stamp.md
 - name: Animated Skins
   href: skin_making_animated/animated.md
 - name: Take and Hold Music
