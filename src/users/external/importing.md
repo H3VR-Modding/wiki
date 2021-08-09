@@ -3,8 +3,6 @@ title: Importing External Mods
 uid: importing
 ---
 
-# Importing External Mods
-
 Mods found outside r2modman need to be installed a certain way, which depends on their [mod format](xref:formats).
 
 ## Supported Formats

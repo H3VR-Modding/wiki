@@ -2,35 +2,38 @@
 title: The BepInEx Log
 ---
 
-Your BepInEx log is a simple log that tells you what mods loaded, what mods are talking about, and if any errors occurred during setup. A window appears when you run the game that displays this log. You can use [Sodalite](https://h3vr.thunderstore.io/package/nrgill28/Sodalite/)'s 
+The BepInEx log is a list of messages that describe what mods loaded, what mods are talking about, and any errors occurred.  
+With purely BepInEx, the log can be read from two sources:  the console window that appears after running the game, and a file saved. Both are updated as logging occurs.  
+Mods can extend the logging system to provide more ways to read it, such as [Sodalite](https://h3vr.thunderstore.io/package/nrgill28/Sodalite/)'s in-game log panel.
 
-## Opening it for yourself
+## Opening It Yourself
 
-Opening it yourself is a good way to check to make sure everything loaded for troubleshooting purposes.
+Opening it yourself is a good first-step for troubleshooting purposes.
 
-1. Open r2modman and go to the `Settings` section and open your profile folder by using the following button.
+1. Open r2modman and go to the `Settings` section. Open your profile folder by clicking the following button:
 
     ![image](images/r2modman/settings/browse_profile_folder.png)
 
 2. This button should have opened a folder. Inside this folder you will see the following files:
 
     ```text
-    [profile folder]/
+    [Current profile name]/
         BepInEx/
-        doorstop_config.ini
         mods.yml
-        winhttp.dll
+        ...
     ```
 
-3. Open the folder named `BepInEx`.
-4. Inside of this folder you should see a file called `LogOutput.log`. That is your log file. You can open it using any text editor, but Notepad is not recommended.
+3. Open the folder named `BepInEx`
+4. Open `LogOutput.log`. You can use any text editor, but Notepad is ill-advised.
 
-## Sharing it over Discord
+Search for any `Error` or `Warning` messages. Most warnings from `HarmonyX` can be ignored.
 
-Sharing it over Discord is the main way to get help, and makes the people who answer who not hate you as much. Including the log in your problem message helps us more than you might think.
+## Sharing It Over Discord
 
-1. Go to the `Settings` section of r2modman or Thunderstore Mod Manager.
-2. Search for "log", and click on the 1 item in the list. This button copies soe text to your clipboard.
+Sharing it over Discord is the main way to get help, and makes the people who answer you not hate you as much. Including the log in your problem message helps more than you might think.
+
+1. Go to the `Settings` section of r2modman
+2. Search for "log", and click on the 1 item in the list. This button copies the text to your clipboard.
 
    ![copy](images/r2modman/settings/copy_LogOutput.png)
 

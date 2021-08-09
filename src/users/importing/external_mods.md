@@ -2,7 +2,7 @@
 title: Installing External Mods
 ---
 
-# This page has moved
+## This page has moved
 
 See @"importing"
 

@@ -2,7 +2,7 @@
 title: Mod Types
 ---
 
-# This page has moved
+## This page has moved
 
 See @"formats"
 

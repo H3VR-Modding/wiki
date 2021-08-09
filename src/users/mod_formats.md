@@ -3,8 +3,6 @@ title: Mod Formats
 uid: formats
 ---
 
-# Mod Formats
-
 Mods are packaged in a few different ways, partially due to what they rely on. However, **all mods** require [BepInEx](https://h3vr.thunderstore.io/package/BepInEx/BepInExPack_H3VR/).
 
 ## r2modman Packages
