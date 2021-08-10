@@ -4,7 +4,7 @@ title: Implementing Basics
 
 This document is meant as a quick reference guide, and should not be substituted for a comprehensive tutorial.
 
-### Required/Recommended tools
+## Required/Recommended tools
 
 You need Unity version 5.6.3. This is **non-negotiable**. Any patch version is compatible (p4, f). The link to the Unity version archive can be found [here](https://unity3d.com/get-unity/download/archive).
 
@@ -14,7 +14,7 @@ The [H3 Unity Template](https://drive.google.com/file/d/1bRHZrJxgPmE1PJGR_ty3i78
 
 Once you have these, open Unity then open the folder of the template as a Unity project.
 
-### Windows
+## Unity Window Types
 
 There are a few types of windows inside of the unity editor.
 
@@ -46,7 +46,7 @@ Asset bundles
 - This window shows what asset labels you have and which items are included in them.
 - In the build section, you can build your asset labels to be used and shared.
 
-### Importing prefabs
+## Importing prefabs
 
 Got an item in mind that you want to make? Think of an item already in the game that is most like it, and which class it would belong in (melee, smg, rifle, etc.). Open your file explorer and go to your root H3VR folder, then navigate to `H3VR/h3vr_data/StreamingAssets/` and find that file. For example, if you wanted to make an smg, you would want to copy the `assets_resources_objectids_weaponry_smg` and `assets_resources_objectids_weaponry_smg.manifest` file.
 
@@ -72,7 +72,7 @@ This is the path copied from the manifest file.
 
 Press the pause button then the play button at the top of the screen, then drag the clone into your assets tray.
 
-### Importing assets
+## Importing assets
 
 Importing assets is as easy as copying them to your Unity project. Its recommended to make them under a recognizable folder, such as `Materials`. This can be done by dragging and dropping them into the Assets tray, or by opening your OS's file explorer and copying them through there.
 
@@ -90,7 +90,7 @@ From here, you need to fill in the three fields in the material. It needs a base
 
 In the window that opens, drag your textures into the required fields. The normal is not required. After you hit generate, you will obtain a metal texture. Fill you material with your texture sets now (base/diffuse, metal, and normal).
 
-### Modifying your item
+## Modifying your item
 
 > [!NOTE]
 > GameObjects in your Hierarchy window are not saved, make sure to press the "Apply" button in the Inspector to save your changes.
@@ -108,29 +108,26 @@ To add more, you can duplicate ones already made (by right-clicking in the Hiera
 
 Everything is dependent on the type of item you are trying to create, which cannot be explained in a guide like this. You will have to figure out the specifics on your own.
 
-### Required Assets
+## Required Assets
 
 To make sure your weapon works, you need to give it an object wrapper (found in the main script). The object wrapper is simply an object id, something that defines your item.
 
 Among the item id, you also need:
 
 - Item Spawner ID
-- Icon
-
-The ISID can be made through the assets tray `Create > ItemSpawner > ID`, and the icon is just an image that has its metadata changed to be a sprite (clicking on the icon and changing the type in the inspector).
 
 And depending on the if the item is a firearm or not:
 
 - Recoil profile
 - Audio profile
 
-[A file](files/file.asset) can be found at that link, simply save it to your unity project and you will be able to fill in any script into it that you may need.
+## Filling out the specifics
 
-### Filling out the specifics
+This next section will go over what needs to be filled out in each file detailed above. Included are example `.zip` files that include an empty script object and it's associated `.meta` file. You can extract these into your Unity project for reference and duplication. If for whatever reason the scrip file is empty, click on the little circle in the Inspector window and browse for the correct name of the script and press enter.
 
-This next section will go over what needs to be filled out in each file detailed above.
+### Item ID
 
-#### Item ID
+[Script example download](files/file_ID.zip). Script name: `FVRObject`
 
 The Item ID requires a few fields to be filled out:
 
@@ -144,21 +141,29 @@ The rest of the fields should be filled out to your discretion. They are tags th
 
 Finally, if you want your item to spawn in TnH, enabled the `O Sple` property.
 
-#### Item Spawner ID
+### Item Spawner ID
+
+[Script example download](files/file_ISID.zip). Script name: `ItemSpawnerID`
+
+The ISID can be made through the assets tray `Create > ItemSpawner > ID`, and the icon is just an image that has its metadata changed to be a sprite (clicking on the icon and changing the type in the inspector).
 
 Make sure that you have `Is Displayed In Main Entry` and `Is Unlocked By Default` are set to true. This will allow you to see your item and spawn it. Set it's category and sub category so that you can find it (make sure that you set it to something used in the game already or else it won't load correctly). Set the sub heading to something you want, but its not required.
 
 Fill out the icon with the one you made (not required), and set the `Item ID` field to the exact same string you used in the Item ID object just above. Drag your item id object into the `Main Object` field.
 
-#### Recoil profile
+### Recoil profile
+
+[Script example download](files/file_Recoil.zip). Script name: `FVRFireArmRecoilProfile`
 
 This is just a bunch of number fields that determine your weapon's recoil. Make something up, or pause play and check your reference weapon through the inspection window (double click on the recoil profile in the main script of the cloned object). Make sure you place your audio profile in both recoil profile fields in your main weapon script.
 
-#### Audio Profile
+### Audio Profile
+
+[Script example download](files/file_Audio.zip). Script name: `FVRFirearmAudioSet`
 
 The same deal as the audio profile, check out which sounds your referenced weapon used and use asset studio gui to export them. If you are missing any, it will cause errors. Make sure you place your audio profile in your main weapon script.
 
-### Building your item
+## Building your item
 
 Before building your item, you need to add a few items to your asset bundle list. To do this, select your prefab, item id, and item spawner id from the assets tray (using `ctrl + click`), then look at the bottom of the inspector tab. Here you will see a black box with a drop-down at the bottom. This is the asset label box, and allows you to select which items are bundled together.
 
