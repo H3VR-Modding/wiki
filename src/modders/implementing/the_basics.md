@@ -155,13 +155,25 @@ Fill out the icon with the one you made (not required), and set the `Item ID` fi
 
 [Script example download](files/file_Recoil.zip). Script name: `FVRFireArmRecoilProfile`
 
-This is just a bunch of number fields that determine your weapon's recoil. Make something up, or pause play and check your reference weapon through the inspection window (double click on the recoil profile in the main script of the cloned object). Make sure you place your audio profile in both recoil profile fields in your main weapon script.
+This is just a bunch of number fields that determine your weapon's recoil.
+
+If you want to simulate your referenced weapon, the follow the following steps:
+
+1. Press pause, then play to spawn prefab load the object.
+2. In the Hierarchy, click on the newly cloned weapon.
+3. Scroll down in the Inspector window until you find the location of the recoil profile that is required by all weapons.
+4. Double click on it.
+5. The Inspector should have changed to show your referenced weapon's recoil profile. Take a screenshot using `win + shift + s`, or any other scipping tool you may have for a quick reference.  
+
+Make sure that you place your recoil profile in both slots in your weapon's main script.
 
 ### Audio Profile
 
 [Script example download](files/file_Audio.zip). Script name: `FVRFirearmAudioSet`
 
-The same deal as the audio profile, check out which sounds your referenced weapon used and use asset studio gui to export them. If you are missing any, it will cause errors. Make sure you place your audio profile in your main weapon script.
+The Audio profile is exactly the same as the recoil profile, double check what your referenced weapon used by following the similar steps, taking pictures along the way. Make sure that you expand all clip sections and take note of which fields (such as `prefire`) are filled. Your weapon's audio profile **must** contain a sound in the same field.
+
+AssetStudioGUI is a great tool to use here. Drag and drop the asset bundle you copied into your Unity project into the ASGUI window and wait for it to load. Select the `Asset List` tab and then search for the sound files that are required. You can right click on the sound files and click `Export Selected Assets`, and you can export them straight to your Unity project to use.
 
 ## Building your item
 
