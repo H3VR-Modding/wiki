@@ -126,6 +126,6 @@ Do keep a cautious eye for _MainTex names that seem a bit too broad!
 
 ***CONGRATS!*** You know the basics of making skins! You are now ready to make all sorts of skins!
 
-But! Stick around! There's more to learn about what you can do for your skins in the [Skin Making Advanced](../skin_making_advanced/advanced.md) course!
+But! Stick around! There's more to learn about what you can do for your skins in the [Skin Making Advanced](../skin_making_advanced/stamp.md) course!
 
 Be sure to check out the [Extras](extras.md) too!
