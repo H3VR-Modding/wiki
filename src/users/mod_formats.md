@@ -41,3 +41,9 @@ Sideloader mods require [Sideloader](https://h3vr.thunderstore.io/package/deniks
 File Extension: none (shows as the `FILE` file type)
 
 Asset bundles are loaded through [OtherLoader](https://h3vr.thunderstore.io/package/devyndamonster/OtherLoader/)'s legacy loading system. These bundles are almost always a firearm, and are often accompanied with a `.manifest` file. This `.manifest` file is not needed for load the mod.
+
+## TnH Music
+
+File Extension: `.bank`
+
+TnH Music requires [PTNHBGML](https://h3vr.thunderstore.io/package/Potatoes/Potatoes_TNH_BGM_Loader/).

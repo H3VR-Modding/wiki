@@ -3,7 +3,7 @@ title: Take and Hold Music
 ---
 
 > [!NOTE]
-> Keep in mind that these types are mods are currently invalid for Thunderstore's mod managers r2modman and TSMM. Contact the creator of r2modman, EBKR, to make sure your mod is removed from the listing to avoid confusion.
+> [Potatoes TNH BGM Loader](https://h3vr.thunderstore.io/package/Potatoes/Potatoes_TNH_BGM_Loader/) is required for these types of mods to work. Check out the [Thunderstore creation](../../thunderstore/creating.md#tnh-music) page more more details on what your Thunderstore package should look like before uploading.
 
 Hiya! This is the tutorial to make your own TNH hold themes.
 

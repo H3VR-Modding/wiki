@@ -45,3 +45,15 @@ Place your assets inside of a folder inside of your mod folder called `LegacyVir
     manifest.json
     README.md
 ```
+
+## TnH Music
+
+No folder needed, place your `.bank` file inside of your mod folder
+  
+```text
+[You mod name]/
+    MX_TAH_[MyEpicMusicModNameHere].bank
+    icon.png
+    manifest.json
+    README.md
+```
