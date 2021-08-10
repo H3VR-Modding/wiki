@@ -163,7 +163,7 @@ If you want to simulate your referenced weapon, the follow the following steps:
 2. In the Hierarchy, click on the newly cloned weapon.
 3. Scroll down in the Inspector window until you find the location of the recoil profile that is required by all weapons.
 4. Double click on it.
-5. The Inspector should have changed to show your referenced weapon's recoil profile. Take a screenshot using `win + shift + s`, or any other scipping tool you may have for a quick reference.  
+5. The Inspector should have changed to show your referenced weapon's recoil profile. Take a screenshot using `win + shift + s`, or any other snipping tool you may have for a quick reference.  
 
 Make sure that you place your recoil profile in both slots in your weapon's main script.
 
