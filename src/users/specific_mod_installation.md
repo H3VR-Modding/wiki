@@ -41,7 +41,7 @@ Alternatively, you can alter the folder structure of `LSIIC-v1.4.zip` to follow 
 LSIIC-v1.4.zip/
     monomod/
         Assembly-CSharp.LSIIC.mm.dll
-    Sideloaer/
+    Sideloader/
         LSIIC.h3mod
     LSIIC.Core.dll
     LSIIC.SmartPalming.dll
