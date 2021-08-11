@@ -32,11 +32,15 @@ So taking that into account, we get to the following file on the repo:
 
 Now that you know where the file is, open it and click on the little pencil icon in the top right of the document box. Now you can edit the page however you like, and you can click the preview button at the top to see how it looks. Keep in mind that some parts of the document are not rendered correctly in this view since it is actually [DocFX Flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html).
 
-Once you are done editing the page, scroll all the way to the bottom and write a descriptive message about what you did and hit the `Commit changes` button. Make sure that the "Commit directly to the `main` branch" option is selected.
+Once you are done editing the page, scroll all the way to the bottom and write a descriptive message about what you did and hit the `Commit changes` button. Select "Create a new branch for this commit and start a pull request." Then, give your branch a simple name. Often times, this will overlap with your commit name.
 
 ![commit dialogue](images/commit_dialogue.png)
 
-Once you are done changing files, head on over to the main page of your repo and click on the "Pull Requests" tab. This will let you create a new pull request to site, meaning a team member will take a look at your changes, suggest things, or modify it to comply, and then be added to the site. Fill in some information about what you did, and send it off for review.
+Press the "Propose changes" button. This will open the pull request page, which allows you to describe your changes in further and prettier detail. It should be obvious by your pull request title and description what you have changed.
+
+![pull request page](images/pull_request.png)
+
+Once you are ready to submit the request, press the "Create pull request" button. A team member will take a look at your changes, suggest things, or modify it to comply, and then be added to the site.
 
 You can also read [this official Github page](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to find out how to submit your changes.
 
@@ -58,49 +62,7 @@ Congrats! You can now start contributing to new articles on the site. Make sure 
 
 ### Building the site for testing
 
-In VSCode, hit the `ctrl + shift + b` buttons. A dropdown will appear at the top of your screen. Asking you for a build configuration.
-
-![build 1](images/vscode_build_1.png)
-
-Then click on the "Create task.json file from template".
-
-![build 2](images/vscode_build_2.png)
-
-Finally, click "Others".
-
-![build 3](images/vscode_build_3.png)
-
-This will create a file called `tasks.json` in your `.vscode` folder in your copy of the repo.
-
-Replace the contents with the following code:
-
-```json
-{
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Build site",
-            "type": "shell",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "options": {
-                "cwd": "docfx/"
-            },
-            "windows": {
-                "command": "serve.bat"
-            },
-            "linux": {
-                "command": "./serve.sh"
-            },
-            "problemMatcher": []
-        }
-    ]
-}
-```
-
-Now, when you press `ctrl + shift + b` you should have the option to build the site or set the default build task.
+In VSCode, hit the `ctrl + shift + b` buttons. You should have the option to build the site or set the default build task.
 
 Running it will make the terminal appear at the bottom of the screen, showing you if any errors occurred (broken links in orange, build failures in red). If the build failed because of a port already in use, just run it again.
 
