@@ -14,20 +14,21 @@ Sideloader/
     asset2.h3mod
 ```
 
-Zip the folder itself to create an r2modman package.
+Zip the `Sideloader` folder itself to create an r2modman package ready for local import.
 
 ## Asset Bundles
 
-Create a directory named `LegacyVirtualObjects` and place the asset bundles within.
+Create a directory named `LegacyVirtualObjects` within another directory called `plugins` and place the asset bundles within.
 
 ```text
-LegacyVirtualObjects/
-    bundle_a
-    bundle_b
-    bundle_b.manifest
+plugins/
+    LegacyVirtualObjects/
+        bundle_a
+        bundle_b
+        bundle_b.manifest
 ```
 
 > [!NOTE]
 > `.manifest` files are not required. They are documentation files used by other modders and have no effect on the mod.
 
-Zip the folder itself to create an r2modman package.
+Zip the `plugins` folder itself to create an r2modman package ready for local import.
