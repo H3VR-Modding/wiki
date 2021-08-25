@@ -4,7 +4,7 @@ Welcome to the H3VR Modding Wiki.
 
 If you are a new user, check out the [Getting Started](installing/getting_started.md) page.
 
-Having problems? We have a [troubleshooting document](installing/troubleshooting.md).
+Having problems? We have a [troubleshooting section](installing/troubleshooting/index.md).
 
 Looking to mod? The [Making Mods](creating/making_mods.md) page might have what you are looking for.
 

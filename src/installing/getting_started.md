@@ -34,7 +34,7 @@ Please see the @"importing" doc for more information.
 ## Troubleshooting
 
 Many common problems can be found on the r2modman wiki page, [Why aren't my mods working?](https://github.com/ebkr/r2modmanPlus/wiki/Why-aren%27t-my-mods-working%3F), provided by Ebkr.  
-For less common problems, see the [Troubleshooting](troubleshooting.md) file for more details. New problems are found every day, but yours will likely be on this page.
+For less common problems, see the [Troubleshooting](troubleshooting/index.md) articles for more details. New problems are found every day, but yours will likely be on this page.
 
 ## Configuring Mods
 
