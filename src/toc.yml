@@ -1,4 +1,4 @@
-- name: For Users
-  href: users/getting_started.md
-- name: For Modders
-  href: modders/making_mods.md
+- name: Installing Mods
+  href: installing/getting_started.md
+- name: Creating Mods
+  href: creating/making_mods.md

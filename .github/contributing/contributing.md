@@ -21,9 +21,9 @@ After some time, you will have your own copy of the wiki under your own name.
 To suggest a change to a page, simple navigate to the page that you wish to edit on the repo. This can be done easily by taking a look at the url of the page you wish to edit.
 
 Here is an example:
-`https://h3vr-modding.github.io/wiki/users/specific_mod_installation.html`
+`https://h3vr-modding.github.io/wiki/installing/specific_mod_installation.html`
 
-If you see the url, we have our base (`h3vr-modding.github.io/wiki/`), which is our domain (where the repo root is), then a set of folders and files. `users/` means that the page is inside of the `users/` folder, and then the `specific_mod_installation.html` is the file you need to change. With the way that the site works, you will actually be editing a markdown file (so in this case, `specific_mod_installation.md`).
+If you see the url, we have our base (`h3vr-modding.github.io/wiki/`), which is our domain (where the repo root is), then a set of folders and files. `installing/` means that the page is inside of the `installing/` folder, and then the `specific_mod_installation.html` is the file you need to change. With the way that the site works, you will actually be editing a markdown file (so in this case, `specific_mod_installation.md`).
 
 So taking that into account, we get to the following file on the repo:
 `src > users > specific_mod_installation.md`
