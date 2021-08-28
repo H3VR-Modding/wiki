@@ -3,20 +3,18 @@ title: Troubleshooting
 ---
 
 # Troubleshooting
-
 Read through this guide from top to bottom and follow the steps within to narrow down what is causing the issue and what potential fixes you may have.
 
 > [!WARNING]
 > This guide assumes you are using r2modman / Thunderstore Mod Manager.
 
 ## None of my mods are working / the game doesn't open
-
 Make sure that a console window is opening up on your desktop alongside the game when you start the game modded. If one does not then it is highly likely that your issue is with r2modman and you should read their [troubleshooting guide](https://github.com/ebkr/r2modmanPlus/wiki/Why-aren%27t-my-mods-working%3F).
 
 ## Only some of my mods are working
+First, please ensure you are running the latest version of the game and all your installed mods. It's important everything is up to date as that is the first thing you will be told to do if you can't solve your issue and decide ask for help. It's also possible that some mods require you to be running on the alpha branch, in which case you can also try opting in or out to see if that solves your issue.
 
-Make sure you are running the latest version of the game and all your installed mods, anything outdated may be causing issues. It's also possible that some mods require you to be running on the alpha branch, in which case you can also try opting in or out to see if that solves your issue. 
-Check the [log / log file](log_file.md) for errors and warnings, a lot of the time these errors and warnings are descriptive enough to help you identify the issue, but some of the most common errors and warnings are listed below.
+Next, check the [log / log file](log_file.md) for errors and warnings. Often it will point out right away what the exact issue is and what mod is causing it. Below you can find some of the most common errors, but once you've discovered which mod is having issues you can select its article from further down to get more specific troubleshooting steps.
 
 ### Deli missing or outdated dependency
 Log error:

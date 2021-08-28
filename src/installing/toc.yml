@@ -2,6 +2,15 @@
   href: getting_started.md
 - name: Troubleshooting
   href: troubleshooting/index.md
+  items:
+    - name: Start Here
+      href: troubleshooting/index.md
+    - name: Log File
+      href: troubleshooting/log_file.md
+    - name: WurstMod & Maps
+      href: troubleshooting/wurstmod.md
+    - name: TNHT & Characters
+      href: troubleshooting/tnht.md
 - name: External Mods
   href: external/toc.yml
   topicHref: external/importing.md
@@ -9,7 +18,5 @@
   href: specific_mod_installation.md
 - name: Cleaning your H3VR Folder
   href: starting_fresh.md
-- name: The BepInEx Log
-  href: BepInEx_log.md
 - name: Mod Formats
   href: mod_formats.md
