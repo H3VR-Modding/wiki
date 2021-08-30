@@ -9,8 +9,6 @@
       href: troubleshooting/log_file.md
     - name: WurstMod & Maps
       href: troubleshooting/wurstmod.md
-    - name: TNHT & Characters
-      href: troubleshooting/tnht.md
 - name: External Mods
   href: external/toc.yml
   topicHref: external/importing.md
