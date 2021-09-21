@@ -25,7 +25,7 @@ LSIIC-v1.4.zip/
         LSIIC.h3mod
 ```
 
-To install, please follow the following steps:
+**Method 1: Drag and drop**
 
 1. Install Sideloader through r2modman
 2. Run your game once until it has finished loading once using the `Run modded` button in r2modman.
@@ -34,6 +34,10 @@ To install, please follow the following steps:
 5. Confirm that you now have `[your profile]/BepInEx/plugins/LSIIC/` and `[your profile]/BepInEx/monomod/LSIIC`.
 6. Extract the `LSIIC-v1.4.zip/Mods/LSIIC.h3mod` file to `[your profile]/BepInEx/Sideloader/`.
 7. (Optional) Run the game once to confirm that it has been installed by opening your BepInEx log at `[your profile folder]/BepInEx/LogOutput.log` and searching for "LSIIC", confirming there are no other errors.
+
+[This link](https://github.com/H3VR-Modding/wiki/blob/a3fc3055e34e00818820150d6bfc566e4d6b94c8/src/installing/videos/InstallingLSIIC.mp4?raw=true) contains a video of this process being done. The left window is the downloaded `.zip` package from the releases page, and the right window is the profile folder opened through r2mm.
+
+**Method 2: Reconstruct and import**
 
 Alternatively, you can alter the folder structure of `LSIIC-v1.4.zip` to follow the following structure and import it into r2modman using its import feature in the settings menu:
 
