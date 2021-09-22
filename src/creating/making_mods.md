@@ -6,6 +6,13 @@ Each mod is created differently and because of that each have their own way of m
 
 In every case, it is recommended to open a mod that you want to emulate (if you want to make a skin, download a skin mod) using 7zip or winrar (`.hotmod`, `.h3mod`, and `.deli` files are just `.zip` files in disguise) and seeing what goes into making one.
 
+## How to package mods
+
+| Tutorial                                                                                                                                      | Notes                                                                                                                                                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Devyndamonster's Otherloader packaging requirements](https://github.com/devyndamonster/OtherLoader/wiki/Building-Mods-For-On-Demand-Loading) | This guide is extremely important for packaging your mod. This packaging method has you use Otherloader and Stratum/Mason for a low memory, fast loading, load on demand approach. This is by far the best way to package custom objects. |
+| [Ash's Mason quick-start guide](https://h3vr-modding.github.io/Mason/quickstart.html)                                                         | The basics on how to package a mod for Stratum/Mason. |
+
 ## Custom skins/sounds
 
 | Tutorial                                                                                   | Notes                                                                                                                                         |
