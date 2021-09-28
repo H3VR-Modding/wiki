@@ -20,11 +20,11 @@ Log error:
 [Fatal : BepInEx] Could not run preloader!
 ```
 
-This message will appear when you have Otherloader 1.0.0 installed, but not Deliter. Since Otherloader now uses stratum, it is not deli compliant. Install Deliter and it will convert your deli mods to stratum mods.
+This message will appear when you have Otherloader 1.0.0 installed, but not [Deliter](https://h3vr.thunderstore.io/package/Stratum/Deliter/). Since Otherloader now uses stratum, it is not deli compliant. Install [Deliter](https://h3vr.thunderstore.io/package/Stratum/Deliter/) and it will convert your deli mods to stratum mods.
 
 Potential fixes:
 
-1. Install Deliter
+1. Install [Deliter](https://h3vr.thunderstore.io/package/Stratum/Deliter/).
 
 ... or ...
 
