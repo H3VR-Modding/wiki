@@ -12,6 +12,7 @@ In every case, it is recommended to open a mod that you want to emulate (if you 
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Devyndamonster's Otherloader packaging requirements](https://github.com/devyndamonster/OtherLoader/wiki/Building-Mods-For-On-Demand-Loading) | This guide is extremely important for packaging your mod. This packaging method has you use Otherloader and Stratum/Mason for a low memory, fast loading, load on demand approach. This is by far the best way to package custom objects. |
 | [Ash's Mason quick-start guide](https://h3vr-modding.github.io/Mason/quickstart.html)                                                         | The basics on how to package a mod for Stratum/Mason. |
+| [gamernayr's Making Modpacks](thunderstore/modpacks.md)                                                         | Got a list a mods you would like to share with the community? Take a look at this guide for making a modpack. |
 
 ## Custom skins/sounds
 
