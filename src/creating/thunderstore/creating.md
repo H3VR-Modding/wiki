@@ -2,11 +2,31 @@
 title: Creating a Thunderstore Package
 ---
 
-Depending on the [mod format](xref:formats), you will need to package your mod differently by using folders:
+Depending on the [mod format](xref:formats), you will need to package your mod differently by using folders. 
+
+> [!NOTE]
+> The `[Your mod name/]` line refers to the `.zip` file you are uploading to Thunderstore,
+
+## Stratum mods
+
+Placed into the `plugins/` folder.
+
+```text
+[Your mod name]/
+    plugins/
+      resources/
+        ...
+      boostrap.dll
+      config.yaml
+      project.yaml
+    icon.png
+    manifest.json
+    README.md
+```
 
 ## Deli mods
 
-No folder needed, place your `.deli` file inside of your mod folder
+No folder needed, place your `.deli` file inside of your mod folder.
   
 ```text
 [You mod name]/
@@ -19,7 +39,7 @@ No folder needed, place your `.deli` file inside of your mod folder
 
 ## Sideloader mods
 
-Place your `.h3mod` or `.hotmod` file inside of a folder called `Sideloader` inside of your mod folder
+Place your `.h3mod` or `.hotmod` file inside of a folder called `Sideloader` inside of your mod folder.
 
 ```text
 [You mod name]/
@@ -48,7 +68,7 @@ Place your assets inside of a folder inside of your mod folder called `LegacyVir
 
 ## TnH Music
 
-No folder needed, place your `.bank` file inside of your mod folder
+No folder needed, place your `.bank` file inside of your mod folder.
   
 ```text
 [You mod name]/
