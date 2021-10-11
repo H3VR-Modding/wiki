@@ -14,7 +14,7 @@
                 "cwd": "docfx/"
             },
             "windows": {
-                "command": "serve.bat"
+                "command": "F:/GitHub/wiki/docfx/serve.bat"
             },
             "linux": {
                 "command": "./serve.sh"
