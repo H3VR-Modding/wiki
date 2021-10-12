@@ -8,6 +8,6 @@
   topicHref: asset_replacement/skin_making_basics/basics_1_tools.md
 - name: Thunderstore Packages
   href: thunderstore/toc.yml
-  topicHref: thunderstore/creating.md
+  topicHref: thunderstore/uploading.md
 - name: Packing Deli mods
   href: delimods.md
