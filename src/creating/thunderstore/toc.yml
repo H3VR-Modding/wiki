@@ -1,8 +1,8 @@
-- name: Creating
-  href: creating.md
-- name: Uploading
+- name: 1. Preparing Your Manifest And Package
   href: uploading.md
-- name: Updating
+- name: 2. Adding Your H3VR Content To Your Package
+  href: creating.md
+- name: Updating Your Thunderstore Package
   href: updating.md
-- name: Modpacks
+- name: Making Modpacks
   href: modpacks.md

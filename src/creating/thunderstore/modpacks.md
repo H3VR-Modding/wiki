@@ -1,5 +1,5 @@
 ---
-title: Modpacks
+title: Making Modpacks
 ---
 
 Got a list a mods you would like to share with the community? Take a look at the steps below for information on creating a mod pack.

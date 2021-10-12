@@ -15,6 +15,7 @@ In every case, it is recommended to open a mod that you want to emulate (if you 
 | [Ash's Mason quick-start guide](https://h3vr-modding.github.io/Mason/getting_started/index.html)                                              | The basics on how to package a mod for Stratum/Mason. |
 | [gamernayr's Making Modpacks](thunderstore/modpacks.md)                                                                                       | Got a list a mods you would like to share with the community? Take a look at this guide for making a modpack. |
 | [Stratum GUIDs And Loaders](stratumdeps.md)                                                                                                   | A list of Stratum loaders and their respective GUIDs. |
+| [Packaging Mods For Thunderstore](thunderstore/uploading.md)                                                                                  | A step-by-step tutorial on how to package your mod for Thunderstore. |
 
 ## Custom Skins/Sounds
 

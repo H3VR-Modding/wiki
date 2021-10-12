@@ -1,37 +1,27 @@
 ---
-title: Creating a Thunderstore Package
+title: 2. Adding Your H3VR Content To Your Package
 ---
 
 Depending on the [mod format](xref:formats), you will need to package your mod differently by using folders. 
 
 > [!NOTE]
-> The `[Your mod name/]` line refers to the `.zip` file you are uploading to Thunderstore,
+> The `[Your mod name/]` line refers to the `.zip` file you will upload to Thunderstore.
+
 
 ## Stratum mods
 
-Placed into the `plugins/` folder.
+To create a stratum mod, check out the [Mason Getting Started guide.](https://h3vr-modding.github.io/Mason/getting_started/index.html)
 
-```text
-[Your mod name]/
-    plugins/
-      resources/
-        ...
-      boostrap.dll
-      config.yaml
-      project.yaml
-    icon.png
-    manifest.json
-    README.md
-```
+To build your Stratum mod, you must first make your manifest, so you might want to check out the second part first.
 
 ## Deli mods
 
 No folder needed, place your `.deli` file inside of your mod folder.
   
 ```text
-[You mod name]/
-    asset1.deli
-    asset2.deli
+[Your mod name]/
+    [Your Deli File].deli
+    [Your Second Optional Deli File].deli
     icon.png
     manifest.json
     README.md
@@ -40,12 +30,13 @@ No folder needed, place your `.deli` file inside of your mod folder.
 ## Sideloader mods
 
 Place your `.h3mod` or `.hotmod` file inside of a folder called `Sideloader` inside of your mod folder.
+A `.h3mod` and `.hotmod` are identical; they just end differently.
 
 ```text
-[You mod name]/
+[Your mod name]/
     Sideloader/
-        asset1.h3mod
-        asset2.hotmod
+        [Your Sideloader File].h3mod
+        [Your Second Optional Deli File].hotmod
     icon.png
     manifest.json
     README.md
@@ -56,11 +47,11 @@ Place your `.h3mod` or `.hotmod` file inside of a folder called `Sideloader` ins
 Place your assets inside of a folder inside of your mod folder called `LegacyVirtualObjects/`.
 
 ```text
-[You mod name]/
+[Your mod name]/
     plugins/
       LegacyVirtualObjects/
-        asset
-        asset.manifest (optional)
+        [Your assetbundle file]
+        [Your assetbundle file].manifest (optional)
     icon.png
     manifest.json
     README.md
@@ -71,9 +62,11 @@ Place your assets inside of a folder inside of your mod folder called `LegacyVir
 No folder needed, place your `.bank` file inside of your mod folder.
   
 ```text
-[You mod name]/
+[Your mod name]/
     MX_TAH_[MyEpicMusicModNameHere].bank
     icon.png
     manifest.json
     README.md
 ```
+
+Now that your files are compiled together, zip your files together and head on over to [Thunderstore](https://h3vr.thunderstore.io) to upload your mod. Make sure to log in, then press the `Upload` button in the top left. Set it's category, drag your `.zip`, and hit upload.
