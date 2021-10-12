@@ -273,7 +273,9 @@ A small console popup should appear if the locations are correct.
 
 When the tool finishes, the MX_TAH file will be of a different file size compared to the Vanilla bank file.
 
-Copy this custom Bank file, then go to the H3VR directory
+Rename your MX_TAH file to `MX_TAH_[YourSongNameHere]`, and you are ready to package it as a Thunderstore mod! Remember, it will require Potatoes' TNH BGM Loader, so add that as a dependency.
+
+Alternatively, if you want to manually override your TNH sounds, copy this custom Bank file (while it is named MX_TAH), then go to the H3VR directory
 
 H3VR_Data --> StreamingAssets
 
