@@ -14,10 +14,28 @@
                 "cwd": "docfx/"
             },
             "windows": {
-                "command": "serve.bat"
+                "command": "${workspaceRoot}\\docfx\\serve.bat"
             },
             "linux": {
                 "command": "./serve.sh"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Setup DocFX",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "docfx/"
+            },
+            "windows": {
+                "command": "${workspaceRoot}\\docfx\\setup.bat"
+            },
+            "linux": {
+                "command": "./setup.sh"
             },
             "problemMatcher": []
         }
