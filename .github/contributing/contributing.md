@@ -58,6 +58,8 @@ After that is installed and you pick the dark theme, click on the fork icon (sou
 
 It will prompt you to log into your github account before this, after it will display a list of your repositories (which your copy should be in). After selecting it, you will select a location for the folder to be stored on your machine, after which a prompt will ask you to open it.
 
+Once you have entered into your workspace, hit `ctrl + shift + b` and select `Setup DocFX`. [!Setup](images/setup_docfx)
+
 Congrats! You can now start contributing to new articles on the site. Make sure to follow the examples seen in your file explorer in VSCode to see how things sorted, making sure to follow the [formatting guidelines](formatting.md).
 
 ### Building the site for testing
@@ -67,6 +69,8 @@ In VSCode, hit the `ctrl + shift + b` buttons. You should have the option to bui
 Running it will make the terminal appear at the bottom of the screen, showing you if any errors occurred (broken links in orange, build failures in red). If the build failed because of a port already in use, just run it again.
 
 `ctrl + click` on the link that it gives you. It should be `http://localhost:8080`. The site is hosted there, and you can see your contributions to the site. You will need to build each time you want to see your changes.
+
+Once you have opened up your page in your browser, hit `f12` on your keyboard, navigate to Network, and select "Disable Cache". [!Disabling the cache](images/network_disablecache)
 
 ### Committing your changes
 
