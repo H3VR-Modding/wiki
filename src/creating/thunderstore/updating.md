@@ -1,14 +1,12 @@
 ---
-title: Updating a Thunderstore Package
+title: Updating Your Thunderstore Package
 ---
 
 The following are steps on how to update your mod that is current hosted on Thunderstore.
 
-These instructions are accurate as of July 28th, 2021, and are subject to change without notice once updates come to this process.
-
 1. Obtain your mod files. This can either be done by downloading your mod from your Thunderstore page, or by having a copy handy from when you uploaded it in the first place. You should have something like this:
 
-    ```text
+```text
     MyMod/
         [mod files]
         manifest.json
@@ -16,7 +14,9 @@ These instructions are accurate as of July 28th, 2021, and are subject to change
         README.md
     ```
 
-2. Open your `manifest.json`, and increase the `"version_number"` according to [semantic versioning](https://semver.org). An example being a patch update, which would increase `1.1.1` to `1.1.2`.
-3. Change your [mod files] to their newer version, making sure to follow [Thunderstore's packaging rules](creating.md).
-4. Zip your files together once more for upload.
-5. Upload your mod in the same place you uploaded it the first time, making sure to select the correct tag(s).
+2. Open your `manifest.json`, and increase the `"version_number"` according to [semantic versioning](https://semver.org). In short, if you are making a patch (minor change, fix) increase the third number. (1.2.3 -> 1.2.4)
+If you are making a larger change increase the second number. (1.2.3 -> 1.3.3)
+If you are making an extremely big change that adds or changes major things, increase the first number. (1.2.3 -> 2.2.3)
+1. Change your [mod files] to their newer version, making sure to follow [Thunderstore's packaging rules](creating.md).
+1. Zip your files together once more for upload.
+1. Upload your mod in the same place you uploaded it the first time, making sure to select the correct tag(s).
