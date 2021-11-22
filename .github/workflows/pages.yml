@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - docfx/**
+      - templates/**
       - src/**
 
 jobs:
@@ -20,11 +20,11 @@ jobs:
       - name: Build
         uses: nikeee/docfx-action@v1.0.0
         with:
-          args: docfx/docfx.json
+          args: src/docfx.json
 
       - name: Push to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docfx/_site
+          publish_dir: src/_site
           force_orphan: true
