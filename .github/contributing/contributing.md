@@ -76,44 +76,26 @@ either situation.
 
 ### Getting the environment setup
 
-The next parts are up to yourself to figure out, but you now need to start creating files and folders. If you are on
-windows, the recommended way to do this would be to download [visual studio code](https://code.visualstudio.com).
+The next parts are up to yourself to figure out, but you now need to start creating files and folders. You can use any text editor, such as Visual Studio Code or Notepad++. 
+You will also need to download a Git client which will be used to download and upload changes
+to your version of the wiki. It's recommended you use GitHub Desktop.
 
-After that is installed and you pick the dark theme, click on the fork icon (source control window) on the left side,
-and clone your repository. More information on this process can be found on
-the [official VSCode documentation](https://code.visualstudio.com/docs/editor/github#_setting-up-a-repository).
+After using your git client to clone your fork of the wiki to your computer, there's one more step. Navigate into the `tools` folder of the cloned repo and run `setup.bat`. This will download
+the files needed to build the wiki locally.
 
-It will prompt you to log into your github account before this, after it will display a list of your repositories (which
-your copy should be in). After selecting it, you will select a location for the folder to be stored on your machine,
-after which a prompt will ask you to open it.
-
-Once you have entered into your workspace, hit `ctrl + shift + b` and select `Setup DocFX`. [!Setup](images/setup_docfx)
-
-Congrats! You can now start contributing to new articles on the site. Make sure to follow the examples seen in your file
-explorer in VSCode to see how things sorted, making sure to follow the [formatting guidelines](formatting.md).
 
 ### Building the site for testing
 
-In VSCode, hit the `ctrl + shift + b` buttons. You should have the option to build the site or set the default build
-task.
-
-Running it will make the terminal appear at the bottom of the screen, showing you if any errors occurred (broken links
-in orange, build failures in red). If the build failed because of a port already in use, just run it again.
-
-`ctrl + click` on the link that it gives you. It should be `http://localhost:8080`. The site is hosted there, and you
-can see your contributions to the site. You will need to build each time you want to see your changes.
+When you've made some changes and are ready to see them, run the `tools/serve.bat` file. This will take a second to build the wiki and then will host it on your computer for you to see.
 
 Once you have opened up your page in your browser, hit `f12` on your keyboard, navigate to Network, and select "Disable
 Cache". [!Disabling the cache](images/network_disablecache)
 
 ### Committing your changes
 
-Your fork icon on the left of VSCode should have a number now that you have made changes. On the "Changes" header that
-lists your files, click the plus icon. Write in a descriptive message into the message field, then click the check-mark
-to commit your changes.
+With your changes made, go back to GitHub Desktop and STAGE all of your changes, COMMIT them, then PUSH.
+This will make your changes available on the GitHub website.
 
-Once you are done, click on the three dots to open the drop-down menu, then hit push.
-
-Head on over
+Next head on over
 to [this official Github page](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 to find out how to submit your changes.
