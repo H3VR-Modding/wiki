@@ -1,0 +1,15 @@
+{{#items}}
+    {{#pathActive}}
+    <span>
+    {{#href}}
+        <a href="{{href}}">{{name}}</a>
+    {{/href}}
+    {{^href}}
+    {{name}}
+    {{/href}}
+    </span>
+    {{/pathActive}}
+    {{^leaf}}
+    {{> partials/breadcrumb-item}}
+    {{/leaf}}
+{{/items}}

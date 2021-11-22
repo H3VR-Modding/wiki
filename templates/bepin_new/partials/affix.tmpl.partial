@@ -1,0 +1,10 @@
+<aside class="affix">
+<div>
+    <div class="source-links">
+    {{#docurl}}
+        <a href="{{docurl}}">{{__global.improveThisDoc}}</a>
+    {{/docurl}}
+    </div>
+    <div class="affix-toc"></div>
+</div>
+</aside>

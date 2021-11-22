@@ -1,0 +1,370 @@
+
+body {
+    @apply grid min-h-screen dark:bg-gray-700 font-normal;
+    font-family: 'Roboto', sans-serif;
+    grid-template-rows: auto auto auto auto 1fr auto;
+    grid-template-columns: max-content minmax(auto, 2fr) 1fr;
+    grid-template-areas:
+                    "header header header"
+                    "messages messages messages"
+                    "breadcrumb breadcrumb breadcrumb"
+                    "toc toc toc"
+                    "affix . ."
+                    "main main main"
+                    "footer footer footer";
+}
+
+header {
+    @apply bg-gray-50 border-b-2 border-gray-200;
+    grid-area: header;
+}
+
+section#global-messages {
+    @apply flex flex-col text-sm;
+    grid-area: messages;
+
+    & > div.message {
+        @apply w-full px-2 py-3 text-center text-white;
+
+        & a {
+            @apply font-medium;
+        }
+    }
+}
+
+section.breadcrumb {
+    @apply bg-gray-100 border-gray-200 border-b-2 text-xs font-light py-2 px-4 text-black;
+    grid-area: breadcrumb;
+
+    & > span:not(:last-child)::after {
+        @apply text-gray-400;
+        content: '/';
+    }
+
+    & a {
+        @apply text-yellow-900;
+        &:hover {
+            @apply text-yellow-600;
+        }
+    }
+}
+
+nav {
+    @apply grid items-center;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: max-content 1fr auto auto;
+    grid-template-areas:
+                        "logo . light menu-icon"
+                        "menu menu menu menu"
+                        "versions versions versions versions";
+
+    & > .navbar-brand {
+        grid-area: logo;
+    }
+
+    & > #version-picker {
+        @apply w-full py-2 bg-gray-100 hidden;
+        grid-area: versions;
+
+        & > select {
+            @apply m-auto block;
+        }
+    }
+
+    & > #theme-switch {
+        grid-area: light;
+    }
+
+    & > #menu-switch {
+        grid-area: menu-icon;
+    }
+
+    & > div.nav {
+        @apply hidden flex-col bg-gray-100;
+        grid-area: menu;
+    
+        & > .nav-item {
+            & > a {
+                @apply font-light text-yellow-900 px-3 py-3 block;
+    
+                &:hover {
+                    @apply text-yellow-700 bg-gray-200;
+                }
+            }
+        }
+    }
+
+    &.open {
+        & > #version-picker {
+            @apply block;
+        }
+
+        & > div.nav {
+            @apply flex;
+        }
+    }
+}
+
+.navbar-brand > img {
+    @apply h-24 mx-2;
+}
+
+a#theme-switch, a#menu-switch {
+    @apply text-3xl cursor-pointer text-black;
+}
+
+main {
+    @apply prose dark:prose-dark p-5 max-w-5xl;
+    grid-area: main;
+
+    &.center {
+        justify-self: center;
+    }
+
+    & section[role="tabpanel"] {
+        @apply py-3;
+    }
+}
+
+footer {
+    @apply py-10 px-4 bg-gray-100 flex flex-col items-end text-gray-700 text-sm;
+    grid-area: footer;
+}
+
+aside.toc {
+    @apply font-light text-gray-900;
+    grid-area: toc;
+
+    & > span.toc-menu-button {
+        @apply flex flex-row uppercase py-2 font-light justify-center items-center;
+    }
+
+    & > div.toc-items {
+        @apply py-3 hidden;
+
+        &.open {
+            @apply block;
+        }
+    }
+
+    & span {
+        @apply cursor-pointer;
+    }
+
+    & ul ul {
+        @apply text-sm;
+
+        & > li > *:first-child {
+            @apply pl-4;
+        }
+    }
+
+    & ul ul ul {
+        @apply text-xs;
+
+        & > li > *:first-child {
+            @apply pl-5;
+        }
+    }
+
+    & summary {
+        @apply flex items-center;
+        list-style: none;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        & > * {
+            @apply flex-grow;
+        }
+    }
+
+    & details > summary::after {
+        @apply text-lg;
+        content: '\f107';
+    }
+
+    & details[open] > summary::after {
+        content: '\f106';
+    }
+
+    & details:focus,
+    & summary:focus {
+        @apply outline-none;
+    }
+
+    & span, & a {
+        @apply block py-1 px-2;
+
+        &.active {
+            @apply font-normal text-yellow-900;
+        }
+    }
+
+    & details > summary {
+        @apply pl-4;
+        margin-left: calc(-2 * theme('spacing.2'));
+    }
+
+    & details > summary > a {
+        @apply pl-0;
+    }
+
+    & summary, & span, & a {
+        &:hover {
+            @apply bg-gray-100;
+        }
+    }
+}
+
+aside.affix {
+    @apply text-sm px-5 pt-5;
+    grid-area: affix;
+
+    & .source-links a {
+        @apply font-bold text-xs;
+    }
+
+    & li {
+        @apply border-l-4 border-yellow-800 border-solid pl-2;
+    }
+
+    & h1 {
+        @apply my-2 font-bold text-gray-600;
+    }
+
+    & ul ul li {
+        @apply pl-8 -ml-3;
+    }
+
+    & li.active {
+        @apply border-yellow-600;
+        & > a, & > details > summary > a {
+            @apply font-bold;
+        }
+    }
+
+    & summary {
+        @apply flex items-center;
+        list-style: none;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+
+    & details summary::before {
+        content: '\f107';
+    }
+
+    & details[open] summary::before {
+        content: '\f106';
+    }
+
+    & details:focus,
+    & summary:focus {
+        @apply outline-none;
+    }
+}
+
+@screen md {
+    body {
+        grid-template-areas:
+                    "header header header"
+                    "messages messages messages"
+                    "breadcrumb breadcrumb breadcrumb"
+                    ". . ."
+                    "toc affix ."
+                    "toc main main"
+                    "footer footer footer";
+    }
+
+    nav {
+        grid-template-rows: auto;
+        grid-template-columns: max-content 1fr auto auto;
+        grid-template-areas: "logo menu versions light";
+
+        & > #menu-switch {
+            @apply hidden;
+        }
+
+        & > #version-picker {
+            @apply bg-gray-50 block;
+        }
+    
+        & > div.nav {
+            @apply flex flex-row bg-gray-50;
+
+            & > .nav-item > a:hover {
+                @apply bg-gray-50;
+            }
+        }
+    }
+
+    aside.toc  {
+        @apply px-5;
+        min-width: 15rem;
+        
+        & > span.toc-menu-button {
+            @apply hidden;
+        }
+
+        & > div.toc-items {
+            @apply block sticky overflow-y-auto top-0 max-h-screen;
+        }
+    }
+}
+
+@screen xl {
+    body {
+        grid-template-areas:
+                        "header header header"
+                        "messages messages messages"
+                        "breadcrumb breadcrumb breadcrumb"
+                        "toc main affix"
+                        "toc main affix"
+                        "toc main affix"
+                        "footer footer footer";
+    }
+
+    aside.affix {
+        @apply py-5;
+        & > div {
+            @apply sticky top-3;
+        }
+    }
+
+    main {
+        &.to-affix {
+            grid-column-end: affix;
+        }
+
+        &.from-toc {
+            grid-column-start: toc;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+:root {
+    --scrollbar-track-light: theme('colors.gray.100');
+    --scrollbar-track-thumb-light: theme('colors.gray.300');
+    --scrollbar-thumb-hover-light: theme('colors.gray.400');
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-track-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}

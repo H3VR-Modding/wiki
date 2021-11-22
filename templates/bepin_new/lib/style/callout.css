@@ -1,0 +1,39 @@
+main div {
+    &.NOTE,
+    &.TIP,
+    &.WARNING,
+    &.IMPORTANT,
+    &.CAUTION {
+        @apply bg-gray-100 pl-10 pr-3 py-3 border-l-8 border-solid my-3;
+        border-left-color: var(--alert-color);
+        & > h5 {
+            @apply font-semibold uppercase text-lg;
+            color: var(--alert-color);
+        }
+        
+        /* Skip h5 */
+        & > *:nth-child(2) {
+            @apply mt-2;
+        }
+
+        & > *:last-child {
+            @apply mb-2;
+        }
+    }
+
+    &.NOTE { --alert-color: theme('colors.blue.500'); }
+    &.TIP { --alert-color: theme('colors.blue.500'); }
+    &.WARNING { --alert-color: theme('colors.yellow.500'); }
+    &.IMPORTANT { --alert-color: theme('colors.red.500'); }
+    &.CAUTION { --alert-color: theme('colors.red.500'); }
+}
+
+.dark main div {
+    &.NOTE,
+    &.TIP,
+    &.WARNING,
+    &.IMPORTANT,
+    &.CAUTION { 
+        @apply bg-gray-900;
+    }
+}

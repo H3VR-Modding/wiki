@@ -1,0 +1,124 @@
+.dark {
+    & body {
+        @apply bg-gray-800;
+    }
+
+    & header {
+        @apply bg-black border-gray-600;
+    }
+    
+    & section.breadcrumb {
+        @apply bg-gray-900 border-black text-gray-300;
+    }
+
+    & aside.toc {
+        @apply text-gray-100;
+        & span, & a {
+            &.active {
+                @apply text-yellow-100;
+            }
+        }
+
+        & summary, & span, & a {
+            &:hover {
+                @apply bg-gray-900;
+            }
+        }
+    }
+
+    & section.breadcrumb a {
+        @apply text-white;
+
+        &:hover {
+            @apply text-yellow-50;
+        }
+    }
+
+    & div.nav > .nav-item > a {
+        @apply text-white;
+        &:hover {
+            @apply text-yellow-100;
+        }
+    }
+
+    & a#theme-switch, & a#menu-switch {
+        @apply text-white;
+    }
+
+    & aside.affix {
+        @apply text-white;
+
+        & .source-links a {
+            @apply text-yellow-200;
+        }
+
+        & li {
+            @apply border-gray-300;
+        }
+
+        & h1 {
+            @apply text-gray-300;
+        }
+
+        & li.active {
+            @apply border-gray-400;
+        }
+    }
+
+    & main a {
+        @apply text-yellow-200;
+
+        &:hover {
+            @apply text-yellow-200;
+        }
+    }
+
+    & main thead {
+        @apply text-gray-200;
+    }
+
+    & main ol > li::before {
+        @apply text-gray-300;
+    }
+
+    & footer {
+        @apply bg-gray-900 text-gray-300;
+    }
+
+    & nav {
+        & > #version-picker {
+            @apply bg-gray-900;
+        }
+    
+        & > div.nav {
+            @apply bg-gray-900;
+            & > .nav-item > a:hover {
+                @apply bg-gray-700;
+            }
+        }
+    }
+}
+
+@screen md {
+    .dark {
+        & nav {
+            & > #version-picker {
+                @apply bg-black;
+            }
+        
+            & > div.nav {
+                @apply bg-black;
+    
+                & > .nav-item > a:hover {
+                    @apply bg-black;
+                }
+            }
+        }
+    }
+}
+
+:root {
+    --scrollbar-track-dark: theme('colors.gray.900');
+    --scrollbar-track-thumb-dark: theme('colors.gray.700');
+    --scrollbar-thumb-hover-dark: theme('colors.gray.600');
+}

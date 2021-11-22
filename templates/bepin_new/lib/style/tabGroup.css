@@ -1,0 +1,47 @@
+main .tabGroup {
+    --unselected-color: theme('colors.black');
+    --selected-color: theme('colors.yellow.800');
+    --link-color: theme('colors.black');
+    --tab-border-color: theme('colors.gray.100');
+
+    & > ul {
+        @apply mb-0;
+        & > li {
+            @apply pl-0 inline-block;
+
+            &:focus, & a:focus {
+                outline-color: var(--selected-color);
+                outline-width: 1px;
+            }
+
+            &::before {
+                @apply hidden;
+            }
+
+            & a {
+                @apply no-underline px-3 pb-1 border-b-2 border-solid;
+                color: var(--link-color);
+                border-color: var(--unselected-color);
+
+                &:hover, &[tabindex="0"] {
+                    color: var(--selected-color);
+                    border-color: var(--selected-color);
+                }
+            }
+
+            
+        }
+    }
+
+    & > section {
+        @apply border px-4;
+        border-color: var(--tab-border-color);
+    }
+}
+
+.dark main .tabGroup {
+    --unselected-color: theme('colors.white');
+    --selected-color: theme('colors.yellow.100');
+    --link-color: theme('colors.gray.100');
+    --tab-border-color: theme('colors.gray.600');
+}
