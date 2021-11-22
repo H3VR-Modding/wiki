@@ -6,7 +6,7 @@
         "files": [
           "creating/**.md",
           "creating/**/toc.yml",
-		  "installing/**.md",
+          "installing/**.md",
           "installing/**/toc.yml",
           "toc.yml",
           "*.md"
@@ -27,8 +27,8 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-	  "statictoc",
-	  "../templates/bepin_new"
+      "statictoc",
+      "../templates/bepin_new"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

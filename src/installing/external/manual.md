@@ -2,7 +2,8 @@
 title: Manual Installation
 ---
 
-Some external mods may not be one of the [mod formats supported by r2modman](importing.md#supported-formats). These mods can instead be manually installed as a last resort.
+Some external mods may not be one of the [mod formats supported by r2modman](importing.md#supported-formats). These mods
+can instead be manually installed as a last resort.
 
 From r2modman's settings, search for `Browse Profile Folder` and click on it.
 
@@ -17,7 +18,8 @@ A folder should have appeared that looks like this:
     ...
 ```
 
-Determine the format of the mod, and extract its files to the correct paths. The `BepInEx/` folder is contained inside of your profile folder, which you just opened.
+Determine the format of the mod, and extract its files to the correct paths. The `BepInEx/` folder is contained inside
+of your profile folder, which you just opened.
 
 ## Sideloader
 
@@ -28,7 +30,8 @@ Sideloader mods go into the `BepInEx/Sideloader/` folder.
 
 ## Asset Bundles
 
-First, enter the `BepInEx/plugins/` folder. Then, create a new folder. It can be named anything, but it's recommended to create one with a distinct name like `_LVO`. Create a folder within that folder, and name it `LegacyVirtualObjects`.
+First, enter the `BepInEx/plugins/` folder. Then, create a new folder. It can be named anything, but it's recommended to
+create one with a distinct name like `_LVO`. Create a folder within that folder, and name it `LegacyVirtualObjects`.
 
 For example:
 

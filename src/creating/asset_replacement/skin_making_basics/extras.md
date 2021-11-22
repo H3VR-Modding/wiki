@@ -16,9 +16,11 @@ Hey! Thanks for reading this guide! Here are a few extras that will be of use to
 
 These four folders contain almost a hundred canvases ready for Substance Painter.
 
-OBJ Files, Textures, and a manifest for you to copy and paste where your skin export is located, so that the Skinpacker autofills for you almost all the details needed to make a Hotmod.
+OBJ Files, Textures, and a manifest for you to copy and paste where your skin export is located, so that the Skinpacker
+autofills for you almost all the details needed to make a Hotmod.
 
-It's a handy tool that should cut the time substantially if that gun you were gonna make a skin of is within these packs!
+It's a handy tool that should cut the time substantially if that gun you were gonna make a skin of is within these
+packs!
 
 [Import Multiple Obj files in Blender python script](https://www.mediafire.com/file/v802g3ufu844pt0/io_import_multiple_objs.py/file)
 

@@ -20,7 +20,8 @@ Select Yes.
 
 The main window will now open up with details for you to fill.
 
-GUID - The techy name that Sideloader will use to load up your files. Has to be lowercase, with '.'s or '_'s instead of spaces.
+GUID - The techy name that Sideloader will use to load up your files. Has to be lowercase, with '.'s or '_'s instead of
+spaces.
 
 Name - Self explanatory, the name of your skin, if you gave it one
 
@@ -32,9 +33,11 @@ The next part has confused people, but I promise it isn't as complicated as you 
 
 Click on "Add"
 
-[Open this](https://docs.google.com/spreadsheets/d/1Mjeo410-2wgou9JHSb_I1VltNTyzNXZX_EwhMNsfH6Y/edit#gid=1966002968) on another tab
+[Open this](https://docs.google.com/spreadsheets/d/1Mjeo410-2wgou9JHSb_I1VltNTyzNXZX_EwhMNsfH6Y/edit#gid=1966002968) on
+another tab
 
-This is Ghorsington's handy prefab spreadsheet with details on every gun in H3VR, super useful for hotmodding in general! Bookmark it!
+This is Ghorsington's handy prefab spreadsheet with details on every gun in H3VR, super useful for hotmodding in
+general! Bookmark it!
 
 CTRL + F, and type in a part of the name of your item
 
@@ -76,9 +79,11 @@ Choose your "alloy.png" file.
 
 And then make the entry look like this example.
 
-Yes, it looks the same as the picture above. The simplicity of pasting the BaseColor Texture Name makes this process both easy and slightly confusing.
+Yes, it looks the same as the picture above. The simplicity of pasting the BaseColor Texture Name makes this process
+both easy and slightly confusing.
 
-_SpecTex for the TexParam entry specifies it is the Alloy entry, and is the key difference between the first entry you made.\
+_SpecTex for the TexParam entry specifies it is the Alloy entry, and is the key difference between the first entry you
+made.\
 
 Click on "Save" when you get a similar match comparing it to the picture above.
 
@@ -96,7 +101,8 @@ Click on "Save Manifest"
 
 Then, last part, "Pack into .h3mod"!
 
-For my example, I'd call it "spas12_bs", so nameofitem_name is recommended for your skin, but you can call your skin whatever.
+For my example, I'd call it "spas12_bs", so nameofitem_name is recommended for your skin, but you can call your skin
+whatever.
 
 The hotmod will save where the pngs and manifest is located. This hotmod will be bonafide ready for Sideloader to use.
 
@@ -126,6 +132,7 @@ Do keep a cautious eye for _MainTex names that seem a bit too broad!
 
 ***CONGRATS!*** You know the basics of making skins! You are now ready to make all sorts of skins!
 
-But! Stick around! There's more to learn about what you can do for your skins in the [Skin Making Advanced](../skin_making_advanced/stamp.md) course!
+But! Stick around! There's more to learn about what you can do for your skins in
+the [Skin Making Advanced](../skin_making_advanced/stamp.md) course!
 
 Be sure to check out the [Extras](extras.md) too!

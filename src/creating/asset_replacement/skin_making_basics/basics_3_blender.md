@@ -38,7 +38,8 @@ Do this for every single mesh in your scene!
 
 After you do that, then your canvas will be ready for the next step!
 
-Save your blender project wherever you want (Under Workshop if you have a dedicated folder, call it [NAME OF ITEM].blend)
+Save your blender project wherever you want (Under Workshop if you have a dedicated folder, call it [NAME OF ITEM]
+.blend)
 
 Then, export your canvas as an OBJ file (This will also go to your Workshop folder)
 

@@ -22,4 +22,5 @@ After you decide on a color, scroll down.
 
 ![engrave 3](images/engrave_3.png)
 
-If you activated "height", you can find it down below. Scale it between -.12 and -.2 for the ideal engraving image and make glorious engravings!
+If you activated "height", you can find it down below. Scale it between -.12 and -.2 for the ideal engraving image and
+make glorious engravings!

@@ -2,7 +2,8 @@
 title: Specific Mod Installation
 ---
 
-Specific mods that aren't currently updated yet have different installation instructions. This page assumes you know how to navigate to your r2modman profile folder to reach `BepInEx/`, and how to import local mods using r2modman.
+Specific mods that aren't currently updated yet have different installation instructions. This page assumes you know how
+to navigate to your r2modman profile folder to reach `BepInEx/`, and how to import local mods using r2modman.
 
 ## LSIIC v1.4.0
 
@@ -33,13 +34,17 @@ LSIIC-v1.4.zip/
 4. Drag and drop the `LSIIC-v1.4.zip/BepInEx/` folder into your profile folder.
 5. Confirm that you now have `[your profile]/BepInEx/plugins/LSIIC/` and `[your profile]/BepInEx/monomod/LSIIC`.
 6. Extract the `LSIIC-v1.4.zip/Mods/LSIIC.h3mod` file to `[your profile]/BepInEx/Sideloader/`.
-7. (Optional) Run the game once to confirm that it has been installed by opening your BepInEx log at `[your profile folder]/BepInEx/LogOutput.log` and searching for "LSIIC", confirming there are no other errors.
+7. (Optional) Run the game once to confirm that it has been installed by opening your BepInEx log
+   at `[your profile folder]/BepInEx/LogOutput.log` and searching for "LSIIC", confirming there are no other errors.
 
-[This link](https://github.com/H3VR-Modding/wiki/blob/a3fc3055e34e00818820150d6bfc566e4d6b94c8/src/installing/videos/InstallingLSIIC.mp4?raw=true) contains a video of this process being done. The left window is the downloaded `.zip` package from the releases page, and the right window is the profile folder opened through r2mm.
+[This link](https://github.com/H3VR-Modding/wiki/blob/a3fc3055e34e00818820150d6bfc566e4d6b94c8/src/installing/videos/InstallingLSIIC.mp4?raw=true)
+contains a video of this process being done. The left window is the downloaded `.zip` package from the releases page,
+and the right window is the profile folder opened through r2mm.
 
 **Method 2: Reconstruct and import**
 
-Alternatively, you can alter the folder structure of `LSIIC-v1.4.zip` to follow the following structure and import it into r2modman using its import feature in the settings menu:
+Alternatively, you can alter the folder structure of `LSIIC-v1.4.zip` to follow the following structure and import it
+into r2modman using its import feature in the settings menu:
 
 ```text
 LSIIC-v1.4.zip/
@@ -69,9 +74,15 @@ TakeAndHoldTweaker.Unzip.Me.zip/
         MagazineCacheBlacklist.json
 ```
 
-1. Import the `.deli` file (`TakeAndHoldTweaker.Unzip.Me.zip/Deli/mods/TakeAndHoldTweaker.deli`) using r2modman's `Import Local Mod` feature like you would any other `.deli` file.
-2. Copy the `TnHTweaker/` folder (`TakeAndHoldTweaker.Unzip.Me.zip/TnHTweaker/`) to your root `H3VR/` directory. You can get here by right-clicking on the game through steam and clicking `Browse local files` under the `Manage` sub-menu.
+1. Import the `.deli` file (`TakeAndHoldTweaker.Unzip.Me.zip/Deli/mods/TakeAndHoldTweaker.deli`) using
+   r2modman's `Import Local Mod` feature like you would any other `.deli` file.
+2. Copy the `TnHTweaker/` folder (`TakeAndHoldTweaker.Unzip.Me.zip/TnHTweaker/`) to your root `H3VR/` directory. You can
+   get here by right-clicking on the game through steam and clicking `Browse local files` under the `Manage` sub-menu.
 
-**Recommended:** Download this [Magazine cache blacklist](files/MagazineCacheBlacklist.json) and replace the one located inside of `H3VR/TnHTweaker/`, as it is a more up to date version and fixes specific mags from spawning alongside the wrong guns.
+**Recommended:** Download this [Magazine cache blacklist](files/MagazineCacheBlacklist.json) and replace the one located
+inside of `H3VR/TnHTweaker/`, as it is a more up to date version and fixes specific mags from spawning alongside the
+wrong guns.
 
-Files generated using the Deli config option will be created inside of the root `H3VR/TnHTweaker` folder as of TnHTweaker 1.6.6, and may change in future versions. If the version you installed is higher than 1.6.6, please see their releases page for more information.
+Files generated using the Deli config option will be created inside of the root `H3VR/TnHTweaker` folder as of
+TnHTweaker 1.6.6, and may change in future versions. If the version you installed is higher than 1.6.6, please see their
+releases page for more information.

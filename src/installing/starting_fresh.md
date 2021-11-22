@@ -2,9 +2,11 @@
 title: Starting Fresh
 ---
 
-This process will remove any mod related items but leave the large parts of H3VR untouched, so you don't have to redownload gigabytes of data.
+This process will remove any mod related items but leave the large parts of H3VR untouched, so you don't have to
+redownload gigabytes of data.
 
-Delete all files in your main H3VR directory **except** for the `h3vr_Data/` folder. Don't worry about vault files; they are stored in another folder and will not be deleted.
+Delete all files in your main H3VR directory **except** for the `h3vr_Data/` folder. Don't worry about vault files; they
+are stored in another folder and will not be deleted.
 
 ![image](images/explorer/all_but_h3vr_Data.png)
 

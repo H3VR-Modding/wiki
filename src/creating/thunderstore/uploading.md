@@ -15,13 +15,16 @@ Thunderstore requires 3 files to be present in your `.zip` upload:
 - A Thunderstore manifest that contains information about your mod
 - A README file that displays text and images on your main page
 
-The best thing to do is to log into Thunderstore using Discord or Github and checking the full details on the [upload page](https://h3vr.thunderstore.io/package/create/).
+The best thing to do is to log into Thunderstore using Discord or Github and checking the full details on
+the [upload page](https://h3vr.thunderstore.io/package/create/).
 
-Please see the [Creating a Thunderstore Package](creating.md) page for details on how to place your mod into this file structure. After which, all you need to do is zip the files inside of the mod folder and upload it.
+Please see the [Creating a Thunderstore Package](creating.md) page for details on how to place your mod into this file
+structure. After which, all you need to do is zip the files inside of the mod folder and upload it.
 
 ## Using TSGen to Generate required files
 
-Head on over to [TSGen](https://github.com/nayr31/TSGen)'s github and download their latest release. You probably want to download `TSGen_Extract_This.zip` and extract it to it's own folder.
+Head on over to [TSGen](https://github.com/nayr31/TSGen)'s github and download their latest release. You probably want
+to download `TSGen_Extract_This.zip` and extract it to it's own folder.
 
 Running `TSGen.exe` will greet you with this page:
 
@@ -56,7 +59,8 @@ So Mod A's dependencies are:
 
 ![tsgen finish](images/TSGen/finish.png)
 
-In the above picture you can see what the example would do in it's situation. You can close TSGen now by hitting enter or by closing the window.
+In the above picture you can see what the example would do in it's situation. You can close TSGen now by hitting enter
+or by closing the window.
 
 Inside of the extracted TSGen folder, you should see a folder by the name of your mod:
 
@@ -68,13 +72,16 @@ Inside of the extracted TSGen folder, you should see a folder by the name of you
 ```
 
 # Manual Creation
+
 > [!NOTE]
 > The manifests created from TSGen can still be modified using this section.
 
 ### icon.png
 
-`icon.png` is a box 256 pixels wide and tall. It is the icon that will be displayed on the Thunderstore website.
-Note that it *must* be 256x256. If you are new to making images, a tool such as [paint.net](https://www.getpaint.net/index.html) can be useful for making quick images, as they are relatively easy to learn.
+`icon.png` is a box 256 pixels wide and tall. It is the icon that will be displayed on the Thunderstore website. Note
+that it *must* be 256x256. If you are new to making images, a tool such
+as [paint.net](https://www.getpaint.net/index.html) can be useful for making quick images, as they are relatively easy
+to learn.
 
 ### manifest.json
 
@@ -82,24 +89,24 @@ The default manifest looks like follows:
 
 ```json
 {
-    "name": "My_Mod_Name",
-    "version_number": "1.0.0",
-    "website_url": "https://thebestsiteevermadeforh3vrmodding.com", 
-    "description": "My mod is definitely a mod (250 characters max)",
-    "dependencies":
-    [
-        "Author1-FirstDependency-Version",
-        "Author2-SecondDependency-Version",
-        "Author3-ThirdDependency-Version"
-    ]
+  "name": "My_Mod_Name",
+  "version_number": "1.0.0",
+  "website_url": "https://thebestsiteevermadeforh3vrmodding.com",
+  "description": "My mod is definitely a mod (250 characters max)",
+  "dependencies": [
+    "Author1-FirstDependency-Version",
+    "Author2-SecondDependency-Version",
+    "Author3-ThirdDependency-Version"
+  ]
 }
 ```
+
 The name must not contain spaces. Replace your spaces with `_`s.
 
 The `website_url` can be empty (`"website_url": "",`) if you do not have a website.
 
-Dependencies are taken from the Thunderstore website. They are mods that your mod relies on.
-They can be seen from their page on Thunderstore. Copy and paste the string listed to your dependencies.
+Dependencies are taken from the Thunderstore website. They are mods that your mod relies on. They can be seen from their
+page on Thunderstore. Copy and paste the string listed to your dependencies.
 ![dependencies](images/thunderstore/dependencies.png)
 
 > [!NOTE]
@@ -108,8 +115,12 @@ They can be seen from their page on Thunderstore. Copy and paste the string list
 
 ### README.md
 
-The README.md is the description by the mod. Often forgotten because it is not visible through the Mod Manager (As of yet, anyway), it is what displays on Thunderstore when you click on a mod. You can test your markdown through [Thunderstore's Markdown Preview tool.](https://h3vr.thunderstore.io/tools/markdown-preview/) If you're new to Markdown, [check out this guide!](https://www.markdowntutorial.com/)
-Once you've fancied up your description, make a new text file and rename it to `README.md`. Open it up using a text editor and paste your fancy text.
+The README.md is the description by the mod. Often forgotten because it is not visible through the Mod Manager (As of
+yet, anyway), it is what displays on Thunderstore when you click on a mod. You can test your markdown
+through [Thunderstore's Markdown Preview tool.](https://h3vr.thunderstore.io/tools/markdown-preview/) If you're new to
+Markdown, [check out this guide!](https://www.markdowntutorial.com/)
+Once you've fancied up your description, make a new text file and rename it to `README.md`. Open it up using a text
+editor and paste your fancy text.
 
 Once you have these three files, you should end up with this:
 
@@ -120,5 +131,6 @@ Once you have these three files, you should end up with this:
     README.md
 ```
 
-Please see the [the next step, Adding Your H3VR Content To Your Package](creating.md) page for details on how to place your mod into this file structure.
+Please see the [the next step, Adding Your H3VR Content To Your Package](creating.md) page for details on how to place
+your mod into this file structure.
 
