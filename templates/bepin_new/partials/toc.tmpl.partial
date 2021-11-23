@@ -1,0 +1,13 @@
+{{#_toc}}
+{{^leaf}}
+<aside class="toc">
+<span class="toc-menu-button">
+    <span>Table of Contents</span>
+    <i class="icon-menu"></i>
+</span>
+<div class="toc-items">
+{{> partials/toc-items}}
+</div>
+</aside>
+{{/leaf}}
+{{/_toc}}

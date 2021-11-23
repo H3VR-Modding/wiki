@@ -1,0 +1,12 @@
+<div class="nav">
+    {{#items}}
+    <div class="nav-item">
+        {{#topicHref}}
+        <a href="{{topicHref}}">{{name}}</a>
+        {{/topicHref}}
+        {{^leaf}}
+        {{> partials/navbar-items}}
+        {{/leaf}}
+    </div>
+    {{/items}}
+</div>

@@ -18,7 +18,8 @@ Make the background completely black
 
 Then import your image
 
-The example I'll be using is one of my own artworks (credit where credit is due! I'll remind you in the bottom of this tutorial)
+The example I'll be using is one of my own artworks (credit where credit is due! I'll remind you in the bottom of this
+tutorial)
 
 ![stamp 1](images/stamp_1.png)
 
@@ -46,7 +47,8 @@ For your alpha, classify it as an alpha among the four choices available
 
 For your color, classify it as a texture among the four choices available
 
-The location of these resources, select as "Project" if you want to specify that it only belongs to the certain gun you are working on. If you want it available for all the projects you plan to work on, select "shelf"
+The location of these resources, select as "Project" if you want to specify that it only belongs to the certain gun you
+are working on. If you want it available for all the projects you plan to work on, select "shelf"
 
 ![stamp 3](images/stamp_3.png)
 

@@ -1,0 +1,10 @@
+{{#_pathActive}}
+<section class="breadcrumb">
+{{#_nav}}
+{{> partials/breadcrumb-item}}
+{{/_nav}}
+{{#_toc}}
+{{> partials/breadcrumb-item}}
+{{/_toc}}
+</section>
+{{/_pathActive}}

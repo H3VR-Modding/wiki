@@ -1,0 +1,21 @@
+<ul>
+    {{#items}}
+    <li>
+        {{^leaf}}
+        <details {{#pathActive}}open{{/pathActive}}>
+        <summary>
+        {{/leaf}}
+        {{#href}}
+        <a href="{{href}}" {{#pathActive}}class="active"{{/pathActive}}>{{name}}</a>
+        {{/href}}
+        {{^href}}
+        <span {{#pathActive}}class="active"{{/pathActive}}>{{name}}</span>
+        {{/href}}
+        {{^leaf}}
+        </summary>
+        {{> partials/toc-items}}
+        </details>
+        {{/leaf}}
+    </li>
+    {{/items}}
+</ul>

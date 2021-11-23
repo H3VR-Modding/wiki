@@ -1,0 +1,40 @@
+{
+  "metadata": [],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "creating/**.md",
+          "creating/**/toc.yml",
+          "installing/**.md",
+          "installing/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "**/images/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "dest": "_site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "statictoc",
+      "../templates/bepin_new"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}

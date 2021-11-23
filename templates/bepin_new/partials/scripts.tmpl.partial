@@ -1,0 +1,2 @@
+<script type="text/javascript" src="{{_rel}}static/scripts/template.js"></script>
+<script type="text/javascript" src="{{_rel}}static/scripts/main.js"></script>

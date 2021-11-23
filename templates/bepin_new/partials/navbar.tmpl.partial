@@ -1,0 +1,11 @@
+<nav>
+    <a class="navbar-brand" href="{{_rel}}index.html">
+        <img id="logo" class="svg" src="{{_rel}}{{{_appLogoPath}}}{{^_appLogoPath}}logo.png{{/_appLogoPath}}" alt="{{_appName}}" >
+    </a>
+    {{#_nav}}
+    {{> partials/navbar-items}}
+    {{/_nav}}
+    <div id="version-picker"></div>
+    <a id="menu-switch" class="icon-menu"></a>
+    <a id="theme-switch" class="icon-lightbulb"></a>
+</nav>

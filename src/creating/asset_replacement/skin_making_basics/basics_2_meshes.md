@@ -7,9 +7,11 @@ title: Skin Making Basics 2 - Meshes and Textures
 
 Once we have our tools, it is time to use them.
 
-**1) Open up your H3VR File Location.** This can be done on the Steam App, where you find H3VR in your library, select "properties", then hitting the option "Open File Directory"
+**1) Open up your H3VR File Location.** This can be done on the Steam App, where you find H3VR in your library, select "
+properties", then hitting the option "Open File Directory"
 
-Alternatively, you can search within your computer: PC --> Drive --> ProgramFiles (x86) --> steam --> steamapps --> common --> H3VR
+Alternatively, you can search within your computer: PC --> Drive --> ProgramFiles (x86) --> steam --> steamapps -->
+common --> H3VR
 
 **2) Locate and Duplicate your "StreamingAssets".**
 
@@ -27,7 +29,8 @@ Open UABE
 
 File --> Open
 
-Locate these asset files (If you made a copy, find the copy in your skinmaking folder instead of the one in StreamingAssets)
+Locate these asset files (If you made a copy, find the copy in your skinmaking folder instead of the one in
+StreamingAssets)
 
 Select which one you think the desired gun/ammo/item you want to skin will be
 
@@ -35,7 +38,8 @@ Once you select the asset file, UABE will request to unpack it, select "yes"
 
 It will ask you to make a new file
 
-Don't replace the old StreamingAssets file, make a new file with 'U' or 'Unpack' inside of it to make it different from the others.
+Don't replace the old StreamingAssets file, make a new file with 'U' or 'Unpack' inside of it to make it different from
+the others.
 
 This will duplicate that asset file in a way that UABE can view and extract it.
 
@@ -55,7 +59,8 @@ I recommend this, click on "Name", then "Container", then "Type"
 
 Now, the madness should be much easier to read!
 
-(I recommend making a folder in your dedicated Skinmaking folder. Call it by the item's name, then make three folders inside that - Tex, Mesh, and Workshop)
+(I recommend making a folder in your dedicated Skinmaking folder. Call it by the item's name, then make three folders
+inside that - Tex, Mesh, and Workshop)
 
 Lets get started with finding the Textures.
 
@@ -67,9 +72,9 @@ When you find the container, you will need three primary maps -- Base Color, All
 
 If you are having difficulty finding these files:
 
-Look into the "magazine" container for your item as they can be found there sometimes
-If you are seeing more than three textures under your desired item's container, download those as well
-When you find these textures, select all of them, then hit "Export" off to the left of the window.
+Look into the "magazine" container for your item as they can be found there sometimes If you are seeing more than three
+textures under your desired item's container, download those as well When you find these textures, select all of them,
+then hit "Export" off to the left of the window.
 
 Save as "PNGs"
 
@@ -87,7 +92,8 @@ Once you find the container, locate all the parts connected to said container.
 
 Select all of them.
 
-Export as a Blender compatible file, such as DAE or OBJ (OBJ recommended, see extras for a 'multiple obj export' tool for Blender)
+Export as a Blender compatible file, such as DAE or OBJ (OBJ recommended, see extras for a 'multiple obj export' tool
+for Blender)
 
 Save in a location close to those Texture files (If you have that dedicated folder, these would be placed in Mesh)
 

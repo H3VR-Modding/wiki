@@ -9,7 +9,8 @@ Hiya! This is the tutorial to make your own TNH hold themes.
 
 No mods are actually required, it is just replacing a single file with H3VR's data.
 
-TNH Hold Music can be pretty much any song if you go the extra mile to make it. (Its a bit tougher to use a song with lyrics, but doable!)
+TNH Hold Music can be pretty much any song if you go the extra mile to make it. (Its a bit tougher to use a song with
+lyrics, but doable!)
 
 Lets start off by getting the right software:
 
@@ -151,7 +152,8 @@ You can use Silence as a means to extend the length. "Generate" --> Generate Sil
 
 You can use the Fade Out effect to match the vanilla file, I recommend it. "Effect" --> Fade Out
 
-Once you have your custom Intro file ready, you can remove the vanilla file by hitting the 'X' on the top left of the waveform entry (right next to the name of the sound file)
+Once you have your custom Intro file ready, you can remove the vanilla file by hitting the 'X' on the top left of the
+waveform entry (right next to the name of the sound file)
 
 Here is how you'll export it
 
@@ -179,17 +181,21 @@ This is the looping sequence dedicated to the first hold.
 
 It is also 21 - 22 seconds long, and it loops, so the part you'll use will likely be the chorus or the catchy part
 
-For the empty Audacity window, locate the file "Fake Meat Must Die-14 - Lo", and drop it inside the empty Audacity window
+For the empty Audacity window, locate the file "Fake Meat Must Die-14 - Lo", and drop it inside the empty Audacity
+window
 
 Next, locate a part of your song that you think can be a good looping part of the first hold.
 
 Copy that part to the best of your ability and paste it under the vanilla Lo file.
 
-When matching the lengths, you cannot use the silence trick from earlier to extend the song length, the loops will be affected and the flow of the song will be tarnished
+When matching the lengths, you cannot use the silence trick from earlier to extend the song length, the loops will be
+affected and the flow of the song will be tarnished
 
-You can use a part thats 22 - 24 seconds long by making the start of this tune fade in, and the ending fade out, both can be found in the effects tab
+You can use a part thats 22 - 24 seconds long by making the start of this tune fade in, and the ending fade out, both
+can be found in the effects tab
 
-It takes a bit to get this part just right, but when you are ready to export, it will follow the same rules as how you exported the Intro file.
+It takes a bit to get this part just right, but when you are ready to export, it will follow the same rules as how you
+exported the Intro file.
 
 ![tnhm 10](images/tnhm_10.png)
 
@@ -217,7 +223,8 @@ The last three files are
 
 "Fake Meat Must Die-14 - End"
 
-Transition happens when a hold is bigger than one round. After completing the first hold, the "Lo" theme cuts off, and this part will play
+Transition happens when a hold is bigger than one round. After completing the first hold, the "Lo" theme cuts off, and
+this part will play
 
 It is 5-6 seconds long
 
@@ -227,13 +234,15 @@ Fade Ins at the start will do the same.
 
 ![tnhm 11](images/tnhm_11.png)
 
-MedHi has the most freedom of all the parts. It is also the one that is heard the most. It is the theme that plays during holds 2 and beyond.
+MedHi has the most freedom of all the parts. It is also the one that is heard the most. It is the theme that plays
+during holds 2 and beyond.
 
 It is 51 - 52 seconds long, and it does loop as well.
 
 You can use your favorite part of your song here.
 
-No silence tricks because it is a loop, but a fade-in intro and fade-out end can work if your part is a bit bigger than 51 - 52 seconds
+No silence tricks because it is a loop, but a fade-in intro and fade-out end can work if your part is a bit bigger than
+51 - 52 seconds
 
 ![tnhm 12](images/tnhm_12.png)
 
@@ -243,11 +252,13 @@ End is self explanatory, but it will look strange when you put it on audacity
 
 It has a two second gap of silence. This gap is integral to how Anton made his Hold theme
 
-When putting the ending to your song under this vanilla file, you can copy the silence and the fade in bit, then apply it to your song ending to save the trouble
+When putting the ending to your song under this vanilla file, you can copy the silence and the fade in bit, then apply
+it to your song ending to save the trouble
 
 ![tnhm 14](images/tnhm_14.png)
 
-The ending itself is like two seconds after the two second silence, but you can stretch this out to five or further because no other hold themes will occur after this part.
+The ending itself is like two seconds after the two second silence, but you can stretch this out to five or further
+because no other hold themes will occur after this part.
 
 All these parts get exported the same as the first two.
 
@@ -273,12 +284,15 @@ A small console popup should appear if the locations are correct.
 
 When the tool finishes, the MX_TAH file will be of a different file size compared to the Vanilla bank file.
 
-Rename your MX_TAH file to `MX_TAH_[YourSongNameHere]`, and you are ready to package it as a Thunderstore mod! Remember, it will require Potatoes' TNH BGM Loader, so add that as a dependency.
+Rename your MX_TAH file to `MX_TAH_[YourSongNameHere]`, and you are ready to package it as a Thunderstore mod! Remember,
+it will require Potatoes' TNH BGM Loader, so add that as a dependency.
 
-Alternatively, if you want to manually override your TNH sounds, copy this custom Bank file (while it is named MX_TAH), then go to the H3VR directory
+Alternatively, if you want to manually override your TNH sounds, copy this custom Bank file (while it is named MX_TAH),
+then go to the H3VR directory
 
 H3VR_Data --> StreamingAssets
 
-Pasting this file replaces the vanilla file, so having the Vanilla folder back in your workshop and its bank file is your way of reverting this change.
+Pasting this file replaces the vanilla file, so having the Vanilla folder back in your workshop and its bank file is
+your way of reverting this change.
 
 We are finished! Thats the tutorial, have fun!

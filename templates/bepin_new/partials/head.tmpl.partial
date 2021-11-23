@@ -1,0 +1,42 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}}{{#_appTitle}} | {{_appTitle}} {{/_appTitle}}</title>
+    <meta name="title" content="{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}}{{#_appTitle}} | {{_appTitle}} {{/_appTitle}}">
+    {{#_description}}
+        <meta name="description" content="{{_description}}">
+    {{/_description}}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}}{{#_appTitle}} | {{_appTitle}} {{/_appTitle}}">
+    {{#_cardImage}}
+        <meta name="twitter:image" content="{{_cardImage}}">
+    {{/_cardImage}}
+    {{#_description}}
+        <meta name="twitter:description" content="{{_description}}">
+    {{/_description}}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{_rel}}{{{_appFaviconPath}}}{{^_appFaviconPath}}favicon.ico{{/_appFaviconPath}}">
+    <link rel="stylesheet" href="{{_rel}}static/styles/template.css">
+    <link rel="stylesheet" href="{{_rel}}static/styles/main.css">
+    <script>
+        var docsVersion = "{{_docsVersion}}";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>

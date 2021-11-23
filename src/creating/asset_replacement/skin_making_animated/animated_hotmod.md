@@ -48,7 +48,7 @@ The format of making animated skins this way is near identical to one another!
   "version": "1.0.0",
   "description": "[Description]",
   "assetMappings": [
-   {
+    {
       "type": "Material",
       "target": "h3vr_data\\streamingassets\\assets_resources_objectids_weaponry_[category]\\[gun]:[gun mat]",
       "path": "[bundle name]:assets\\[mat name].mat"
@@ -59,7 +59,6 @@ The format of making animated skins this way is near identical to one another!
       "path": "base color.png"
     },
     {
-
       "type": "Texture",
       "target": ":[mat name]::_SpecTex",
       "path": "alloy.png"
@@ -93,9 +92,12 @@ Guid --> Sideloader ID, needs to be lowercase and with either underscores or per
 
 Name & Description --> self-explanatory
 
-Target is very important, the trickiest part of this process... this is the prefab path and material name of the gun you are making a skin for.
+Target is very important, the trickiest part of this process... this is the prefab path and material name of the gun you
+are making a skin for.
 
-To assist, use [this spreadsheet](https://docs.google.com/spreadsheets/d/1Mjeo410-2wgou9JHSb_I1VltNTyzNXZX_EwhMNsfH6Y/edit#gid=1966002968) made by Ghorsington.
+To assist,
+use [this spreadsheet](https://docs.google.com/spreadsheets/d/1Mjeo410-2wgou9JHSb_I1VltNTyzNXZX_EwhMNsfH6Y/edit#gid=1966002968)
+made by Ghorsington.
 
 But for my example, I am making a skin for the Uzi, so my target would be
 
@@ -107,7 +109,8 @@ But for my example, I am making a skin for the Uzi, so my target would be
 
 Target's down, next is path.
 
-If you named your asset bundle and material name the same, and have your material in the assets folder just as this tutorial instructed, then this is going to be a sinch!
+If you named your asset bundle and material name the same, and have your material in the assets folder just as this
+tutorial instructed, then this is going to be a sinch!
 
 However, if you stored your material in a subfolder of "Assets", it's gonna be a bit more tricky
 
@@ -129,7 +132,8 @@ Save the manifest and exit out.
 
 The final step of the final step is to manually make a hotmod.
 
-Select all seven items in your folder, the five textures, the manifest, and the unity file we dubbed as the "material" file.
+Select all seven items in your folder, the five textures, the manifest, and the unity file we dubbed as the "material"
+file.
 
 ![hotmod 7](images/hotmod/hotmod_7.png)
 
@@ -137,4 +141,5 @@ Use a ZIP program [WINRAR, Bandizip, etc] to package all the materials into a ZI
 
 Rename the .zip to .hotmod or .h3mod
 
-And it's ready to go! That's the process of making animated skins for H3VR! Hope it wasn't too taxing and I hope you make the most of it!
+And it's ready to go! That's the process of making animated skins for H3VR! Hope it wasn't too taxing and I hope you
+make the most of it!

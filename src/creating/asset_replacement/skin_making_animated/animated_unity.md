@@ -8,23 +8,29 @@ If this is your first time using it, do not panic, you'll only be needing it for
 
 That being said, lemme state a few rules to this process that I've discovered the hard way:
 
-**Rule 1)** Every animated skin you make, you need to make a new material for it. You CANNOT use the same material for two skins.
+**Rule 1)** Every animated skin you make, you need to make a new material for it. You CANNOT use the same material for
+two skins.
 
 Using the same material on two skins will result in one skin being an abhorrent mess of the other skin's textures.
 
-**Rule 2)** Every Material you make, you need to include new, unused PNGs for it. You CANNOT use the same PNGs for two skins.
+**Rule 2)** Every Material you make, you need to include new, unused PNGs for it. You CANNOT use the same PNGs for two
+skins.
 
-This mainly applies to Incandescence Maps. We'll be talking about scroll speeds soon, but if you use the same incan.png, than there will be only one speed, not two.
+This mainly applies to Incandescence Maps. We'll be talking about scroll speeds soon, but if you use the same incan.png,
+than there will be only one speed, not two.
 
 Lets get started.
 
-Opening Unity should result in something like this. Lets begin by making a subfolder in this main folder, "Assets", and I'll call this subfolder, "am" (for Animated Material)
+Opening Unity should result in something like this. Lets begin by making a subfolder in this main folder, "Assets", and
+I'll call this subfolder, "am" (for Animated Material)
 
 ![unity 1](images/unity/unity_1.png)
 
-In this subfolder "am", I'm going to make another folder based off of the skin I'm making. This subfolder will have my PNG exports.
+In this subfolder "am", I'm going to make another folder based off of the skin I'm making. This subfolder will have my
+PNG exports.
 
-The quick way would be to drag and drop your pngs in this category, but if you plan on making multiple animated skins, this will get clutter-some real quick.
+The quick way would be to drag and drop your pngs in this category, but if you plan on making multiple animated skins,
+this will get clutter-some real quick.
 
 Instead, make a copy of your exports, put them somewhere else, than add a codename to them.
 
@@ -40,7 +46,8 @@ So now that we have those pngs on Unity, go back to **Assets**...
 
 ![unity 4](images/unity/unity_4.png)
 
-Here is where I store my Animated Materials, and there is a reason behind it that we'll get to in the hotmodding step, but for now, follow my example.
+Here is where I store my Animated Materials, and there is a reason behind it that we'll get to in the hotmodding step,
+but for now, follow my example.
 
 Right click, and choose "Create"
 
@@ -62,7 +69,8 @@ Your information should now change to something far more simple than prior. Phew
 
 ![unity 8](images/unity/unity_8.png)
 
-Before we crack it open, we will need to add one more thing though. Look for the "plus" symbol next to the "Add Tab" category...
+Before we crack it open, we will need to add one more thing though. Look for the "plus" symbol next to the "Add Tab"
+category...
 
 And select "**Emission**" to the categories.
 
@@ -97,7 +105,8 @@ A popup should appear. (This is where the codenames come in handy, use the searc
 
 ![unity 13](images/unity/unity_13.png)
 
-Find the select pngs that go with each category. Base Color needs base color.png, Metal needs alloy.png, Normal needs normal.png--
+Find the select pngs that go with each category. Base Color needs base color.png, Metal needs alloy.png, Normal needs
+normal.png--
 
 Holup
 
@@ -131,7 +140,8 @@ Now that you have your pngs inside this material, lets address the elephant in t
 
 ![unity 17](images/unity/unity_17.png)
 
-Asset Bundles. "None" needs to go. You'll be renaming it to something else, and that name does matter, so I HIGHLY recommend you use the same name as your material.
+Asset Bundles. "None" needs to go. You'll be renaming it to something else, and that name does matter, so I HIGHLY
+recommend you use the same name as your material.
 
 ![unity 18](images/unity/unity_18.png)
 
@@ -161,7 +171,8 @@ A lot of options come up, but you're going to be selecting "**AssetBundle Browse
 
 ![unity 23](images/unity/unity_23.png)
 
-A new pop up will appear. Yours won't have as many categories, but the one we're focused on is the current bundle, which we named the same as our material, right?
+A new pop up will appear. Yours won't have as many categories, but the one we're focused on is the current bundle, which
+we named the same as our material, right?
 
 ![unity 24](images/unity/unity_24.png)
 
@@ -171,7 +182,8 @@ A good time to check to see if you have everything. Seven things: Material, Shad
 
 If you have these seven things, move on to the "**Build**" option.
 
-Now, this is the Unity Export. The result will be a file that will be used for the hotmod, and this file will enable animated skins for that weapon.
+Now, this is the Unity Export. The result will be a file that will be used for the hotmod, and this file will enable
+animated skins for that weapon.
 
 ![unity 26](images/unity/unity_26.png)
 

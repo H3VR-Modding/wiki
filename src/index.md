@@ -8,4 +8,5 @@ Having problems? We have a [troubleshooting section](installing/troubleshooting/
 
 Looking to mod? The [Making Mods](creating/making_mods.md) page might have what you are looking for.
 
-Something missing or you want to add a page? Check the [Contributing](https://github.com/H3VR-Modding/wiki/blob/main/.github/contributing/contributing.md) document rules.
+Something missing or you want to add a page? Check
+the [Contributing](https://github.com/H3VR-Modding/wiki/blob/main/.github/contributing/contributing.md) document rules.

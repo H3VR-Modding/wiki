@@ -1,0 +1,36 @@
+{{!include(/^static/.*/)}}
+{{!include(/^fonts/.*/)}}
+{{!include(favicon.ico)}}
+{{!include(logo.png)}}
+{{!include(search-stopwords.json)}}
+<!DOCTYPE html>
+<html lang="en">
+{{> partials/head}}
+<body>
+    <header>
+        {{^_disableNavbar}}
+        {{> partials/navbar}}
+        {{/_disableNavbar}}
+    </header>
+    <section id="global-messages"></section>
+    {{^_disableBreadcrumb}}
+    {{> partials/breadcrumb}}
+    {{/_disableBreadcrumb}}
+    {{^_disableToc}}
+    {{> partials/toc}}
+    {{/_disableToc}}
+    <main class="{{#_disableToc}}from-toc{{/_disableToc}} {{#_disableAffix}}to-affix{{/_disableAffix}} {{#_centerBody}}center{{/_centerBody}}">
+        {{!body}}
+    </main>
+    {{^_disableAffix}}
+    {{> partials/affix}}
+    {{/_disableAffix}}
+    {{^_disableFooter}}
+    <footer>
+        <div>H3VR Modding Wiki{{#_docsVersion}} ({{_docsVersion}}){{/_docsVersion}}</div>
+        {{#_buildInfo}}<div>Build info: {{_buildInfo}}</div>{{/_buildInfo}}
+    </footer>
+    {{/_disableFooter}}
+{{> partials/scripts}}
+</body>
+</html>
