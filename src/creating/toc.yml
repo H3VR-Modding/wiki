@@ -1,5 +1,8 @@
 - name: Making mods
   href: making_mods.md
+- name: MeatKit
+  href: meatkit/toc.yml
+  topicHref: meatkit/intro.md
 - name: Implementing
   href: implementing/toc.yml
   topicHref: implementing/the_basics.md
