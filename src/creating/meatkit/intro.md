@@ -18,7 +18,6 @@ As well as the following commonly used tools:
 * PrefabLoader, for loading in a prefab from an existing asset bundle
 * EnumPicker, for making large enum dropdowns searchable
 
-
 ### One click to build your Thunderstore package
 The time it takes to build and create a package for your mod can be significantly reduced using MeatKit's build pipeline. By defining build items for what you wish to include in your mod, MeatKit will handle creating the asset bundles and generating assets. By reducing the time it takes to build your mod, the overall time to test your changes goes down, resulting in a quicker workflow.
 

@@ -23,5 +23,7 @@ some kind of asset, like a custom scene, weapon, or just an asset bundle to stor
 ## Dependencies
 This is just a list of the Thunderstore packages your mod will depend on. Some build items require certain dependencies, like the `AtlasSceneBuildItem` requiring Atlas, so if you have a custom scene build item in your list, Atlas will appear automatically in the dependencies and you will not be able to remove it.
 
+You can also add your own here if you are making a more complex mod and need to set one up manually.
+
 ## Summary
-After rebranding your mod, you can continue to another guide that will explain how to create specific assets.
+After rebranding your package, you can [move on to creating your first mod](3_creating.md).

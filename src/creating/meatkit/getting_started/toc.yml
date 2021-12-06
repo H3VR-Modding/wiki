@@ -2,3 +2,5 @@
   href: 1_setup.md
 - name: "2. Build Settings"
   href: 2_build_settings.md
+- name: "3. Creating"
+  href: 3_creating.md
