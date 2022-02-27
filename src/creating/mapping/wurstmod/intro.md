@@ -1,0 +1,2 @@
+﻿# WurstMod
+(Documentation WIP)

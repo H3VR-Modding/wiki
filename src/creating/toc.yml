@@ -3,6 +3,9 @@
 - name: MeatKit
   href: meatkit/toc.yml
   topicHref: meatkit/intro.md
+- name: Mapping
+  href: mapping/toc.yml
+  topicHref: mapping/index.md
 - name: Implementing
   href: implementing/toc.yml
   topicHref: implementing/the_basics.md

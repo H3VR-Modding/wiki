@@ -17,18 +17,20 @@ When the Editor is finished installing, go ahead and open it. It will ask you to
 > If you have Unity Hub installed, you _cannot_ use it to open this version of the editor for the first time, it will just hang indefinitely on the splash screen. You must open 5.6.3p4 directly and register your license first before Hub will work.
 
 ### Downloading MeatKit
-1. Download the `Source code (zip)` from the [latest release](https://github.com/H3VR-Modding/MeatKit/releases/latest) of MeatKit, extract it, and open the project in Unity.
-2. With the project open, select `MeatKit > Scripts > Import Game` on the menu bar at the top and point it to your `h3vr/h3vr_Data/Managed` folder.
-3. After the game's scripts finish importing, navigate to the `Assets/MeatKit/` folder and right click > reimport the `Managed` folder.
+1. Visit the [MeatKit repository](https://github.com/H3VR-Modding/MeatKit) and download the current version by clicking the green 'Code' button and selecting 'Download ZIP'.
+2. Unzip MeatKit and open the folder with your installed version of Unity.
+3. With the project open, select `MeatKit > Scripts > Import Game` on the menu bar at the top and point it to your `h3vr/h3vr_Data/Managed` folder.
+4. After the game's scripts finish importing, navigate to the `Assets/MeatKit/` folder and right click > reimport the `Managed` folder.
 
 > [!WARNING]
 > If you are getting compile errors for missing the game's assembly and / or cannot see the MeatKit menu bar item, go to `Edit > Project Settings > Player` and in the `Other Settings` tab, clear the `Scripting Define Symbols` field and hit enter, then re-import the game's scripts.
 
+## Import Core Packages
+As part of the MeatKit download two core packages for Atlas and OtherLoader are includes containing their respective development tools and samples. Browse to your project's folder in file explorer and locate the 'Packages' folder contained within. Import one or both of the packages depending on what kind of modding you wish to do by using the `Assets > Import Package > Custom Package` menu item. 
+
 ## Confirm everything works
-There are already some sample scenes / prefabs and build items ready to go in
-the `Assets/Samples` folder. To prepare a build, first select `MeatKit > Build Window` from the menu bar at the top,
-then in the build window ensure you have a build profile selected. You won't need to modify anything to get these to work,
-however you will want to change the build action to 'copy to profile' and then select one of your r2mm profile folders.
+To confirm everything is setup correctly, open MeatKit build window (`MeatKit > Build Window`) and click the circle beside the build profile field. At least one of the sample profiles will show up, depending on which packages you imported, select one of them.
+You won't need to modify anything to get these to work, however you will want to change the build action to 'copy to profile' and then select one of your r2mm profile folders.
 
 Now click the big build button. When the build is finished, the 'last build time' in the build window will update to reflect the current time, and because of the selected build action, the mod has been inserted into the selected profile and is ready to test.
 
