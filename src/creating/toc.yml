@@ -6,6 +6,9 @@
 - name: Mapping
   href: mapping/toc.yml
   topicHref: mapping/index.md
+- name: Scripting
+  href: scripting/toc.yml
+  topicHref: scripting/intro.md
 - name: Implementing
   href: implementing/toc.yml
   topicHref: implementing/the_basics.md
