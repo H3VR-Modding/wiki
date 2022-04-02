@@ -6,3 +6,6 @@
 - name: Build Items
   href: build_items/toc.yml
   topicHref: build_items/index.md
+- name: Technical Info
+  href: technical/toc.yml
+  topicHref: technical/1_intro.md
