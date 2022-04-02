@@ -1,5 +1,6 @@
 ---
-title: Mod Formats uid: formats
+title: Mod Formats
+uid: formats
 ---
 
 Mods are packaged in a few different ways, partially due to what they rely on. However, **all mods**

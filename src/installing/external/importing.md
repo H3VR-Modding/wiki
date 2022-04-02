@@ -1,5 +1,6 @@
 ---
-title: Importing External Mods uid: importing
+title: Importing External Mods
+uid: importing
 ---
 
 Mods found outside r2modman need to be installed a certain way, which depends on their [mod format](xref:formats).

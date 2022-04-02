@@ -49,7 +49,7 @@ goes into making one.
 
 | Tutorial                                                                                                                                      | Notes                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [Atlas getting started guide](mapping/atlas/getting_started/1_requirements.md)                                                                | Simple guide for getting started with Atlas. (NOTE: Atlas does not yet support TNH)      |
+| [Atlas getting started guide](mapping/atlas/getting_started/1_requirements.md)                                                                | Simple guide for getting started with Atlas.                                             |
 | [Wurstmod - Setting Up Your Environment](https://github.com/WurstModders/WurstMod/wiki/Setting-up-your-environment)                           | A basic guide from Wurstmod on setting up your environment to make and export H3VR maps. |
 | [NunSuperior's Map Modding Tips](https://www.youtube.com/watch?v=zaIOFqZUVmI)                                                                 | NunSuperior's video is a very in-depth guide into almost every facet of making a map.    |
 | [NunSuperior's Modded Map Performance Tips](https://docs.google.com/document/d/1rMcIcLBcJBFqosD6wBnVdqipfZH8vOnf_vgNLhwZ7yQ/edit?usp=sharing) | A short but useful document to increase performance in maps.                             |

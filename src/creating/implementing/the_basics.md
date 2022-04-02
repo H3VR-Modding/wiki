@@ -154,7 +154,7 @@ Inspector window and browse for the correct name of the script and press enter.
 
 ### Item ID
 
-[Script example download](files/file_ID.zip). Script name: `FVRObject`
+[Script example download](https://github.com/H3VR-Modding/wiki/raw/main/src/creating/implementing/files/file_ID.zip). Script name: `FVRObject`
 
 The Item ID requires a few fields to be filled out:
 
@@ -171,7 +171,7 @@ Finally, if you want your item to spawn in TnH, enabled the `O Sple` property.
 
 ### Item Spawner ID
 
-[Script example download](files/file_ISID.zip). Script name: `ItemSpawnerID`
+[Script example download](https://github.com/H3VR-Modding/wiki/raw/main/src/creating/implementing/files/file_ISID.zip). Script name: `ItemSpawnerID`
 
 The ISID can be made through the assets tray `Create > ItemSpawner > ID`, and the icon is just an image that has its
 metadata changed to be a sprite (clicking on the icon and changing the type in the inspector).
@@ -186,7 +186,7 @@ the Item ID object just above. Drag your item id object into the `Main Object` f
 
 ### Recoil profile
 
-[Script example download](files/file_Recoil.zip). Script name: `FVRFireArmRecoilProfile`
+[Script example download](https://github.com/H3VR-Modding/wiki/raw/main/src/creating/implementing/files/file_Recoil.zip). Script name: `FVRFireArmRecoilProfile`
 
 This is just a bunch of number fields that determine your weapon's recoil.
 
@@ -204,7 +204,7 @@ Make sure that you place your recoil profile in both slots in your weapon's main
 
 ### Audio Profile
 
-[Script example download](files/file_Audio.zip). Script name: `FVRFirearmAudioSet`
+[Script example download](https://github.com/H3VR-Modding/wiki/raw/main/src/creating/implementing/files/file_Audio.zip). Script name: `FVRFirearmAudioSet`
 
 The Audio profile is exactly the same as the recoil profile, double check what your referenced weapon used by following
 the similar steps, taking pictures along the way. Make sure that you expand all clip sections and take note of which
