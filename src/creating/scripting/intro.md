@@ -25,7 +25,9 @@ screen, there is a window called the 'solution explorer'. Inside the solution ex
 see a tree of everything contained in the template, you will want to expand this tree so that all
 of the files are visible:
 
-![](/src/creating/scripting/img/solution_explorer.png)
+
+
+![](https://github.com/H3VR-Modding/wiki/blob/main/src/creating/scripting/img/solution_explorer.png?raw=true)
 
 The first place you need to change your plugin name is in the `PluginInfo.cs` file. Double click to
 open this file. Inside there are three lines with values you will want to change. The name of your
@@ -36,7 +38,7 @@ to be permanent. And the version is obviously the version of your mod. When you 
 mod you should increment this version number following the [semantic versioning](https://semver.org/)
 format.
 
-![](/src/creating/scripting/img/plugin_info.png)
+![](https://github.com/H3VR-Modding/wiki/blob/main/src/creating/scripting/img/plugin_info.png?raw=true)
 
 The second place where you need to change your plugin name will be on the line with the first arrow
 which just reads `Plugin`. Right click on this item and select 'Rename'. The name entered here will
