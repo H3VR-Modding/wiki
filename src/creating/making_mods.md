@@ -40,10 +40,12 @@ goes into making one.
 
 ## Custom Code
 
-| Tutorial                                                                                                   | Notes                                                                                                                   |
-|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [BepInEx - Writing A Basic Plugin](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html) | BepInEx is the standard on injecting code into H3VR.                                                                    |
-| [Harmony2.0 - Introduction](https://harmony.pardeike.net/articles/intro.html)                              | Harmony is an exceptionally useful lightweight plugin to allow modification of behaviour of already-existing H3VR code. |
+| Tutorial                                                                                                   | Notes                                                                                   |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| [An introduction to scripting](scripting/intro.md)                                                         | Introductory series to setting up and creating code plugins for H3VR.                   |
+| [Unity 5.6 Documentation](https://docs.unity3d.com/560/Documentation/Manual/index.html)                    | As all BepInEx plugins are just MonoBehaviours, all of the Unity documentation applies. |
+| [BepInEx - Writing A Basic Plugin](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html) | BepInEx is the mod loader used for all H3VR mods.                                       |
+| [Harmony2.0 - Introduction](https://harmony.pardeike.net/articles/intro.html)                              | Harmony is a patching framework used to hook and modify existing code in-game.          |
 
 ## Custom Maps
 

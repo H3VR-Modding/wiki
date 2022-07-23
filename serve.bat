@@ -1,3 +1,5 @@
+@echo off
+
 cd /d %~dp0
 
 rem Make sure we have the DocFX binaries downloaded

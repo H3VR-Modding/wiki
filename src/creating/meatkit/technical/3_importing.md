@@ -83,4 +83,4 @@ want to use code from the game to point to the new name instead so it can find t
 If you have an assembly that is neither the game's, nor references the game's, it requires no importing
 and can be placed in your project as-is.
 
-Next article: Exporting bundles (WIP)
+Next article: [Build pipeline](./4_build_pipeline.md).

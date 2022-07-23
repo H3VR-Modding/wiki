@@ -4,3 +4,7 @@
   href: 2_formats.md
 - name: "3. Importing"
   href: 3_importing.md
+- name: "4. Build Pipeline"
+  href: 4_build_pipeline.md
+- name: "5. Exporting"
+  href: 5_exporting.md
