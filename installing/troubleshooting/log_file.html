@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BepInEx Log</title>
+    <meta name="title" content="The BepInEx Log">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The BepInEx Log">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../static/styles/template.css">
+    <link rel="stylesheet" href="../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../getting_started.html">Getting Started</a>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../troubleshooting/index.html" class="active">Troubleshooting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../troubleshooting/index.html">Start Here</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/log_file.html" class="active">Log File</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/wurstmod.html">WurstMod &amp; Maps</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../external/importing.html">External Mods</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../external/importing.html">Importing</a>
+                </li>
+                <li>
+                    <a href="../external/manual.html">Manual Installation</a>
+                </li>
+                <li>
+                    <a href="../external/packaging.html">Packaging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../specific_mod_installation.html">Specific Mod Installation</a>
+        </li>
+        <li>
+            <a href="../starting_fresh.html">Cleaning your H3VR Folder</a>
+        </li>
+        <li>
+            <a href="../mod_formats.html">Mod Formats</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+<h1 id="what-is-the-bepinex-log">What is the BepInEx Log</h1>
+
+<p>The BepInEx log is essentially just a list of messages from the game and plugins, a log of what has happened since you
+started the game. When you run the game modded a console window appears along side it and shows the log in real-time,
+but the messages are also written to a file in your profile folder so the messages can be retreived after the game is
+closed (usually for the purposes of troubleshooting an issue).</p>
+<p>Some mods may also implement in-game features using the log, such
+as <a href="https://github.com/H3VR-Modding/Sodalite">Sodalite</a>'s in-game log panel which can be accessed from the wrist menu at
+any time.</p>
+<h2 id="finding-your-log-file">Finding your log file</h2>
+<ol>
+<li><p>Open r2modman and go to the <code>Settings</code> section. Open your profile folder by clicking the following button:</p>
+<p><img src="../images/r2modman/settings/browse_profile_folder.png" alt="image"></p>
+</li>
+<li><p>After clicking on the settings entry your current r2mm profile folder will be opened. Inside might look something
+like this:</p>
+<pre><code class="lang-text">[Current profile name]/
+    BepInEx/
+    mods.yml
+    ...
+</code></pre>
+</li>
+<li><p>Open the folder named <code>BepInEx</code>.</p>
+</li>
+<li><p>The file named <code>LogOutput.log</code> is your log file, it can be opened with any plain text editor, such as Notepad.</p>
+</li>
+</ol>
+<h2 id="how-to-read-your-log-file">How to read your log file</h2>
+<p>Here's a quick breakdown of what you might see in your log file with some annotations. First we'll start with a simple
+info message. These are purely informational and help establish some context for <em>when</em> something goes wrong as it's
+helpful to know what comes before and after errors.</p>
+<pre><code> ⬐ This first column indicates the severity of the message. Info / Warning / Error
+[Info   :      Deli] Deli bootstrap has begun! Version 0.4.2 (main @ 4952ff9)
+               ⬑ The second column tells you where this message came from.
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Sometimes log messages might show up as coming from the &quot;Unity Log&quot;. Most of the time these messages come from the game itself, but in rare cases it might be a plugin using the game's Unity logger instead of the BepInEx provided logger.</p>
+</div>
+<p>Next, we'll take a look at some warnings. Warnings can be a bit ambiguous as they sometimes are important and sometimes
+can be ignored. For example, most warnings from <code>HarmonyX</code> can be ignored as they are intended for the mod developer and
+not the end user. With any other kind of warning you will have to read the message to see if it may be important.</p>
+<pre><code>[Warning:  HarmonyX] AccessTools.Property: Could not find property ...
+           ⬑ Warning is from Harmony, safe to ignore.
+</code></pre>
+<p>Finally we have errors. These are what you are looking for and are very easy to spot. They come in two kinds: the
+expected errors, i.e. errors that a mod itself logs when it detects something is wrong; and the 'exceptions' that occur
+when something completely unexpected happens.</p>
+<p>The expected errors can usually be categorized by being only one single line, in this example Deli has detected that
+some mod &quot;X&quot; which is installed also needs &quot;Y&quot; to function, but it is missing! These expected errors are usually very
+easy to read and can often be solved just as easily as they tell you exactly what is wrong.</p>
+<pre><code>[Error : Deli] X depends on Y 2.0.0, but it is not installed!
+</code></pre>
+<p>Next we have the unexpected errors, the exceptions. These are not usually errors you solve by yourself and will be much
+longer and contain almost entirely information exclusively for the mod author. They will still contain a message on the
+first line but it may be of no use to you, and the rest just tells the author where in the code this happens. If you see
+one of these, chances are you will need to ask for assistance and share your log file through Discord.</p>
+<pre><code>[Error  : Unity Log] ArgumentException: Undefined target method for patch method ...
+Stack trace:
+HarmonyLib.PatchClassProcessor.PatchWithAttributes (System.Reflection.MethodBase&amp; lastOriginal)
+HarmonyLib.PatchClassProcessor.Patch ()
+Rethrow as HarmonyException: Patching exception in method null
+HarmonyLib.PatchClassProcessor.ReportException (System.Exception exception, System.Reflection.MethodBase original)
+HarmonyLib.PatchClassProcessor.Patch ()
+HarmonyLib.Harmony.PatchAll (System.Type type)
+HarmonyLib.Harmony.CreateAndPatchAll (System.Type type, System.String harmonyInstanceId)
+TNHTweaker.TNHTweaker.Awake ()
+</code></pre>
+<h2 id="sharing-it-over-discord">Sharing It Over Discord</h2>
+<p>If you are asked to share your log file to receive assistance, sharing it via Discord is quite easy.</p>
+<ol>
+<li><p>Go to the <code>Settings</code> section of r2modman</p>
+</li>
+<li><p>Search for &quot;log&quot;, and select &quot;Copy LogOutput contents to clipboard&quot;.</p>
+<p><img src="../images/r2modman/settings/copy_LogOutput.png" alt="copy"></p>
+</li>
+<li><p>Then, paste the log output into Discord by right clicking on the chat box and selecting 'paste', or with the chat box
+focused use <code>Ctrl + V</code></p>
+</li>
+<li><p>A message will appear asking you to upload a file instead, insert a caption describing the issue if you haven't
+already, then click upload.</p>
+<p><img src="../images/Discord/large_message.png" alt="upload"></p>
+</li>
+<li><p>Hopefully someone will look at your log soon and provide a fix or forward the issue to whoever needs to see it.</p>
+</li>
+</ol>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/installing/troubleshooting/log_file.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../static/scripts/main.js"></script>
+</body>
+</html>

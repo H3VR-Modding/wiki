@@ -1,0 +1,2105 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/src",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_advanced/engraving.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_advanced/engraving.html",
+          "hash": "Wsmzhu95FCedrClNswfXyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_advanced/images/engrave_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_advanced/images/engrave_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_advanced/images/engrave_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_advanced/images/engrave_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_advanced/images/engrave_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_advanced/images/engrave_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_advanced/images/stamp_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_advanced/images/stamp_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_advanced/images/stamp_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_advanced/images/stamp_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_advanced/images/stamp_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_advanced/images/stamp_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_advanced/stamp.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_advanced/stamp.html",
+          "hash": "cC5dvPSv3nd99IPw946E2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/animated.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/animated.html",
+          "hash": "55BRLAiQCfE8NH2uFnwFkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/animated_hotmod.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/animated_hotmod.html",
+          "hash": "qcAZSNBbQxIVybfiSx9MnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/animated_unity.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/animated_unity.html",
+          "hash": "i6WgRSLYCn0JiQiRaaJgng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/emiss_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/emiss_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/emiss_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/emiss_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/emiss_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/emiss_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/export_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/export_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/export_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/export_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/export_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/export_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/export_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/export_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/export_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/export_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_4_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_4_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/hotmod/hotmod_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/incan_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/incan_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/incan_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/incan_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/incan_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/incan_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/sp_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/sp_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/sp_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/sp_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/sp_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/sp_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_13.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_14.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_15.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_15.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_16.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_16.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_17.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_17.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_18.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_18.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_19.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_19.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_20.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_20.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_21.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_21.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_22.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_22.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_23.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_23.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_24.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_24.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_25.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_25.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_26.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_26.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_27.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_27.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_oof.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_animated/images/unity/unity_oof.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/basics_1_tools.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/basics_1_tools.html",
+          "hash": "nVtv+AHEWrAZoypKVZRUPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/basics_2_meshes.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/basics_2_meshes.html",
+          "hash": "ghQRsR2o9qr4RGRGhPnQ5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/basics_3_blender.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/basics_3_blender.html",
+          "hash": "zHa5oSCIWQlI25FBLnTNvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/basics_4_painting.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/basics_4_painting.html",
+          "hash": "qWpsyq6SCfrEmE8qCh33Nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/basics_5_exporting.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/basics_5_exporting.html",
+          "hash": "VU3GYs3bxHS2KufegtS56w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/basics_6_hotmods.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/basics_6_hotmods.html",
+          "hash": "xqy+3UdrgQ+By4ss8E3zKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/extras.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/extras.html",
+          "hash": "SXALQlmit7EPDH5XU+XpBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/3_blend_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/3_blend_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/3_blend_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/3_blend_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/4_exa_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/4_exa_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/4_exa_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/4_exa_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/4_exa_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/4_exa_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/5_popup_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/5_popup_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/6_export_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/6_export_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/6_export_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/6_export_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/skin_making_basics/images/6_export_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/skin_making_basics/images/6_export_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/asset_replacement/tnh_music/hold_music.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/asset_replacement/tnh_music/hold_music.html",
+          "hash": "o5dyj6TKlUG/OZ5ogmtD0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_13.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_14.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_15.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_15.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/asset_replacement/tnh_music/images/tnhm_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/asset_replacement/tnh_music/images/tnhm_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/delimods.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/delimods.html",
+          "hash": "pmrAY33t9D7+hljFNZov9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/implementing/grenades.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/implementing/grenades.html",
+          "hash": "qZxc+2mUjoRjDdnU/HcwUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/AssetStudioGUI/list.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/AssetStudioGUI/list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/AssetStudioGUI/selected.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/AssetStudioGUI/selected.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/UnityEditor/alloy_channel.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/UnityEditor/alloy_channel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/UnityEditor/alloy_core.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/UnityEditor/alloy_core.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/UnityEditor/assetbundle_browser.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/UnityEditor/assetbundle_browser.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/UnityEditor/assetbundle_browser_open.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/UnityEditor/assetbundle_browser_open.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/UnityEditor/assetbundle_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/UnityEditor/assetbundle_select.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/UnityEditor/prefab.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/UnityEditor/prefab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/UnityEditor/scripts/pre-attached_attachment.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/UnityEditor/scripts/pre-attached_attachment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/images/explorer/EFT_bundle.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/images/explorer/EFT_bundle.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/implementing/modul/creation.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/implementing/modul/creation.html",
+          "hash": "yAB8gDNH827f9l45e30+XQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/implementing/modul/id_duping.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/implementing/modul/id_duping.html",
+          "hash": "efUS9Vr5OiHFTViniG5x+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/modul/images/UnityEditor/dustcover/child.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/modul/images/UnityEditor/dustcover/child.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/modul/images/UnityEditor/dustcover/mount.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/modul/images/UnityEditor/dustcover/mount.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/modul/images/UnityEditor/dustcover/preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/modul/images/UnityEditor/dustcover/preview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/modul/images/UnityEditor/hierarchy/attachment_list.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/modul/images/UnityEditor/hierarchy/attachment_list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/modul/images/UnityEditor/hierarchy/mount_type.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/modul/images/UnityEditor/hierarchy/mount_type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/modul/images/UnityEditor/id_duping_infographic.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/modul/images/UnityEditor/id_duping_infographic.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/modul/images/UnityEditor/scripts/prefab_loader.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/modul/images/UnityEditor/scripts/prefab_loader.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/implementing/modul/images/explorer/ModulAK.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/implementing/modul/images/explorer/ModulAK.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/implementing/pre-attached_attachments.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/implementing/pre-attached_attachments.html",
+          "hash": "ioDfPEM+HM/UH8lCY/wofw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/implementing/ripping_eft_assets.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/implementing/ripping_eft_assets.html",
+          "hash": "/UqQPRr3dlTq9avdQLZB5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/implementing/the_basics.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/implementing/the_basics.html",
+          "hash": "LeVXekA0CRyNc5KGvm9AWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/making_mods.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/making_mods.html",
+          "hash": "CBYaWOnmK+S2LCVgOt3H2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/mapping/atlas/getting_started/1_requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/mapping/atlas/getting_started/1_requirements.html",
+          "hash": "4dvQoXaGWSH+4j0dR6Tixw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/mapping/atlas/getting_started/2_the_basics.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/mapping/atlas/getting_started/2_the_basics.html",
+          "hash": "B/j/XO5X1ooHJLA8QyjWkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/mapping/atlas/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/mapping/atlas/intro.html",
+          "hash": "cAJ0Dk/MH1M6Mkd8bGY6mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/mapping/atlas/tutorials/doors_windows.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/mapping/atlas/tutorials/doors_windows.html",
+          "hash": "sy/7RYw8gWkp0508N2sTMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/mapping/atlas/tutorials/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/mapping/atlas/tutorials/index.html",
+          "hash": "Yphb8sh3LBCdyxcLtkBOAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/mapping/atlas/tutorials/spawning_sosigs.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/mapping/atlas/tutorials/spawning_sosigs.html",
+          "hash": "A4fh9YT7866vZqUErQRS/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/mapping/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/mapping/index.html",
+          "hash": "q97TiIMVb/q4R5nyuA7GnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/mapping/wurstmod/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/mapping/wurstmod/intro.html",
+          "hash": "Ug1kH0d5B+krOUI1Q/AG+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/build_items/atlas_scene.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/build_items/atlas_scene.html",
+          "hash": "Dz/aFDf80IiN+x7X0EY5oQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/build_items/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/build_items/index.html",
+          "hash": "BD7TH0ftTdF2n2lCptye3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/build_items/preload_assets.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/build_items/preload_assets.html",
+          "hash": "PPCW+vUFMaRPsSvnuMlCeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/build_items/store_files.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/build_items/store_files.html",
+          "hash": "Gnh7uAgN8FI0PwwTHDblJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/getting_started/1_setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/getting_started/1_setup.html",
+          "hash": "oX5nFCDunhaX+KRWm2aXIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/getting_started/2_build_profile.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/getting_started/2_build_profile.html",
+          "hash": "IV5hpmEphX6lv8sTpi+1kA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/getting_started/3_creating.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/getting_started/3_creating.html",
+          "hash": "XtCptdA0WpwXUt9g5wpJQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/intro.html",
+          "hash": "kuBlmscRY8lri+c3wVeEzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/technical/1_intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/technical/1_intro.html",
+          "hash": "8jynEtM51IEUqNkFntnvLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/technical/2_formats.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/technical/2_formats.html",
+          "hash": "kbeIxD4Ps1OU68JceDT53Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/technical/3_importing.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/technical/3_importing.html",
+          "hash": "2jIGwEK6tdSVdZ0kJoCK/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/technical/4_build_pipeline.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/technical/4_build_pipeline.html",
+          "hash": "ww5jsyIFhnYBekVPcD1Qyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/meatkit/technical/5_exporting.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/meatkit/technical/5_exporting.html",
+          "hash": "u1eLJcpcv0EZ1NjI6sKSxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/scripting/debugging.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/scripting/debugging.html",
+          "hash": "UOeFg6TsdmDHMAGTmtJWeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/scripting/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/scripting/intro.html",
+          "hash": "GUnaetc4/tjp0P2SE+mgRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/stratumdeps.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/stratumdeps.html",
+          "hash": "bMxcXUPmwyDuH1TnxkNLdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/thunderstore/creating.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/thunderstore/creating.html",
+          "hash": "B8q7LooV7hvSXTdDHcT4hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/thunderstore/images/TSGen/dependencies.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/thunderstore/images/TSGen/dependencies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/thunderstore/images/TSGen/finish.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/thunderstore/images/TSGen/finish.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/thunderstore/images/TSGen/run.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/thunderstore/images/TSGen/run.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/thunderstore/images/Thunderstore/dependencies.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/thunderstore/images/Thunderstore/dependencies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "creating/thunderstore/images/Thunderstore/website_url.png",
+      "output": {
+        "resource": {
+          "relative_path": "creating/thunderstore/images/Thunderstore/website_url.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/thunderstore/modpacks.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/thunderstore/modpacks.html",
+          "hash": "Ag8NqC7CDDaUbos6AJh4aQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/thunderstore/tspackaging.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/thunderstore/tspackaging.html",
+          "hash": "Gz8x2GnCZccYksaPsCdGSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "creating/thunderstore/updating.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/thunderstore/updating.html",
+          "hash": "CrQy7/SxKZPjeOXBSzZltA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "creating/thunderstore/uploading.md",
+      "output": {
+        ".html": {
+          "relative_path": "creating/thunderstore/uploading.html",
+          "hash": "mlkjVBxeAixsPC0HMtGzNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "creating/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "creating/toc.html",
+          "hash": "fYyzRVUMq0bDcg41gYwqpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Smol_SpannerDog.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Smol_SpannerDog.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "PlULVTtBRFPa0ZPAB1EHeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/external/importing.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/external/importing.html",
+          "hash": "V0OwyUmnOfX/Wg4AgqUxPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/external/manual.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/external/manual.html",
+          "hash": "xTGa2V2E2WsD633B0Imcbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/external/packaging.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/external/packaging.html",
+          "hash": "mdlsGuwgYkq7yFYelRwQhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/getting_started.html",
+          "hash": "tqfz3A7M9pFr305FI0YDFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/Discord/large_message.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/Discord/large_message.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/Steam/local_files.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/Steam/local_files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/Steam/properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/Steam/properties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/explorer/all_but_h3vr_Data.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/explorer/all_but_h3vr_Data.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/r2modman/WurstMod.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/r2modman/WurstMod.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/r2modman/config_editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/r2modman/config_editor.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/r2modman/greeted.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/r2modman/greeted.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/r2modman/help.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/r2modman/help.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/r2modman/settings/browse_profile_folder.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/r2modman/settings/browse_profile_folder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/r2modman/settings/copy_LogOutput.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/r2modman/settings/copy_LogOutput.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "installing/images/r2modman/settings/import_local_mod.png",
+      "output": {
+        "resource": {
+          "relative_path": "installing/images/r2modman/settings/import_local_mod.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/mod_formats.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/mod_formats.html",
+          "hash": "m9cX7rydeFWcgCE/jHbgdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/specific_mod_installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/specific_mod_installation.html",
+          "hash": "j+vNSoR9MKWATC6Ivt6I/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/starting_fresh.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/starting_fresh.html",
+          "hash": "VM6fNl5otTrCVcav3MBL1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "installing/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "installing/toc.html",
+          "hash": "cQRJf18A9QKDntl0SdMLmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/troubleshooting/getting_assistance.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/troubleshooting/getting_assistance.html",
+          "hash": "dhv5QLWoIJtkZGvPuVdV1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/troubleshooting/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/troubleshooting/index.html",
+          "hash": "xaosOjjo5Hl+RHkR50+LTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/troubleshooting/log_file.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/troubleshooting/log_file.html",
+          "hash": "QrJ2CyC/HxjpgNFKV6aHqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "installing/troubleshooting/wurstmod.md",
+      "output": {
+        ".html": {
+          "relative_path": "installing/troubleshooting/wurstmod.html",
+          "hash": "jdf+nzdc+uuXdPniFe+qYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "BbyM3MycPV/rVd9x09QWtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 62,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

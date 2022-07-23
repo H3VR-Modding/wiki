@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting for WurstMod</title>
+    <meta name="title" content="Troubleshooting for WurstMod">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Troubleshooting for WurstMod">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../static/styles/template.css">
+    <link rel="stylesheet" href="../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../getting_started.html">Getting Started</a>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../troubleshooting/index.html" class="active">Troubleshooting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../troubleshooting/index.html">Start Here</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/log_file.html">Log File</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/wurstmod.html" class="active">WurstMod &amp; Maps</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../external/importing.html">External Mods</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../external/importing.html">Importing</a>
+                </li>
+                <li>
+                    <a href="../external/manual.html">Manual Installation</a>
+                </li>
+                <li>
+                    <a href="../external/packaging.html">Packaging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../specific_mod_installation.html">Specific Mod Installation</a>
+        </li>
+        <li>
+            <a href="../starting_fresh.html">Cleaning your H3VR Folder</a>
+        </li>
+        <li>
+            <a href="../mod_formats.html">Mod Formats</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+<h1 id="troubleshooting-wurstmod">Troubleshooting Wurstmod</h1>
+
+<p>Listed below are common errors / mistakes for WurstMod and custom maps.</p>
+<h2 id="i-have-installed-a-custom-map-but-i-dont-see-it-in-game">I have installed a custom map but I don't see it in-game.</h2>
+<p>Depending on the type of the map it can be found in two different places:</p>
+<p>If it is a custom Take and Hold level it will be located on the vanilla level selection panel in the Take and Hold
+Lobby (the room where you eat the hotdog to start a game of TNH). The panel between the settings and the leaderboard
+will have arrows on it, cycle through until you reach the custom level and eat the hotdog as normal.</p>
+<p>Custom sandbox scenes will be located in the main menu directly behind you when you load into the game. Just like with
+the other vanilla scenes you must point at it and pull the trigger to select it, then head over to the panel and select
+load just as you would with a normal vanilla scene.</p>
+<h1 id="getting-assistance">Getting Assistance</h1>
+<p>If this article did not help to solve your issue then your next step is to ask for help in the <code>#modding-help</code> channel
+of the <a href="https://discord.gg/gnXA9Qs4QM">main H3VR server</a>. Be sure to include your <a href="log_file.html">BepInEx log</a> and as much
+information about your issue as you can.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/installing/troubleshooting/wurstmod.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../static/scripts/main.js"></script>
+</body>
+</html>

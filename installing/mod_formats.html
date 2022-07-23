@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod Formats</title>
+    <meta name="title" content="Mod Formats">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mod Formats">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/styles/template.css">
+    <link rel="stylesheet" href="../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+    <section class="breadcrumb">
+                <span>
+            <a href="mod_formats.html">Mod Formats</a>
+        </span>
+    </section>
+    <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="getting_started.html">Getting Started</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="troubleshooting/index.html">Troubleshooting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="troubleshooting/index.html">Start Here</a>
+                </li>
+                <li>
+                    <a href="troubleshooting/log_file.html">Log File</a>
+                </li>
+                <li>
+                    <a href="troubleshooting/wurstmod.html">WurstMod &amp; Maps</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="external/importing.html">External Mods</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="external/importing.html">Importing</a>
+                </li>
+                <li>
+                    <a href="external/manual.html">Manual Installation</a>
+                </li>
+                <li>
+                    <a href="external/packaging.html">Packaging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="specific_mod_installation.html">Specific Mod Installation</a>
+        </li>
+        <li>
+            <a href="starting_fresh.html">Cleaning your H3VR Folder</a>
+        </li>
+        <li>
+            <a href="mod_formats.html" class="active">Mod Formats</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<p>Mods are packaged in a few different ways, partially due to what they rely on. However, <strong>all mods</strong>
+require <a href="https://h3vr.thunderstore.io/package/BepInEx/BepInExPack_H3VR/">BepInEx</a>.</p>
+<h2 id="r2modman-packages">r2modman Packages</h2>
+<p>File Extension: <code>zip</code></p>
+<p>r2modman packages encompass all mods that can be used within r2modman. They may contain the formats below as well, but
+aren't required to.</p>
+<h3 id="thunderstore-packages">Thunderstore Packages</h3>
+<p>Thunderstore packages are a subset of r2modman packages that contain additional metadata. All mods found
+on <a href="https://h3vr.thunderstore.io">Thunderstore</a> are Thunderstore packages. Much like how all squares are rectangles but
+not all rectangles are squares, all Thunderstore packages are r2modman packages but not all r2modman packages are
+Thunderstore packages.</p>
+<h2 id="bepinex-plugins">BepInEx Plugins</h2>
+<p>File Extension: <code>dll</code></p>
+<p>BepInEx plugins have no additional requirements.</p>
+<h2 id="deli-mods">Deli Mods</h2>
+<p>File Extension: <code>deli</code></p>
+<p>Deli mods require <a href="https://h3vr.thunderstore.io/package/DeliCollective/Deli/">Deli 0.4.1</a>, but they may also rely on
+other mods. For instance, Deli mods that contain custom items or ammo also
+require <a href="https://h3vr.thunderstore.io/package/devyndamonster/OtherLoader/">OtherLoader</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>File extensions are disabled by default in File Explorer. In that case, uncommon file extensions will appear under <code>File Type</code> column.</p>
+</div>
+<h2 id="sideloader-mods">Sideloader Mods</h2>
+<p>File Extension: <code>hotmod</code> or <code>h3mod</code></p>
+<p>Sideloader mods require <a href="https://h3vr.thunderstore.io/package/denikson/H3VR_Sideloader/">Sideloader</a>, which in turn
+requires <a href="https://h3vr.thunderstore.io/package/bbepis/XUnity_ResourceRedirector/">XUnity.ResourceRedirector</a>. These mods
+mostly replace assets, such as audio and textures, but can add items.</p>
+<h2 id="asset-bundles">Asset Bundles</h2>
+<p>File Extension: none (shows as the <code>FILE</code> file type)</p>
+<p>Asset bundles are loaded through <a href="https://h3vr.thunderstore.io/package/devyndamonster/OtherLoader/">OtherLoader</a>'s
+legacy loading system. These bundles are almost always a firearm, and are often accompanied with a <code>.manifest</code> file.
+This <code>.manifest</code> file is not needed for load the mod.</p>
+<h2 id="tnh-music">TnH Music</h2>
+<p>File Extension: <code>.bank</code></p>
+<p>TnH Music requires <a href="https://h3vr.thunderstore.io/package/Potatoes/Potatoes_TNH_BGM_Loader/">PTNHBGML</a>.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/installing/mod_formats.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../static/scripts/template.js"></script>
+<script type="text/javascript" src="../static/scripts/main.js"></script>
+</body>
+</html>

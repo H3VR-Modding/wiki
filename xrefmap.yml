@@ -1,0 +1,9 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: formats
+  name: Mod Formats
+  href: installing/mod_formats.html
+- uid: importing
+  name: Importing External Mods
+  href: installing/external/importing.html

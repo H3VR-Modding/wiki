@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3VR Modding Wiki</title>
+    <meta name="title" content="H3VR Modding Wiki">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="H3VR Modding Wiki">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="static/styles/template.css">
+    <link rel="stylesheet" href="static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <main class="from-toc  ">
+<h1 id="h3vr-modding-wiki">H3VR Modding Wiki</h1>
+
+<p>Welcome to the H3VR Modding Wiki.</p>
+<p>If you are a new user, check out the <a href="installing/getting_started.html">Getting Started</a> page.</p>
+<p>Having problems? We have a <a href="installing/troubleshooting/index.html">troubleshooting section</a>.</p>
+<p>Looking to mod? The <a href="creating/making_mods.html">Making Mods</a> page might have what you are looking for.</p>
+<p>Something missing or you want to add a page? Check
+the <a href="https://github.com/H3VR-Modding/wiki/blob/main/.github/contributing/contributing.md">Contributing</a> document rules.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/index.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="static/scripts/template.js"></script>
+<script type="text/javascript" src="static/scripts/main.js"></script>
+</body>
+</html>
