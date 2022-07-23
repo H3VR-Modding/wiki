@@ -3,7 +3,7 @@ This is the first article in a series which will guide you through the basics of
 In this part, you will install Unity, download MeatKit, and confirm everything works by building the sample mod.
 
 ## Setup
-To use MeatKit, you must have a copy of the game and [Unity Editor 5.6.3p4](https://unity3d.com/unity/qa/patch-releases/5.6.3p4) installed. Any 5.6.3 will work, however p4 is the exact version the game uses.
+To use MeatKit, you must have a copy of the game and [Unity Editor 5.6.3p4](https://unity3d.com/unity/qa/patch-releases/5.6.3p4) installed. You _must_ use 5.6.3p4 exactly.
 
 ### Installing Unity
 If you do not have Unity 5.6.3p4 installed, you must go and [download it from their archive](https://unity3d.com/unity/qa/patch-releases/5.6.3p4), select the `Download Assistant` option. Run the installer when it finishes downloading and let everything install with the default options.
