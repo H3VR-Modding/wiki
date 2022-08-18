@@ -2,29 +2,7 @@
 title: Making Mods
 ---
 
-Each mod is created differently and because of that each have their own way of making them.
-
-In every case, it is recommended to open a mod that you want to emulate (if you want to make a skin, download a skin
-mod) using 7zip or winrar (`.hotmod`, `.h3mod`, and `.deli` files are just `.zip` files in disguise) and seeing what
-goes into making one.
-
-## Packaging Mods
-
-| Tutorial                                                                                                                                 | Notes                                                                                                         |
-|------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [gamernayr's packing Deli mods](delimods.md)                                                                                             | How to properly pack mods for the Deli file structure.                                                        |
-| [Devyndamonster's Otherloader on-demand loading](https://github.com/devyndamonster/OtherLoader/wiki/Building-Mods-For-On-Demand-Loading) | The guide shows you how to use on-demand loading for the new version of otherloader. Not required.            |
-| [Ash's Mason quick-start guide](https://h3vr-modding.github.io/Mason/getting_started/index.html)                                         | The basics on how to package a mod for Stratum/Mason.                                                         |
-| [gamernayr's Making Modpacks](thunderstore/modpacks.md)                                                                                  | Got a list a mods you would like to share with the community? Take a look at this guide for making a modpack. |
-| [Stratum GUIDs And Loaders](stratumdeps.md)                                                                                              | A list of Stratum loaders and their respective GUIDs.                                                         |
-| [Packaging Mods For Thunderstore](thunderstore/uploading.md)                                                                             | A step-by-step tutorial on how to package your mod for Thunderstore.                                          |
-
-## Custom Skins/Sounds
-
-| Tutorial                                                                                   | Notes                                                                                                                                         |
-|--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Sora101TD's Skin Making tutorial](asset_replacement/skin_making_basics/basics_1_tools.md) | This guide is useful for making sound replacements to, or changing the assets of any other object in H3VR such as the textures for clay pots. |
-| [Sora101TD's Custom TNH Hold Music tutorial](asset_replacement/tnh_music/hold_music.md)    | The best (only) take and hold music tutorial.                                                                                                 |
+Many mods are created differently, so on this page you will find links to articles and guides for how to make mods of each type.
 
 ## Custom Objects
 
@@ -49,15 +27,34 @@ goes into making one.
 
 ## Custom Maps
 
-| Tutorial                                                                                                                                      | Notes                                                                                    |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [Atlas getting started guide](mapping/atlas/getting_started/1_requirements.md)                                                                | Simple guide for getting started with Atlas.                                             |
-| [Wurstmod - Setting Up Your Environment](https://github.com/WurstModders/WurstMod/wiki/Setting-up-your-environment)                           | A basic guide from Wurstmod on setting up your environment to make and export H3VR maps. |
-| [NunSuperior's Map Modding Tips](https://www.youtube.com/watch?v=zaIOFqZUVmI)                                                                 | NunSuperior's video is a very in-depth guide into almost every facet of making a map.    |
-| [NunSuperior's Modded Map Performance Tips](https://docs.google.com/document/d/1rMcIcLBcJBFqosD6wBnVdqipfZH8vOnf_vgNLhwZ7yQ/edit?usp=sharing) | A short but useful document to increase performance in maps.                             |
+| Tutorial                                                                                                                                      | Notes                                                                                      |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| (Recommended) [Atlas getting started guide](mapping/atlas/getting_started/1_requirements.md)                                                  | Simple guide for getting started with Atlas, the next generation of mapping tools for H3VR |
+| (Legacy) [Wurstmod - Setting Up Your Environment](https://github.com/WurstModders/WurstMod/wiki/Setting-up-your-environment)                  | A basic guide from Wurstmod on setting up your environment to make and export H3VR maps.   |
+| [NunSuperior's Map Modding Tips](https://www.youtube.com/watch?v=zaIOFqZUVmI)                                                                 | NunSuperior's video is a very in-depth guide into almost every facet of making a map.      |
+| [NunSuperior's Modded Map Performance Tips](https://docs.google.com/document/d/1rMcIcLBcJBFqosD6wBnVdqipfZH8vOnf_vgNLhwZ7yQ/edit?usp=sharing) | A short but useful document to increase performance in maps.                               |
+
+## Custom Skins/Sounds
+
+| Tutorial                                                                                   | Notes                                                                                                                                         |
+|--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Sora101TD's Skin Making tutorial](asset_replacement/skin_making_basics/basics_1_tools.md) | This guide is useful for making sound replacements to, or changing the assets of any other object in H3VR such as the textures for clay pots. |
+| [Sora101TD's Custom TNH Hold Music tutorial](asset_replacement/tnh_music/hold_music.md)    | The best (only) take and hold music tutorial.                                                                                                 |
 
 ## Miscellaneous
 
 | Tutorial                                                                                                                                   | Notes                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [Devyndamonster's Making A Custom Character tutorial](https://github.com/devyndamonster/TakeAndHoldTweaker/wiki/Making-A-Custom-Character) | The original tutorial for making custom characters. Recommended as a starting point, covers most subjects. |
+
+## Packaging Mods (LEGACY)
+These articles are considered legacy as they refer to processes which are no longer current.
+
+| Tutorial                                                                                                                                 | Notes                                                                                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| [gamernayr's packing Deli mods](delimods.md)                                                                                             | How to properly pack mods for the Deli file structure.                                                        |
+| [Devyndamonster's Otherloader on-demand loading](https://github.com/devyndamonster/OtherLoader/wiki/Building-Mods-For-On-Demand-Loading) | The guide shows you how to use on-demand loading for the new version of otherloader. Not required.            |
+| [Ash's Mason quick-start guide](https://h3vr-modding.github.io/Mason/getting_started/index.html)                                         | The basics on how to package a mod for Stratum/Mason.                                                         |
+| [gamernayr's Making Modpacks](thunderstore/modpacks.md)                                                                                  | Got a list a mods you would like to share with the community? Take a look at this guide for making a modpack. |
+| [Stratum GUIDs And Loaders](stratumdeps.md)                                                                                              | A list of Stratum loaders and their respective GUIDs.                                                         |
+| [Packaging Mods For Thunderstore](thunderstore/uploading.md)                                                                             | A step-by-step tutorial on how to package your mod for Thunderstore.                                          |
