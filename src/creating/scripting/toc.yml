@@ -1,4 +1,6 @@
 - name: Intro
   href: intro.md
+- name: Comparisons
+  href: comparison.md
 - name: Debugging
   href: debugging.md
