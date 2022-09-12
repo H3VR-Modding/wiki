@@ -26,7 +26,12 @@ When the Editor is finished installing, go ahead and open it. It will ask you to
 > If you are getting compile errors for missing the game's assembly and / or cannot see the MeatKit menu bar item, go to `Edit > Project Settings > Player` and in the `Other Settings` tab, clear the `Scripting Define Symbols` field and hit enter, then re-import the game's scripts.
 
 ## Import Core Packages
-As part of the MeatKit download two core packages for Atlas and OtherLoader are includes containing their respective development tools and samples. Browse to your project's folder in file explorer and locate the 'Packages' folder contained within. Import one or both of the packages depending on what kind of modding you wish to do by using the `Assets > Import Package > Custom Package` menu item. 
+The tools to build different types of mods are created and maintained independently from MeatKit itself, so you will need to download and import one or more of these packages to work on mods:
+
+* Atlas package for mapping: https://github.com/H3VR-Modding/AtlasSampleScenes/releases
+* OtherLoader package for creating guns and other items: https://github.com/devyndamonster/MeatKit/releases
+
+Import one or both of the packages depending on what kind of modding you wish to do by using the `Assets > Import Package > Custom Package` menu item. 
 
 ## Confirm everything works
 To confirm everything is setup correctly, open MeatKit build window (`MeatKit > Build Window`) and click the circle beside the build profile field. At least one of the sample profiles will show up, depending on which packages you imported, select one of them.
