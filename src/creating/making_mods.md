@@ -41,11 +41,12 @@ Many mods are created differently, so on this page you will find links to articl
 | [Sora101TD's Skin Making tutorial](asset_replacement/skin_making_basics/basics_1_tools.md) | This guide is useful for making sound replacements to, or changing the assets of any other object in H3VR such as the textures for clay pots. |
 | [Sora101TD's Custom TNH Hold Music tutorial](asset_replacement/tnh_music/hold_music.md)    | The best (only) take and hold music tutorial.                                                                                                 |
 
-## Miscellaneous
+## Custom Characters
 
 | Tutorial                                                                                                                                   | Notes                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Devyndamonster's Making A Custom Character tutorial](https://github.com/devyndamonster/TakeAndHoldTweaker/wiki/Making-A-Custom-Character) | The original tutorial for making custom characters. Recommended as a starting point, covers most subjects. |
+| [Devyndamonster's Making A Custom Character tutorial](https://github.com/devyndamonster/TakeAndHoldTweaker/wiki/Making-A-Custom-Character)      | The original tutorial for making custom characters. Recommended as a starting point, covers most subjects.                                    |
+| [SirPotato's Custom Character Creation Guide](https://docs.google.com/document/d/1YE7iWOQGHevYE0V-CzMEu3LHfb0ejbmRV4uZz7Id-OI/edit?usp=sharing) | A newer, complete tutorial for that guides you through the entire process for creating a custom character and publishing to Thunderstore. |
 
 ## Packaging Mods (LEGACY)
 These articles are considered legacy as they refer to processes which are no longer current.
