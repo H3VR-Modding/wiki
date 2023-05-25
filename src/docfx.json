@@ -8,6 +8,8 @@
           "creating/**/toc.yml",
           "installing/**.md",
           "installing/**/toc.yml",
+          "docs/**.md",
+          "docs/**/toc.yml",
           "toc.yml",
           "*.md"
         ]
