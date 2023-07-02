@@ -2,5 +2,7 @@
   href: intro.md
 - name: Comparisons
   href: comparison.md
+- name: dnSpy
+  href: dnSpy.md
 - name: Debugging
   href: debugging.md
