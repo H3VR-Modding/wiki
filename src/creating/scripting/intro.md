@@ -36,7 +36,7 @@ project file and at the top are the values you need to change.
 
 * AssemblyName will be the name of the final file after a build, so make sure it doesn't contain any invalid characters
 * Version must be a 3-part version number (x.y.z).
-* Authors should just be your name.
+* Authors should just be your name, typically this should match your Thunderstore team name.
 * AssemblyTitle is the 'pretty' name of your plugin.
 * Description is used as the short description for Thunderstore uploads
 * PackageProjectUrl is used as the URL for Thunderstore uploads. If you don't have a project URL you can just leave it blank.
