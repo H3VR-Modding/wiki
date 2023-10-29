@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Skins - Hotmodding</title>
+    <meta name="title" content="Animated Skins - Hotmodding">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Animated Skins - Hotmodding">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../static/styles/template.css">
+    <link rel="stylesheet" href="../../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../../making_mods.html">Making mods</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../meatkit/intro.html">MeatKit</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../meatkit/intro.html">Introduction</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../meatkit/getting_started/1_setup.html">Getting Started</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/getting_started/1_setup.html">1. Setup</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/getting_started/2_build_profile.html">2. Build Profile</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/getting_started/3_creating.html">3. Creating</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../meatkit/build_items/index.html">Build Items</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/build_items/store_files.html">Store Files</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/build_items/preload_assets.html">Preload Assets</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/build_items/atlas_scene.html">Atlas Scene</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../meatkit/technical/1_intro.html">Technical Info</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/technical/1_intro.html">1. Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/2_formats.html">2. Formats</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/3_importing.html">3. Importing</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/4_build_pipeline.html">4. Build Pipeline</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/5_exporting.html">5. Exporting</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../mapping/index.html">Mapping</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../mapping/atlas/intro.html">Atlas</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../../mapping/atlas/getting_started/1_requirements.html">Getting Started</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../../mapping/atlas/getting_started/1_requirements.html">1. Requirements</a>
+                                </li>
+                                <li>
+                                    <a href="../../mapping/atlas/getting_started/2_the_basics.html">2. The Basics</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../../mapping/atlas/tutorials/index.html">Tutorials</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../../mapping/atlas/tutorials/spawning_sosigs.html">Spawning Sosigs</a>
+                                </li>
+                                <li>
+                                    <a href="../../mapping/atlas/tutorials/doors_windows.html">Doors and Windows</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../mapping/wurstmod/intro.html">WurstMod</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../scripting/intro.html">Scripting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../scripting/intro.html">Intro</a>
+                </li>
+                <li>
+                    <a href="../../scripting/comparison.html">Comparisons</a>
+                </li>
+                <li>
+                    <a href="../../scripting/dnSpy.html">dnSpy</a>
+                </li>
+                <li>
+                    <a href="../../scripting/debugging.html">Debugging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../implementing/the_basics.html">Implementing</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../implementing/the_basics.html">The Basics</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../implementing/modul/creation.html">Modul Weapons</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../implementing/modul/creation.html">Creation</a>
+                        </li>
+                        <li>
+                            <a href="../../implementing/modul/id_duping.html">ID Duping</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../implementing/pre-attached_attachments.html">Pre-Attached Attachments</a>
+                </li>
+                <li>
+                    <a href="../../implementing/grenades.html">Grenades</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html" class="active">Asset Replacement</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics 1 - Tools</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_2_meshes.html">Skin Making Basics 2 - Meshes and Textures</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_3_blender.html">Skin Making Basics 3 - Blender</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_4_painting.html">Skin Making Basics 4 - Painting</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_5_exporting.html">Skin Making Basics 5 - Exporting</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_6_hotmods.html">Skin Making Basics 6 - Hotmods</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/extras.html">Extras</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_advanced/stamp.html">Skin Making Advanced</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_advanced/stamp.html">Stamps</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_advanced/engraving.html">Making Engravings</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details open="">
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_animated/animated.html" class="active">Animated Skins</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated_unity.html">Animated Skins - Unity</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated_hotmod.html" class="active">Animated Skins - Hotmodding</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../asset_replacement/tnh_music/hold_music.html">Take and Hold Music</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../thunderstore/uploading.html">Thunderstore Packages</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../thunderstore/uploading.html">1. Preparing Your Manifest And Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/creating.html">2. Adding Your H3VR Content To Your Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/updating.html">Updating Your Thunderstore Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/modpacks.html">Making Modpacks</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../../delimods.html">Packing Deli mods</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<p>(An example manifest and a manifest template will be included in the starter pack!)</p>
+<p>In you &quot;mat&quot; folder, bring out the file built by Unity.</p>
+<p>Homestretch. Five PNGs, one &quot;Material&quot; file... Now we need a manifest.</p>
+<p><img src="images/hotmod/hotmod_1.png" alt="hotmod 1"></p>
+<p>Open SkinPacker, and locate this location, and have it generate a manifest for you.</p>
+<p>guid - &quot;a&quot;</p>
+<p>name - &quot;a&quot;</p>
+<p>version - &quot;1.0.0&quot;</p>
+<p>save manifest</p>
+<p>Why the low effort? Unfortunately, I have some bad news.</p>
+<p>You cannot use SkinPacker here...</p>
+<p>Skinpacker only works with Textures. It kicks the can when you include anything else.</p>
+<p>So, after saving the manifest, close SkinPacker.</p>
+<p>We're gonna get hands on now...</p>
+<p>Open the Manifest.</p>
+<p>It should look something like this, right?</p>
+<p><img src="images/hotmod/hotmod_2.png" alt="hotmod 2"></p>
+<p>Here's an incoming wall of text that you'll be copying and replacing these details, because, good news!</p>
+<p>The format of making animated skins this way is near identical to one another!</p>
+<pre><code class="lang-json">{
+  &quot;manifestRevision&quot;: &quot;1&quot;,
+  &quot;guid&quot;: &quot;[name]&quot;,
+  &quot;name&quot;: &quot;[Name]&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;[Description]&quot;,
+  &quot;assetMappings&quot;: [
+    {
+      &quot;type&quot;: &quot;Material&quot;,
+      &quot;target&quot;: &quot;h3vr_data\\streamingassets\\assets_resources_objectids_weaponry_[category]\\[gun]:[gun mat]&quot;,
+      &quot;path&quot;: &quot;[bundle name]:assets\\[mat name].mat&quot;
+    },
+    {
+      &quot;type&quot;: &quot;Texture&quot;,
+      &quot;target&quot;: &quot;:[mat name]::_MainTex&quot;,
+      &quot;path&quot;: &quot;base color.png&quot;
+    },
+    {
+      &quot;type&quot;: &quot;Texture&quot;,
+      &quot;target&quot;: &quot;:[mat name]::_SpecTex&quot;,
+      &quot;path&quot;: &quot;alloy.png&quot;
+    },
+    {
+      &quot;type&quot;: &quot;Texture&quot;,
+      &quot;target&quot;: &quot;:[mat name]::_BumpMap&quot;,
+      &quot;path&quot;: &quot;normal.png&quot;
+    },
+    {
+      &quot;type&quot;: &quot;Texture&quot;,
+      &quot;target&quot;: &quot;:[mat name]::_EmissionMap&quot;,
+      &quot;path&quot;: &quot;emiss.png&quot;
+    },
+    {
+      &quot;type&quot;: &quot;Texture&quot;,
+      &quot;target&quot;: &quot;:[mat name]::_IncandescenceMap&quot;,
+      &quot;path&quot;: &quot;incan.png&quot;
+    }
+  ]
+}
+</code></pre>
+<p>Copy that json for your manifest.</p>
+<p>Now that it's like this, lets break it down.</p>
+<p><img src="images/hotmod/hotmod_4.png" alt="hotmod 4"></p>
+<p>Guid --&gt; Sideloader ID, needs to be lowercase and with either underscores or periods, no spaces</p>
+<p>Name &amp; Description --&gt; self-explanatory</p>
+<p>Target is very important, the trickiest part of this process... this is the prefab path and material name of the gun you
+are making a skin for.</p>
+<p>To assist,
+use <a href="https://docs.google.com/spreadsheets/d/1Mjeo410-2wgou9JHSb_I1VltNTyzNXZX_EwhMNsfH6Y/edit#gid=1966002968">this spreadsheet</a>
+made by Ghorsington.</p>
+<p>But for my example, I am making a skin for the Uzi, so my target would be</p>
+<p><img src="images/hotmod/hotmod_4_5.png" alt="hotmod 4 5"></p>
+<p><strong>Category</strong> becomes &quot;Smgs&quot; , <strong>Gun</strong> becomes uzi, and <strong>gun mat</strong> becomes IMIUZI_GUN</p>
+<p><img src="images/hotmod/hotmod_5.png" alt="hotmod 5"></p>
+<p>Target's down, next is path.</p>
+<p>If you named your asset bundle and material name the same, and have your material in the assets folder just as this
+tutorial instructed, then this is going to be a sinch!</p>
+<p>However, if you stored your material in a subfolder of &quot;Assets&quot;, it's gonna be a bit more tricky</p>
+<p><code>[bundle name]:assets\\[mat name].mat</code> --&gt; <code>[bundle name]:assets\\[subfolder]\\[mat name].mat</code></p>
+<p>This is why I keep it in assets because it makes it less confusing!</p>
+<p>ANYWAY</p>
+<p>The name you used on both is what <strong>bundle name</strong> and <strong>mat name</strong> becomes!</p>
+<p>My example is &quot;tdam_puppet&quot;, so I replace it all [] portions with tdam_puppet.</p>
+<p>Here is the final product of my example, yours should hopefully follow the same pattern!</p>
+<p><img src="images/hotmod/hotmod_6.png" alt="hotmod 6"></p>
+<p>Save the manifest and exit out.</p>
+<p>The final step of the final step is to manually make a hotmod.</p>
+<p>Select all seven items in your folder, the five textures, the manifest, and the unity file we dubbed as the &quot;material&quot;
+file.</p>
+<p><img src="images/hotmod/hotmod_7.png" alt="hotmod 7"></p>
+<p>Use a ZIP program [WINRAR, Bandizip, etc] to package all the materials into a ZIP.</p>
+<p>Rename the .zip to .hotmod or .h3mod</p>
+<p>And it's ready to go! That's the process of making animated skins for H3VR! Hope it wasn't too taxing and I hope you
+make the most of it!</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/creating/asset_replacement/skin_making_animated/animated_hotmod.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../../static/scripts/main.js"></script>
+</body>
+</html>

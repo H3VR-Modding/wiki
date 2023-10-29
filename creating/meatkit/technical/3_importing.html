@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importing the game</title>
+    <meta name="title" content="Importing the game">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Importing the game">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../static/styles/template.css">
+    <link rel="stylesheet" href="../../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../../making_mods.html">Making mods</a>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../../meatkit/intro.html" class="active">MeatKit</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../meatkit/intro.html">Introduction</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../meatkit/getting_started/1_setup.html">Getting Started</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/getting_started/1_setup.html">1. Setup</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/getting_started/2_build_profile.html">2. Build Profile</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/getting_started/3_creating.html">3. Creating</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../meatkit/build_items/index.html">Build Items</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/build_items/store_files.html">Store Files</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/build_items/preload_assets.html">Preload Assets</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/build_items/atlas_scene.html">Atlas Scene</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details open="">
+                    <summary>
+                    <a href="../../meatkit/technical/1_intro.html" class="active">Technical Info</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/technical/1_intro.html">1. Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/2_formats.html">2. Formats</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/3_importing.html" class="active">3. Importing</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/4_build_pipeline.html">4. Build Pipeline</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/5_exporting.html">5. Exporting</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../mapping/index.html">Mapping</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../mapping/atlas/intro.html">Atlas</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../../mapping/atlas/getting_started/1_requirements.html">Getting Started</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../../mapping/atlas/getting_started/1_requirements.html">1. Requirements</a>
+                                </li>
+                                <li>
+                                    <a href="../../mapping/atlas/getting_started/2_the_basics.html">2. The Basics</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../../mapping/atlas/tutorials/index.html">Tutorials</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../../mapping/atlas/tutorials/spawning_sosigs.html">Spawning Sosigs</a>
+                                </li>
+                                <li>
+                                    <a href="../../mapping/atlas/tutorials/doors_windows.html">Doors and Windows</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../mapping/wurstmod/intro.html">WurstMod</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../scripting/intro.html">Scripting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../scripting/intro.html">Intro</a>
+                </li>
+                <li>
+                    <a href="../../scripting/comparison.html">Comparisons</a>
+                </li>
+                <li>
+                    <a href="../../scripting/dnSpy.html">dnSpy</a>
+                </li>
+                <li>
+                    <a href="../../scripting/debugging.html">Debugging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../implementing/the_basics.html">Implementing</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../implementing/the_basics.html">The Basics</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../implementing/modul/creation.html">Modul Weapons</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../implementing/modul/creation.html">Creation</a>
+                        </li>
+                        <li>
+                            <a href="../../implementing/modul/id_duping.html">ID Duping</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../implementing/pre-attached_attachments.html">Pre-Attached Attachments</a>
+                </li>
+                <li>
+                    <a href="../../implementing/grenades.html">Grenades</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html">Asset Replacement</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics 1 - Tools</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_2_meshes.html">Skin Making Basics 2 - Meshes and Textures</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_3_blender.html">Skin Making Basics 3 - Blender</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_4_painting.html">Skin Making Basics 4 - Painting</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_5_exporting.html">Skin Making Basics 5 - Exporting</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_6_hotmods.html">Skin Making Basics 6 - Hotmods</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/extras.html">Extras</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_advanced/stamp.html">Skin Making Advanced</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_advanced/stamp.html">Stamps</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_advanced/engraving.html">Making Engravings</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated_unity.html">Animated Skins - Unity</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated_hotmod.html">Animated Skins - Hotmodding</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../asset_replacement/tnh_music/hold_music.html">Take and Hold Music</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../thunderstore/uploading.html">Thunderstore Packages</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../thunderstore/uploading.html">1. Preparing Your Manifest And Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/creating.html">2. Adding Your H3VR Content To Your Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/updating.html">Updating Your Thunderstore Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/modpacks.html">Making Modpacks</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../../delimods.html">Packing Deli mods</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+<h1 id="importing-the-game">Importing the game</h1>
+
+<p>When you first open a MeatKit project, the first thing you must do is import the game.
+It's a required step and without it you won't be able to do anything. This article will
+explain what this process does, why it is required, and the history of alternative methods.</p>
+<h2 id="the-history">The history</h2>
+<p>One of the main goals of MeatKit is to enable an editing experience as close to the original
+Unity project as possible. To achieve this, we need to get all of the game's code into our
+project.</p>
+<p>In the past, what modders did was to decompile the game's code and place the generated C# code
+into their Unity projects. Except as explained earlier, the decompilation process is far from
+perfect and to make this work, the tool that was used to accomplish it removed everything except
+the bare minimum. After it finished, there was no actual code left in the scripts, only the
+serialized fields! While it certainly enabled modding, this is not suitable to attain our goal.</p>
+<h2 id="so-what-do-we-do">So what do we do</h2>
+<p>If decompiling the scripts is off the table, then what do we do? Well, luckily, Unity lets
+us import arbitrary .dll files into our project and this should give us access to everything
+inside them! This is promising but there are a couple issues, the first being that just placing
+the assembly into our project doesn't work.</p>
+<p>Unity uses the same assembly name for every project, <code>Assembly-CSharp</code>. The game's assembly
+is named that, but more importantly, the compiled assembly for our own editor project is named
+the exact same thing! So just placing the game assembly into our project will make Unity unhappy
+because it very much does not like having two assemblies named the same thing loaded at the same
+time. To avoid this, the first thing the import process does is make a copy of the game's assembly
+and <em>renames</em> it to <code>H3VRCode-CSharp</code> using an assembly editing library called Cecil. Now with
+a renamed assembly name, we are one step closer to being able to have Unity load this assembly
+in our project. It is important to remember that we did this renaming though, because it will
+affect us later.</p>
+<p>If you had a completely empty Unity project, you would actually have no issues loading the assembly
+with just this renaming step. Unfortunately we aren't working in an empty project, we also have
+extra things in there like Alloy and possibly Bakery. Both of these contain their own scripts for
+tools and such, and some of them even make it into the game's code! This presents a problem because
+we already imported Alloy separately and it comes with those scripts again so now we have duplicates.
+As you can probably guess, Unity is not happy with this and we need to remove one of them. Removing
+the scripts that come with Alloy is not possible since some of the information that the Alloy assets
+require are editor-only and get completely removed in the final build of the game. Attempting to use
+the scripts inside the imported game DLL will only cause issues with the Alloy editor tools.</p>
+<p>So we need to remove the scripts from the game assembly then. This can also be easily accomplished
+using the Cecil library, in the code for the importer there is a big list of what needs to be removed
+from the imported game assembly.</p>
+<h2 id="post-processing">Post processing</h2>
+<p>Since we already have the assembly open for modification, we might as well do some post processing
+on it too. When importing the game with MeatKit, anything inside the game with was marked as private
+or protected is changed to public, allowing access to those things from anywhere. This is best used
+as a last resort option, when something you need is not normally exposed publicly through the code,
+but still a very useful option to have.</p>
+<p>Additionally, MeatKit provides a way of defining extra modifications just for your project so you can
+for example, add new enum values for custom ammo or magazine types. These are applied on each import.</p>
+<h2 id="why-legalities">Why? Legalities.</h2>
+<p>Wait, but why can't we just ship the project with this imported assembly right from the start?</p>
+<p>While there's nothing <em>technically</em> stopping us, legally we would be in the wrong to do so.
+Doing this would require us to redistribute the game's code which we of course do not have
+permission to do. So despite it being unlikely to happen, to avoid any legal troubles we
+require you to do the import process yourself.</p>
+<p>There are a couple hidden upsides to this however. The first being that forcing this upon
+everyone means that no matter when you download the MeatKit project, you can be sure that
+after your first import you are working with the latest version of the game's code. And
+secondly, it means that you must actually have a copy of the game.</p>
+<h1 id="importing-other-assemblies">Importing other assemblies</h1>
+<p>You may have noticed that alongside the import game option, there is another option to import a
+single assembly. That option is used for importing assemblies which do not belong to the game and
+do not require some of the processing that the game assembly does like removing some things,
+publicizing, or other post processing. The key here is that it's important to remember we renamed
+the game's assembly, and because we've done that, we also need to update any other assembly that may
+want to use code from the game to point to the new name instead so it can find that code without issue.</p>
+<p>If you have an assembly that is neither the game's, nor references the game's, it requires no importing
+and can be placed in your project as-is.</p>
+<p>Next article: <a href="4_build_pipeline.html">Build pipeline</a>.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/creating/meatkit/technical/3_importing.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../../static/scripts/main.js"></script>
+</body>
+</html>

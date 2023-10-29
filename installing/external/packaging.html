@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-import Packaging</title>
+    <meta name="title" content="Pre-import Packaging">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Pre-import Packaging">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../static/styles/template.css">
+    <link rel="stylesheet" href="../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../getting_started.html">Getting Started</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../troubleshooting/index.html">Troubleshooting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../troubleshooting/index.html">Start Here</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/log_file.html">Log File</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/wurstmod.html">WurstMod &amp; Maps</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../external/importing.html" class="active">External Mods</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../external/importing.html">Importing</a>
+                </li>
+                <li>
+                    <a href="../external/manual.html">Manual Installation</a>
+                </li>
+                <li>
+                    <a href="../external/packaging.html" class="active">Packaging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../specific_mod_installation.html">Specific Mod Installation</a>
+        </li>
+        <li>
+            <a href="../starting_fresh.html">Cleaning your H3VR Folder</a>
+        </li>
+        <li>
+            <a href="../mod_formats.html">Mod Formats</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<p>Some external mods may not be one of the <a href="importing.html#supported-formats">mod formats supported by r2modman</a>. These mods
+can be converted to r2modman packages before importing, providing a near-seamless experience within r2modman.</p>
+<h2 id="sideloader">Sideloader</h2>
+<p>Create a directory named <code>Sideloader</code> and place the Sideloader mods within.</p>
+<pre><code class="lang-text">Sideloader/
+    asset1.hotmod
+    asset2.h3mod
+</code></pre>
+<p>Zip the <code>Sideloader</code> folder itself to create an r2modman package ready for local import.</p>
+<h2 id="asset-bundles">Asset Bundles</h2>
+<p>Create a directory named <code>LegacyVirtualObjects</code> within another directory called <code>plugins</code> and place the asset bundles
+within.</p>
+<pre><code class="lang-text">plugins/
+    LegacyVirtualObjects/
+        bundle_a
+        bundle_b
+        bundle_b.manifest
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>.manifest</code> files are not required. They are documentation files used by other modders and have no effect on the mod.</p>
+</div>
+<p>Zip the <code>plugins</code> folder itself to create an r2modman package ready for local import.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/installing/external/packaging.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../static/scripts/main.js"></script>
+</body>
+</html>

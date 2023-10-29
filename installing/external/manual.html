@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Installation</title>
+    <meta name="title" content="Manual Installation">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Manual Installation">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../static/styles/template.css">
+    <link rel="stylesheet" href="../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../getting_started.html">Getting Started</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../troubleshooting/index.html">Troubleshooting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../troubleshooting/index.html">Start Here</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/log_file.html">Log File</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/wurstmod.html">WurstMod &amp; Maps</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../external/importing.html" class="active">External Mods</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../external/importing.html">Importing</a>
+                </li>
+                <li>
+                    <a href="../external/manual.html" class="active">Manual Installation</a>
+                </li>
+                <li>
+                    <a href="../external/packaging.html">Packaging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../specific_mod_installation.html">Specific Mod Installation</a>
+        </li>
+        <li>
+            <a href="../starting_fresh.html">Cleaning your H3VR Folder</a>
+        </li>
+        <li>
+            <a href="../mod_formats.html">Mod Formats</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<p>Some external mods may not be one of the <a href="importing.html#supported-formats">mod formats supported by r2modman</a>. These mods
+can instead be manually installed as a last resort.</p>
+<p>From r2modman's settings, search for <code>Browse Profile Folder</code> and click on it.</p>
+<p><img src="../images/r2modman/settings/browse_profile_folder.png" alt="browse profile folder"></p>
+<p>A folder should have appeared that looks like this:</p>
+<pre><code class="lang-text">[Name of current profile]/
+    BepInEx/
+    mods.yaml
+    ...
+</code></pre>
+<p>Determine the format of the mod, and extract its files to the correct paths. The <code>BepInEx/</code> folder is contained inside
+of your profile folder, which you just opened.</p>
+<h2 id="sideloader">Sideloader</h2>
+<p>Sideloader mods go into the <code>BepInEx/Sideloader/</code> folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the folder is not present, let the game make it for you. If they are not being created, ensure that you have run the game at least once with Sideloader installed. Failure to do so will result in all of your Sideloader mods being wiped.</p>
+</div>
+<h2 id="asset-bundles">Asset Bundles</h2>
+<p>First, enter the <code>BepInEx/plugins/</code> folder. Then, create a new folder. It can be named anything, but it's recommended to
+create one with a distinct name like <code>_LVO</code>. Create a folder within that folder, and name it <code>LegacyVirtualObjects</code>.</p>
+<p>For example:</p>
+<pre><code class="lang-text">BepInEx/
+    plugins/
+        _LVO/
+            LegacyVirtualObjects/
+                bundle_a
+                bundle_b
+                bundle_b.manifest
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>.manifest</code> files are not required. They are documentation files used by other modders and have no effect on the mod.</p>
+</div>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/installing/external/manual.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../static/scripts/main.js"></script>
+</body>
+</html>

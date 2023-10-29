@@ -1,0 +1,529 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Modpacks</title>
+    <meta name="title" content="Making Modpacks">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Making Modpacks">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../static/styles/template.css">
+    <link rel="stylesheet" href="../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../making_mods.html">Making mods</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../meatkit/intro.html">MeatKit</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../meatkit/intro.html">Introduction</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../meatkit/getting_started/1_setup.html">Getting Started</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../meatkit/getting_started/1_setup.html">1. Setup</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/getting_started/2_build_profile.html">2. Build Profile</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/getting_started/3_creating.html">3. Creating</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../meatkit/build_items/index.html">Build Items</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../meatkit/build_items/store_files.html">Store Files</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/build_items/preload_assets.html">Preload Assets</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/build_items/atlas_scene.html">Atlas Scene</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../meatkit/technical/1_intro.html">Technical Info</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../meatkit/technical/1_intro.html">1. Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/technical/2_formats.html">2. Formats</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/technical/3_importing.html">3. Importing</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/technical/4_build_pipeline.html">4. Build Pipeline</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/technical/5_exporting.html">5. Exporting</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../mapping/index.html">Mapping</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../mapping/atlas/intro.html">Atlas</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../mapping/atlas/getting_started/1_requirements.html">Getting Started</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../mapping/atlas/getting_started/1_requirements.html">1. Requirements</a>
+                                </li>
+                                <li>
+                                    <a href="../mapping/atlas/getting_started/2_the_basics.html">2. The Basics</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../mapping/atlas/tutorials/index.html">Tutorials</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../mapping/atlas/tutorials/spawning_sosigs.html">Spawning Sosigs</a>
+                                </li>
+                                <li>
+                                    <a href="../mapping/atlas/tutorials/doors_windows.html">Doors and Windows</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../mapping/wurstmod/intro.html">WurstMod</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../scripting/intro.html">Scripting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../scripting/intro.html">Intro</a>
+                </li>
+                <li>
+                    <a href="../scripting/comparison.html">Comparisons</a>
+                </li>
+                <li>
+                    <a href="../scripting/dnSpy.html">dnSpy</a>
+                </li>
+                <li>
+                    <a href="../scripting/debugging.html">Debugging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../implementing/the_basics.html">Implementing</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../implementing/the_basics.html">The Basics</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../implementing/modul/creation.html">Modul Weapons</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../implementing/modul/creation.html">Creation</a>
+                        </li>
+                        <li>
+                            <a href="../implementing/modul/id_duping.html">ID Duping</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../implementing/pre-attached_attachments.html">Pre-Attached Attachments</a>
+                </li>
+                <li>
+                    <a href="../implementing/grenades.html">Grenades</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../asset_replacement/skin_making_basics/basics_1_tools.html">Asset Replacement</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics 1 - Tools</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_2_meshes.html">Skin Making Basics 2 - Meshes and Textures</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_3_blender.html">Skin Making Basics 3 - Blender</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_4_painting.html">Skin Making Basics 4 - Painting</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_5_exporting.html">Skin Making Basics 5 - Exporting</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_6_hotmods.html">Skin Making Basics 6 - Hotmods</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/extras.html">Extras</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../asset_replacement/skin_making_advanced/stamp.html">Skin Making Advanced</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../asset_replacement/skin_making_advanced/stamp.html">Stamps</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_advanced/engraving.html">Making Engravings</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_animated/animated_unity.html">Animated Skins - Unity</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_animated/animated_hotmod.html">Animated Skins - Hotmodding</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../asset_replacement/tnh_music/hold_music.html">Take and Hold Music</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../thunderstore/uploading.html" class="active">Thunderstore Packages</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../thunderstore/uploading.html">1. Preparing Your Manifest And Package</a>
+                </li>
+                <li>
+                    <a href="../thunderstore/creating.html">2. Adding Your H3VR Content To Your Package</a>
+                </li>
+                <li>
+                    <a href="../thunderstore/updating.html">Updating Your Thunderstore Package</a>
+                </li>
+                <li>
+                    <a href="../thunderstore/modpacks.html" class="active">Making Modpacks</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../delimods.html">Packing Deli mods</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<p>Got a list a mods you would like to share with the community? Take a look at the steps below for information on creating
+a mod pack.</p>
+<h2 id="recommended-software">Recommended software</h2>
+<p>It is recommended to use <a href="https://code.visualstudio.com">Visual Studio Code</a> if your modpack has a large amount of mods.
+This program is simply a fancy text editor, and will help with multi-line editing of text. If you have an alternative,
+or would like to avoid it then that is completely fine.</p>
+<h2 id="what-is-a-mod-pack">What is a mod pack?</h2>
+<p>A mod pack is simply a list of mods that <a href="https://h3vr.thunderstore.io/package/ebkr/r2modman/">r2modman</a>
+or <a href="https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager">Thunderstore mod manager</a> use to install all
+listed mods at once, making it very convenient.</p>
+<p>This means that it is just a regular mod you would upload, and can include it's own custom content.</p>
+<p>The <a href="creating.html">creating</a> and <a href="uploading.html">uploading</a> pages are for other mods, so this one will be modpack
+specific.</p>
+<h2 id="getting-your-list-ready">Getting your list ready</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The term &quot;string&quot; is used to describe a length of text, and is used in programming. More information <a href="https://www.tutorialspoint.com/computer_programming/computer_programming_strings.htm">here</a>, although it is not required for this guide.</p>
+</div>
+<p>Have the perfect mod list ready to go in r2mm or tsmm? Great!</p>
+<ol>
+<li>In r2mm/tsmm, select the profile you would like to reference your modpack on.</li>
+<li>Click on the &quot;Settings&quot; button on the left.</li>
+<li>Change from the &quot;All&quot; tab to the &quot;Modpacks&quot; tab.</li>
+<li>Click on the &quot;Show dependency strings&quot; button. This will open a list of strings that we will use for creating the
+list.</li>
+<li>Copy the strings and paste them into a text file so you don't lose them.</li>
+</ol>
+<p>If your profile has no mods installed in it, the list will be empty. If you still want to make a modpack but don't have
+this:</p>
+<ol>
+<li>Open a text file and <a href="https://h3vr.thunderstore.io">Thunderstore</a>.</li>
+<li>Open the mod page of a mod you would like to include in your mod pack.</li>
+<li>Just under the title and short description, there are a few fields that describe the last update and total downloads,
+etc. Below these are something called a &quot;Dependency string&quot;. Copy the entire thing and paste it inside of your file.</li>
+<li>Repeat for all mods you wish to include, pasting each string on a new line.</li>
+</ol>
+<hr>
+<p>Now that you have a file with a list of each dependency string inside of it, we are going to format it so that it will
+be easier to copy and paste it in the next step.</p>
+<p>These steps assume that you are using a multi-line editor like <a href="https://code.visualstudio.com">VSCode</a>. Here is
+a <a href="https://tahoeninjas.blog/2019/03/30/multi-cursor-editing-in-visual-studio-code/">reference site</a> for shortcuts.</p>
+<p>Before example:</p>
+<pre><code class="lang-text">BepInEx-BepInExPack_H3VR-5.4.1101
+BepInEx-MonoMod_Loader-1.0.0
+nrgill28-HookGenPatcher_H3VR-1.2.3
+nrgill28-Sodalite-1.0.0
+</code></pre>
+<ol>
+<li>Select the leftmost point in every line (before any text).</li>
+<li>Add a <code>&quot;</code> to it.</li>
+<li>Select the rightmost point in every line (after any text).</li>
+<li>Add a <code>&quot;</code> to it.</li>
+<li>Select the rightmost point in every line except for the last (after any text).</li>
+<li>Add a <code>,</code> to it.</li>
+</ol>
+<p>After example:</p>
+<pre><code class="lang-text">&quot;BepInEx-BepInExPack_H3VR-5.4.1101&quot;,
+&quot;BepInEx-MonoMod_Loader-1.0.0&quot;,
+&quot;nrgill28-HookGenPatcher_H3VR-1.2.3&quot;,
+&quot;nrgill28-Sodalite-1.0.0&quot;
+</code></pre>
+<p>Leave this file aside for now.</p>
+<h2 id="making-the-manifest">Making the manifest</h2>
+<p>A manifest is what tells the website the information about your mod. Go ahead and copy the example below into a new file
+called <code>manifest.json</code> (case sensitive).</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;TestMod&quot;,
+  &quot;version_number&quot;: &quot;1.1.0&quot;,
+  &quot;website_url&quot;: &quot;https://github.com/thunderstore-io&quot;,
+  &quot;description&quot;: &quot;This is a description for a mod. 250 characters max&quot;,
+  &quot;dependencies&quot;: [
+    &quot;MythicManiac-TestMod-1.1.0&quot;
+  ]
+}
+</code></pre>
+<p>You can find specific information about this file on
+the <a href="https://h3vr.thunderstore.io/package/create/docs/">old upload page</a>, but we will go over what you need to change.</p>
+<ol>
+<li>Give your modpack a name.
+<ol>
+<li>Do this by changing the <code>&quot;name&quot;</code> field, making sure to keep it inside the quotes.</li>
+<li>This is the only unique identifier of your mod! If you change it, you will instead upload another mod!</li>
+</ol>
+</li>
+<li>Change the version number to something normal, like <code>&quot;1.0.0&quot;</code>.
+<ol>
+<li>You can find information about what these numbers mean on the <a href="https://semver.org">official document</a>.</li>
+</ol>
+</li>
+<li>The website url can be blank, so you can change the <code>&quot;https://github.com/thunderstore-io&quot;</code> to <code>&quot;&quot;</code>.</li>
+<li>The description shown is what is displayed on the main page, and is the main selling point of your pack. Keep this
+shorter than 250 characters.</li>
+<li>Delete the <code>&quot;MythicManiac-TestMod-1.1.0&quot;</code> in the dependencies section, and replace it with the list of dependency
+strings that we made in the previous step.</li>
+</ol>
+<p>Here is an example of a finished manifest:</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;Cool guys only&quot;,
+  &quot;version_number&quot;: &quot;1.0.0&quot;,
+  &quot;website_url&quot;: &quot;&quot;,
+  &quot;description&quot;: &quot;The coolest modpack, yo.&quot;,
+  &quot;dependencies&quot;: [
+    &quot;BepInEx-BepInExPack_H3VR-5.4.1101&quot;,
+    &quot;BepInEx-MonoMod_Loader-1.0.0&quot;,
+    &quot;nrgill28-HookGenPatcher_H3VR-1.2.3&quot;,
+    &quot;nrgill28-Sodalite-1.0.0&quot;
+  ]
+}
+</code></pre>
+<h2 id="an-icon-and-a-readme">An icon, and a readme</h2>
+<p>There are two other files required before you upload:</p>
+<ol>
+<li>An icon named <code>icon.png</code> (case sensitive), 256x256. This is non-negotiable.</li>
+<li>A file called <code>README.md</code> (case sensitive). This is displayed on the main page of your pack.
+<ol>
+<li>The <code>.md</code> extension stands for markdown, and is essentially a fancy text file. You can just write out whatever
+you want in here.</li>
+</ol>
+</li>
+</ol>
+<p>Here is an example of the <code>README.md</code> file:</p>
+<pre><code class="lang-md"># This is the coolest title
+
+Some example text.
+
+## But then this one is smaller
+
+With some other text.
+
+- A bulleted list
+- With some cool text
+
+1. A numbered list
+2. With some other cool text
+
+## A changelog is nice
+
+### v1.0.1
+
+This is cool too
+
+### v1.0.0
+
+This is cool
+</code></pre>
+<p>Thunderstore even has <a href="https://h3vr.thunderstore.io/tools/markdown-preview/">a page to test it live</a>!</p>
+<h2 id="configs">Configs</h2>
+<p>If you would like to include your modified configs:</p>
+<ol>
+<li>In r2mm/tsmm, click on &quot;Settings&quot; on the left.</li>
+<li>Click on &quot;Browse profile folder&quot; (should be the second option in the list).</li>
+<li>In the file explorer that opened, open the <code>BepInEx/</code> folder.</li>
+<li>Make note of the <code>config/</code> folder, and when told in the next step to zip your files, include the entire folder inside
+of the zip.</li>
+</ol>
+<p>This will look like this instead of the other example given.</p>
+<pre><code class="lang-text">Mockpackname.zip/
+    config/
+        ...
+    icon.png
+    manifest.json
+    README.md
+</code></pre>
+<h2 id="uploading-your-mod">Uploading your mod</h2>
+<p>After you are done making the required files:</p>
+<ul>
+<li><code>manifest.json</code></li>
+<li><code>icon.png</code></li>
+<li><code>README.md</code></li>
+</ul>
+<p>You can zip them up (select all, right click, send to, compressed zip) and head on over to
+the <a href="https://h3vr.thunderstore.io/package/create/">upload page</a> to upload your mod.</p>
+<p>Here is what it should look like:</p>
+<pre><code class="lang-text">Mockpackname.zip/
+    icon.png
+    manifest.json
+    README.md
+</code></pre>
+<p>Make sure that you are logged in, select your team, and select &quot;Modpacks&quot; as your category.</p>
+<p>Click submit, and if there were no errors, your pack should be uploaded.</p>
+<p>If you did get an error, you can use <a href="https://h3vr.thunderstore.io/tools/manifest-v1-validator/">this page</a> to test your
+manifest.</p>
+<p>If it says the manifest is fine, then you are missing a file, or your icon is incorrect.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/creating/thunderstore/modpacks.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../static/scripts/main.js"></script>
+</body>
+</html>

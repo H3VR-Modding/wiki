@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting</title>
+    <meta name="title" content="Troubleshooting">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Troubleshooting">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../static/styles/template.css">
+    <link rel="stylesheet" href="../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+    <section class="breadcrumb">
+        <span>
+            <a href="../troubleshooting/index.html">Troubleshooting</a>
+        </span>
+            <span>
+                <a href="../troubleshooting/index.html">Start Here</a>
+            </span>
+        </section>
+    <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../getting_started.html">Getting Started</a>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../troubleshooting/index.html" class="active">Troubleshooting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../troubleshooting/index.html" class="active">Start Here</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/log_file.html">Log File</a>
+                </li>
+                <li>
+                    <a href="../troubleshooting/wurstmod.html">WurstMod &amp; Maps</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../external/importing.html">External Mods</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../external/importing.html">Importing</a>
+                </li>
+                <li>
+                    <a href="../external/manual.html">Manual Installation</a>
+                </li>
+                <li>
+                    <a href="../external/packaging.html">Packaging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../specific_mod_installation.html">Specific Mod Installation</a>
+        </li>
+        <li>
+            <a href="../starting_fresh.html">Cleaning your H3VR Folder</a>
+        </li>
+        <li>
+            <a href="../mod_formats.html">Mod Formats</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<p>Read through this guide from top to bottom and follow the steps within to narrow down what is causing the issue and what
+potential fixes you may have.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>This guide assumes you are using r2modman / Thunderstore Mod Manager.</p>
+</div>
+<h2 id="none-of-my-mods-are-working--the-game-doesnt-open">None of my mods are working / the game doesn't open</h2>
+<p>Make sure that a console window is opening up on your desktop alongside the game when you start the game modded. If one
+does not then it is highly likely that your issue is with r2modman and you should read
+their <a href="https://github.com/ebkr/r2modmanPlus/wiki/Why-aren%27t-my-mods-working%3F">troubleshooting guide</a>.</p>
+<h3 id="x-mod-depends-on-y-but-it-is-not-installed">[x mod] depends on y, but it is not installed</h3>
+<p>Log error:</p>
+<pre><code class="lang-log">[Fatal :    Deli] Mod [Melons Mags 0.1.0] depends on h3vr.otherloader.deli @ 0.2.0, but it is not installed
+[Fatal : BepInEx] Could not run preloader!
+</code></pre>
+<p>This message will appear when you have Otherloader 1.0.0 installed, but
+not <a href="https://h3vr.thunderstore.io/package/Stratum/Deliter/">Deliter</a>. Since Otherloader now uses stratum, it is not deli
+compliant. Install <a href="https://h3vr.thunderstore.io/package/Stratum/Deliter/">Deliter</a> and it will convert your deli mods
+to stratum mods.</p>
+<p>Potential fixes:</p>
+<ol>
+<li>Install <a href="https://h3vr.thunderstore.io/package/Stratum/Deliter/">Deliter</a>.</li>
+</ol>
+<p>... or ...</p>
+<ol>
+<li>Downgrade Otherloader:
+<ol>
+<li>Go to the <code>Online</code> section.</li>
+<li>Download Otherloader.</li>
+<li>Select <code>0.3</code> as the version.</li>
+</ol>
+</li>
+</ol>
+<p>This can also happen when you have outdated or mods that aren't installed.</p>
+<ul>
+<li>You have a mod X that requires Y to also be installed but it is outdated or missing. If the mod is installed, update
+it, and if not, install it.</li>
+</ul>
+<h2 id="only-some-of-my-mods-are-working">Only some of my mods are working</h2>
+<p>First, please ensure you are running the latest version of the game and all your installed mods. It's important
+everything is up to date as that is the first thing you will be told to do if you can't solve your issue and decide ask
+for help. It's also possible that some mods require you to be running on the alpha branch, in which case you can also
+try opting in or out to see if that solves your issue.</p>
+<p>Next, check the <a href="log_file.html">log / log file</a> for errors and warnings. Often it will point out right away what the exact
+issue is and what mod is causing it. Below you can find some of the most common errors, but once you've discovered which
+mod is having issues you can select its article from further down to get more specific troubleshooting steps.</p>
+<h3 id="outdated-game">Outdated game</h3>
+<p>Log errors:</p>
+<pre><code class="lang-log">[Error  : Unity Log] ArgumentException: Undefined target method for patch method static bool TNHTweaker.Patches.TNHPatches::GenerateSentryPatrolPatch ...
+[Error  : Unity Log] InvalidOperationException: Loader required for setup asset ...
+</code></pre>
+<p>... or ...</p>
+<pre><code class="lang-log">[Warning:      Deli] Could not load all types from WurstMod, Version=2.0.0.0, Culture=neutral ...
+[Error  : Unity Log] Exception: This version of the game is not supported. Please update your game.
+</code></pre>
+<p>Potential fixes:</p>
+<ul>
+<li>Update your game to the latest version. If it is already up to date, try restarting Steam and or your computer as
+sometimes it can fix the Steamworks API not initializing correctly and reporting the correct game version.</li>
+</ul>
+<h2 id="a-specific-mod">A specific mod</h2>
+<p>If you already know what mod you're having issues with or have found out by reading your log file you can select it from
+below to get more specific troubleshooting steps.</p>
+<ul>
+<li><a href="wurstmod.html">WurstMod and custom maps</a></li>
+</ul>
+<h1 id="getting-assistance">Getting Assistance</h1>
+<p>If this article did not help to solve your issue then your next step is to ask for help in the <code>#modding-help</code> channel
+of the <a href="https://discord.gg/gnXA9Qs4QM">main H3VR server</a>. Be sure to include your <a href="log_file.html">BepInEx log</a> and as much
+information about your issue as you can.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/installing/troubleshooting/index.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../static/scripts/main.js"></script>
+</body>
+</html>

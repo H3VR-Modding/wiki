@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started</title>
+    <meta name="title" content="Getting Started">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Getting Started">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/styles/template.css">
+    <link rel="stylesheet" href="../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+    <section class="breadcrumb">
+        <span>
+            <a href="../installing/getting_started.html">Installing Mods</a>
+        </span>
+        <span>
+            <a href="getting_started.html">Getting Started</a>
+        </span>
+            </section>
+    <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="getting_started.html" class="active">Getting Started</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="troubleshooting/index.html">Troubleshooting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="troubleshooting/index.html">Start Here</a>
+                </li>
+                <li>
+                    <a href="troubleshooting/log_file.html">Log File</a>
+                </li>
+                <li>
+                    <a href="troubleshooting/wurstmod.html">WurstMod &amp; Maps</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="external/importing.html">External Mods</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="external/importing.html">Importing</a>
+                </li>
+                <li>
+                    <a href="external/manual.html">Manual Installation</a>
+                </li>
+                <li>
+                    <a href="external/packaging.html">Packaging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="specific_mod_installation.html">Specific Mod Installation</a>
+        </li>
+        <li>
+            <a href="starting_fresh.html">Cleaning your H3VR Folder</a>
+        </li>
+        <li>
+            <a href="mod_formats.html">Mod Formats</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+<h2 id="thunderstore">Thunderstore</h2>
+
+<p><a href="https://h3vr.thunderstore.io"><strong>Thunderstore</strong></a> is the site to find mods.<br>
+<a href="https://h3vr.thunderstore.io/package/ebkr/r2modman/"><strong>r2modman</strong></a> and <a href="https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager"><strong>Thunderstore Mod
+Manager</strong></a> are mod managers meant to be used to
+manage mods from Thunderstore. This site will refer to r2modman, but Thunderstore Mod Manager can be used with the same
+instructions.</p>
+<p>If you would prefer a video tutorial, you can find one here by Jeditobiwan:</p>
+<p><a href="https://youtu.be/rchbe9xDbrY" title="Mod tutorial"><img src="https://img.youtube.com/vi/rchbe9xDbrY/sddefault.jpg" alt="Mod tutorial"></a></p>
+<h2 id="installing-mods-via-r2modman">Installing Mods via r2modman</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If you have installed mods previously from another storefront, please preform a <a href="starting_fresh.html">clean install</a>.</p>
+</div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Mods are no longer installed to the root H3VR directory! Please read the tutorial carefully.</p>
+</div>
+<p>Once you have installed r2modman and opened it, you will be greeted by a page asking you which game you would like to
+manage. In our case, we want to manage H3VR so click on that. It will ask you to create a profile or select the default
+one. It's up to you which you use, the default one cannot be deleted, but comes as an empty profile for new users.</p>
+<p>You will then be greeted to the main interface shown below. Every time you want to run the game with mods, you will need
+to press the <code>Run Modded</code> button in the top left corner. This will launch the game with the mods listed under
+the <code>Installed</code> section on the left.</p>
+<p><img src="images/r2modman/greeted.png" alt="image"></p>
+<p>r2modman contains a list of Thunderstore mods in their <code>Online</code> section. It will automatically download any mods
+required by any other mods. This means all you need to worry about is the mods you want, and not what's needed to run
+it. This process also works in reverse: if you were to uninstall a mod that other mods depend on, those mods will also
+be uninstalled.</p>
+<p>From the <code>Online</code> section in r2modman, install anything you want by clicking on it, then by clicking on the <code>Download</code>
+button. Below is a picture of the <code>WurstMod</code> dependency as an example.</p>
+<p><img src="images/r2modman/WurstMod.png" alt="image"></p>
+<h2 id="installing-mods-not-on-thunderstore">Installing mods not on Thunderstore</h2>
+<p>Please see the <a class="xref" href="external/importing.html">Importing External Mods</a> doc for more information.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Many common problems can be found on the r2modman wiki
+page, <a href="https://github.com/ebkr/r2modmanPlus/wiki/Why-aren%27t-my-mods-working%3F">Why aren't my mods working?</a>, provided
+by Ebkr.<br>
+For less common problems, see the <a href="troubleshooting/index.html">Troubleshooting</a> articles for more details. New problems
+are found every day, but yours will likely be on this page.</p>
+<h2 id="configuring-mods">Configuring Mods</h2>
+<p>Some mods may utilize configuration files to change certain aspects of their behavior. Using r2modman's <code>Config Editor</code>
+setting on the left, you can change any config file created.<br>
+To generate config files, fully load the game. This will generated config files for all the mods currently enabled.
+Errors may prevent options within the config files or even entire config files to not generate. If you do have errors,
+fix those before changing config options.</p>
+<p>Below is a picture of where the <code>Config Editor</code> feature is.</p>
+<p><img src="images/r2modman/config_editor.png" alt="image"></p>
+<h2 id="running-your-game-with-mods">Running your game with mods</h2>
+<p>To run mods, you <strong>must</strong> press the <code>Run Modded</code> button within r2modman.</p>
+<p>If you would like to run the game modded through Steam, making the ease of use and usefulness of profiles irrelevant,
+please see the bottom of the <code>General</code> section of the <code>Help</code> menu on the left.</p>
+<p><img src="images/r2modman/help.png" alt="image"></p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/installing/getting_started.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../static/scripts/template.js"></script>
+<script type="text/javascript" src="../static/scripts/main.js"></script>
+</body>
+</html>

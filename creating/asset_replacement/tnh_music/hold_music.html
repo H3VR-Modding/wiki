@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take and Hold Music</title>
+    <meta name="title" content="Take and Hold Music">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Take and Hold Music">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../static/styles/template.css">
+    <link rel="stylesheet" href="../../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../../making_mods.html">Making mods</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../meatkit/intro.html">MeatKit</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../meatkit/intro.html">Introduction</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../meatkit/getting_started/1_setup.html">Getting Started</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/getting_started/1_setup.html">1. Setup</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/getting_started/2_build_profile.html">2. Build Profile</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/getting_started/3_creating.html">3. Creating</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../meatkit/build_items/index.html">Build Items</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/build_items/store_files.html">Store Files</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/build_items/preload_assets.html">Preload Assets</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/build_items/atlas_scene.html">Atlas Scene</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../meatkit/technical/1_intro.html">Technical Info</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../meatkit/technical/1_intro.html">1. Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/2_formats.html">2. Formats</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/3_importing.html">3. Importing</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/4_build_pipeline.html">4. Build Pipeline</a>
+                        </li>
+                        <li>
+                            <a href="../../meatkit/technical/5_exporting.html">5. Exporting</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../mapping/index.html">Mapping</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../mapping/atlas/intro.html">Atlas</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../../mapping/atlas/getting_started/1_requirements.html">Getting Started</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../../mapping/atlas/getting_started/1_requirements.html">1. Requirements</a>
+                                </li>
+                                <li>
+                                    <a href="../../mapping/atlas/getting_started/2_the_basics.html">2. The Basics</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../../mapping/atlas/tutorials/index.html">Tutorials</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../../mapping/atlas/tutorials/spawning_sosigs.html">Spawning Sosigs</a>
+                                </li>
+                                <li>
+                                    <a href="../../mapping/atlas/tutorials/doors_windows.html">Doors and Windows</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../mapping/wurstmod/intro.html">WurstMod</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../scripting/intro.html">Scripting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../scripting/intro.html">Intro</a>
+                </li>
+                <li>
+                    <a href="../../scripting/comparison.html">Comparisons</a>
+                </li>
+                <li>
+                    <a href="../../scripting/dnSpy.html">dnSpy</a>
+                </li>
+                <li>
+                    <a href="../../scripting/debugging.html">Debugging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../implementing/the_basics.html">Implementing</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../implementing/the_basics.html">The Basics</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../implementing/modul/creation.html">Modul Weapons</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../implementing/modul/creation.html">Creation</a>
+                        </li>
+                        <li>
+                            <a href="../../implementing/modul/id_duping.html">ID Duping</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../implementing/pre-attached_attachments.html">Pre-Attached Attachments</a>
+                </li>
+                <li>
+                    <a href="../../implementing/grenades.html">Grenades</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html" class="active">Asset Replacement</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics 1 - Tools</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_2_meshes.html">Skin Making Basics 2 - Meshes and Textures</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_3_blender.html">Skin Making Basics 3 - Blender</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_4_painting.html">Skin Making Basics 4 - Painting</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_5_exporting.html">Skin Making Basics 5 - Exporting</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/basics_6_hotmods.html">Skin Making Basics 6 - Hotmods</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_basics/extras.html">Extras</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_advanced/stamp.html">Skin Making Advanced</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_advanced/stamp.html">Stamps</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_advanced/engraving.html">Making Engravings</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated_unity.html">Animated Skins - Unity</a>
+                        </li>
+                        <li>
+                            <a href="../../asset_replacement/skin_making_animated/animated_hotmod.html">Animated Skins - Hotmodding</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../../asset_replacement/tnh_music/hold_music.html" class="active">Take and Hold Music</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../../thunderstore/uploading.html">Thunderstore Packages</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../../thunderstore/uploading.html">1. Preparing Your Manifest And Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/creating.html">2. Adding Your H3VR Content To Your Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/updating.html">Updating Your Thunderstore Package</a>
+                </li>
+                <li>
+                    <a href="../../thunderstore/modpacks.html">Making Modpacks</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../../delimods.html">Packing Deli mods</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<div class="NOTE">
+<h5>Note</h5>
+<p><a href="https://h3vr.thunderstore.io/package/Potatoes/Potatoes_TNH_BGM_Loader/">Potatoes TNH BGM Loader</a> is required for these types of mods to work. Check out the <a href="../../thunderstore/creating.html#tnh-music">Thunderstore creation</a> page more more details on what your Thunderstore package should look like before uploading.</p>
+</div>
+<p>Hiya! This is the tutorial to make your own TNH hold themes.</p>
+<p>No mods are actually required, it is just replacing a single file with H3VR's data.</p>
+<p>TNH Hold Music can be pretty much any song if you go the extra mile to make it. (Its a bit tougher to use a song with
+lyrics, but doable!)</p>
+<p>Lets start off by getting the right software:</p>
+<p><a href="https://www.audacityteam.org/download/">Audacity</a> (recommended, but any audio edit software can work)</p>
+<p><a href="http://www.rugbyleaguemods.net/downloads/miscellaneous/Fmod%20Bank%20Tools.zip">FMOD Bank Tool</a></p>
+<h2 id="step-1---the-foundation">Step 1 - The Foundation</h2>
+<p>You will also need to locate a certain file in your H3VR Folder</p>
+<p>Inside the H3VR Folder, go through these two folders</p>
+<p>H3vr_Data --&gt; StreamingAssets</p>
+<p>Inside StreamingAssets is where BANK files are located</p>
+<p>The BANK file we are looking for is MX_TAH.bank</p>
+<p>Copy this file and paste it in a dedicated location, such as a folder in your desktop called &quot;Custom TNH Music&quot;</p>
+<p><img src="images/tnhm_1.png" alt="tnhm 1"></p>
+<h2 id="step-2---the-vanilla-folder">Step 2 - The Vanilla Folder</h2>
+<p>We'll be giving the Fmod tool a spin, so you can understand what this tool is capable of!</p>
+<p>First, your MX_TAH file is sitting by itself, lets change that</p>
+<p>Make a folder called &quot;Vanilla&quot;</p>
+<p>Drop the MX_TAH file inside &quot;Vanilla&quot;</p>
+<p><img src="images/tnhm_2.png" alt="tnhm 2"></p>
+<p>Boom, done, easy</p>
+<p>Now, find where your FMOD bank tools are, and put them in the dedicated folder, next to the &quot;Vanilla&quot; folder</p>
+<p>Next, after you move the Fmod tools folder, open your Fmod tools &quot;Fmod Bank Tools.exe&quot;</p>
+<p>A small popup will appear. Two long bars, three buttons, nothing crazy.</p>
+<p>&quot;Bank Source Folder&quot; and &quot;Wav Destination Folder&quot;</p>
+<p>There will be an option to select off to the side, and this option will open a browse window</p>
+<p>Choose the &quot;Vanilla Bank File&quot; Folder for both of these options</p>
+<p><img src="images/tnhm_3.png" alt="tnhm 3"></p>
+<p>Afterwards, for the three buttons down below, hit &quot;Extract&quot;</p>
+<p>This will bring the WAV files out from the Bank file for you to edit!</p>
+<p>These files will be in a folder called &quot;MX_TAH&quot;, identical name to the bank file.</p>
+<p>Once the Fmod tool is done, this is what you'll wanna do next.</p>
+<p>Make a copy of your Vanilla Bank File folder now that it has the extracted parts inside</p>
+<p><img src="images/tnhm_4.png" alt="tnhm 4"></p>
+<p>Rename that folder to the name of your song, album, artist, etc + Bank File</p>
+<p><img src="images/tnhm_5.png" alt="tnhm 5"></p>
+<p>In the tutorial, I'll call it your Custom TNH Folder</p>
+<p>Once thats all set, we are ready for the most important part - matching your song with TNH!</p>
+<h2 id="step-3---setting-up-with-audacity">Step 3 - Setting up with Audacity</h2>
+<p>Next, it's time to use Audacity!</p>
+<p>You're going to want to open it twice, making two Audacity windows</p>
+<p>One window, you'll put your music in</p>
+<p>Drag your music file and drop it into this window, it'll load in</p>
+<p><img src="images/tnhm_6.png" alt="tnhm 6"></p>
+<p>If your waveform is huge (if it's a loud song), select the entire song</p>
+<p>&quot;Effects&quot; --&gt; Amplify</p>
+<p>Bring it down by -3 to -6 so that it doesn't blare too loud in-game</p>
+<p>Now that that's set</p>
+<p>The other window, your workshop</p>
+<p>You'll be working each part of the Hold theme with this window</p>
+<p>Go to your Custom TNH Folder and find the extracted files</p>
+<p>There are 90+ files, but don't be overwhelmed, there are five that we're going to edit</p>
+<p>Fake Meat Must Die-14, and it's five parts are.</p>
+<p>Intro, Lo, Transition, MedHi, and Ending</p>
+<p><img src="images/tnhm_7.png" alt="tnhm 7"></p>
+<p>There are &quot;Rules&quot; to the wav files. If you ignore them, the results may be a sound file mess.</p>
+<p>Please play close attention to the following instructions.</p>
+<p>Lets get to work</p>
+<h2 id="step-4---intro">Step 4 - Intro</h2>
+<p>Lets get started with the &quot;Intro&quot; WAV file</p>
+<p>Find the &quot;Fake Meat Must Die-14 - Intro&quot; File and drag n drop it in your second, empty Audacity Window</p>
+<p>This particular file happens when the hold begins</p>
+<p>It does not loop and only plays once, meaning the start of your file can be whatever</p>
+<p>However, it does have a dedicated end time at 21 - 22 seconds</p>
+<p>If you are too short on the time, it will result in a breach of silence.</p>
+<p>If you are too long on the time, it will overlap with the next part we'll be working on.</p>
+<p>You're going to find an ideal part of YOUR song that you think would work well as an intro to the Hold sequence.</p>
+<p>So find a part in your song's Audacity window, highlight it from start to finish...</p>
+<p>Then paste it under the Vanilla Intro file.</p>
+<p><img src="images/tnhm_8.png" alt="tnhm 8"></p>
+<p>Match the file length accordingly. 21 seconds is a safe place, but you can stretch it to 22 seconds.</p>
+<p>You can use Silence as a means to extend the length. &quot;Generate&quot; --&gt; Generate Silence</p>
+<p>You can use the Fade Out effect to match the vanilla file, I recommend it. &quot;Effect&quot; --&gt; Fade Out</p>
+<p>Once you have your custom Intro file ready, you can remove the vanilla file by hitting the 'X' on the top left of the
+waveform entry (right next to the name of the sound file)</p>
+<p>Here is how you'll export it</p>
+<p>File --&gt; Export --&gt; Export as WAV</p>
+<p>Locate your Custom TNH Music folder --&gt; MX_TAH</p>
+<p><img src="images/tnhm_9.png" alt="tnhm 9"></p>
+<p>Select &quot;Fake Meat Must Die-14 - Intro&quot;, you will be replacing this file</p>
+<p>Make sure the WAV encoding format is &quot;Signed 16-bit PCM&quot;</p>
+<p>Export, and boom, that's the intro</p>
+<p>Delete your custom intro from the Audacity window so that it's blank again.</p>
+<p>Next part!</p>
+<h2 id="step-5---lo">Step 5 - Lo</h2>
+<p>The next one we'll be doing is what I think is the trickiest part.</p>
+<p>This is the looping sequence dedicated to the first hold.</p>
+<p>It is also 21 - 22 seconds long, and it loops, so the part you'll use will likely be the chorus or the catchy part</p>
+<p>For the empty Audacity window, locate the file &quot;Fake Meat Must Die-14 - Lo&quot;, and drop it inside the empty Audacity
+window</p>
+<p>Next, locate a part of your song that you think can be a good looping part of the first hold.</p>
+<p>Copy that part to the best of your ability and paste it under the vanilla Lo file.</p>
+<p>When matching the lengths, you cannot use the silence trick from earlier to extend the song length, the loops will be
+affected and the flow of the song will be tarnished</p>
+<p>You can use a part thats 22 - 24 seconds long by making the start of this tune fade in, and the ending fade out, both
+can be found in the effects tab</p>
+<p>It takes a bit to get this part just right, but when you are ready to export, it will follow the same rules as how you
+exported the Intro file.</p>
+<p><img src="images/tnhm_10.png" alt="tnhm 10"></p>
+<p>Delete the Vanilla Lo file by hitting the 'X' in the top left of the waveform, next to the name</p>
+<p>File --&gt; Export</p>
+<p>Locate Custom TNH Folder</p>
+<p>Name of the file is &quot;Fake Meat Must Die-14 - Lo&quot;</p>
+<p>Encoding is 16-Bit Signed PCM</p>
+<p>Export</p>
+<p>These methods will be the same for the other sound files, so the next step will be simplified</p>
+<h2 id="step-6---transition-medhi-ends-rules">Step 6 - Transition, MedHi, End's Rules</h2>
+<p>The last three files are</p>
+<p>&quot;Fake Meat Must Die-14 - Transition&quot;</p>
+<p>&quot;Fake Meat Must Die-14 - MedHi&quot;</p>
+<p>&quot;Fake Meat Must Die-14 - End&quot;</p>
+<p>Transition happens when a hold is bigger than one round. After completing the first hold, the &quot;Lo&quot; theme cuts off, and
+this part will play</p>
+<p>It is 5-6 seconds long</p>
+<p>It will not loop, but silence in the start of this part will cut the Lo theme and ruin the flow</p>
+<p>Fade Ins at the start will do the same.</p>
+<p><img src="images/tnhm_11.png" alt="tnhm 11"></p>
+<p>MedHi has the most freedom of all the parts. It is also the one that is heard the most. It is the theme that plays
+during holds 2 and beyond.</p>
+<p>It is 51 - 52 seconds long, and it does loop as well.</p>
+<p>You can use your favorite part of your song here.</p>
+<p>No silence tricks because it is a loop, but a fade-in intro and fade-out end can work if your part is a bit bigger than
+51 - 52 seconds</p>
+<p><img src="images/tnhm_12.png" alt="tnhm 12"></p>
+<p>End is self explanatory, but it will look strange when you put it on audacity</p>
+<p><img src="images/tnhm_13.png" alt="tnhm 13"></p>
+<p>It has a two second gap of silence. This gap is integral to how Anton made his Hold theme</p>
+<p>When putting the ending to your song under this vanilla file, you can copy the silence and the fade in bit, then apply
+it to your song ending to save the trouble</p>
+<p><img src="images/tnhm_14.png" alt="tnhm 14"></p>
+<p>The ending itself is like two seconds after the two second silence, but you can stretch this out to five or further
+because no other hold themes will occur after this part.</p>
+<p>All these parts get exported the same as the first two.</p>
+<p>Once you have all five WAV files edited with your song, we now can finish this project!</p>
+<h2 id="step-7---repack-and-install">Step 7 - Repack and Install</h2>
+<p>In the Fmod Bank Tools window, ets change our folder destination now</p>
+<p>We originally had both parts on the Vanilla folder</p>
+<p>Lets change both parts to your Custom TNH Music Folder</p>
+<p>After you change the destination, there are two other buttons we have not touched.</p>
+<p>The button we'll push is &quot;Rebuild&quot;.</p>
+<p>Hitting this, the tool will replace the MX_TAH.bank file inside with the parts of the Extract folder</p>
+<p>A small console popup should appear if the locations are correct.</p>
+<p><img src="images/tnhm_15.png" alt="tnhm 15"></p>
+<p>When the tool finishes, the MX_TAH file will be of a different file size compared to the Vanilla bank file.</p>
+<p>Rename your MX_TAH file to <code>MX_TAH_[YourSongNameHere]</code>, and you are ready to package it as a Thunderstore mod! Remember,
+it will require Potatoes' TNH BGM Loader, so add that as a dependency.</p>
+<p>Alternatively, if you want to manually override your TNH sounds, copy this custom Bank file (while it is named MX_TAH),
+then go to the H3VR directory</p>
+<p>H3VR_Data --&gt; StreamingAssets</p>
+<p>Pasting this file replaces the vanilla file, so having the Vanilla folder back in your workshop and its bank file is
+your way of reverting this change.</p>
+<p>We are finished! Thats the tutorial, have fun!</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/creating/asset_replacement/tnh_music/hold_music.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../../static/scripts/main.js"></script>
+</body>
+</html>

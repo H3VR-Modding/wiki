@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting Fresh</title>
+    <meta name="title" content="Starting Fresh">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Starting Fresh">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/styles/template.css">
+    <link rel="stylesheet" href="../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+    <section class="breadcrumb">
+                <span>
+            <a href="starting_fresh.html">Cleaning your H3VR Folder</a>
+        </span>
+    </section>
+    <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="getting_started.html">Getting Started</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="troubleshooting/index.html">Troubleshooting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="troubleshooting/index.html">Start Here</a>
+                </li>
+                <li>
+                    <a href="troubleshooting/log_file.html">Log File</a>
+                </li>
+                <li>
+                    <a href="troubleshooting/wurstmod.html">WurstMod &amp; Maps</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="external/importing.html">External Mods</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="external/importing.html">Importing</a>
+                </li>
+                <li>
+                    <a href="external/manual.html">Manual Installation</a>
+                </li>
+                <li>
+                    <a href="external/packaging.html">Packaging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="specific_mod_installation.html">Specific Mod Installation</a>
+        </li>
+        <li>
+            <a href="starting_fresh.html" class="active">Cleaning your H3VR Folder</a>
+        </li>
+        <li>
+            <a href="mod_formats.html">Mod Formats</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<p>This process will remove any mod related items but leave the large parts of H3VR untouched, so you don't have to
+redownload gigabytes of data.</p>
+<p>Delete all files in your main H3VR directory <strong>except</strong> for the <code>h3vr_Data/</code> folder. Don't worry about vault files; they
+are stored in another folder and will not be deleted.</p>
+<p><img src="images/explorer/all_but_h3vr_Data.png" alt="image"></p>
+<p>Open Steam, and navigate to the game's properties by right-clicking on the game in the list.</p>
+<p><img src="images/Steam/properties.png" alt="image"></p>
+<p>Click on the <code>Local Files</code> menu on the left of the properties window, then press <code>Verify integrity of game files</code>.</p>
+<p><img src="images/Steam/local_files.png" alt="image"></p>
+<p>Steam will now download the missing files it needs to run H3VR. A clean installation will be left after it does so.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/installing/starting_fresh.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../static/scripts/template.js"></script>
+<script type="text/javascript" src="../static/scripts/main.js"></script>
+</body>
+</html>

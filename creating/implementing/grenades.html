@@ -1,0 +1,529 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grenades</title>
+    <meta name="title" content="Grenades">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Grenades">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../static/styles/template.css">
+    <link rel="stylesheet" href="../../static/styles/main.css">
+    <script>
+        var docsVersion = "";
+
+        var root = document.documentElement;
+        var rootComputedStyle = window.getComputedStyle(root);
+        function setScrollbarTheme(theme) {
+            root.style.setProperty('--scrollbar-track', rootComputedStyle.getPropertyValue('--scrollbar-track-'+theme));
+            root.style.setProperty('--scrollbar-track-thumb', rootComputedStyle.getPropertyValue('--scrollbar-track-thumb-'+theme));
+            root.style.setProperty('--scrollbar-thumb-hover', rootComputedStyle.getPropertyValue('--scrollbar-thumb-hover-'+theme));
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setScrollbarTheme('dark');
+            document.documentElement.classList.add('dark');
+        } else {
+            setScrollbarTheme('light');
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="../../installing/getting_started.html">Installing Mods</a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../creating/making_mods.html">Creating Mods</a>
+                </div>
+            </div>
+            <div id="version-picker"></div>
+            <a id="menu-switch" class="icon-menu"></a>
+            <a id="theme-switch" class="icon-lightbulb"></a>
+        </nav>
+    </header>
+    <section id="global-messages"></section>
+        <aside class="toc">
+    <span class="toc-menu-button">
+        <span>Table of Contents</span>
+        <i class="icon-menu"></i>
+    </span>
+    <div class="toc-items">
+    <ul>
+        <li>
+            <a href="../making_mods.html">Making mods</a>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../meatkit/intro.html">MeatKit</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../meatkit/intro.html">Introduction</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../meatkit/getting_started/1_setup.html">Getting Started</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../meatkit/getting_started/1_setup.html">1. Setup</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/getting_started/2_build_profile.html">2. Build Profile</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/getting_started/3_creating.html">3. Creating</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../meatkit/build_items/index.html">Build Items</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../meatkit/build_items/store_files.html">Store Files</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/build_items/preload_assets.html">Preload Assets</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/build_items/atlas_scene.html">Atlas Scene</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../meatkit/technical/1_intro.html">Technical Info</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../meatkit/technical/1_intro.html">1. Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/technical/2_formats.html">2. Formats</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/technical/3_importing.html">3. Importing</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/technical/4_build_pipeline.html">4. Build Pipeline</a>
+                        </li>
+                        <li>
+                            <a href="../meatkit/technical/5_exporting.html">5. Exporting</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../mapping/index.html">Mapping</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../mapping/atlas/intro.html">Atlas</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../mapping/atlas/getting_started/1_requirements.html">Getting Started</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../mapping/atlas/getting_started/1_requirements.html">1. Requirements</a>
+                                </li>
+                                <li>
+                                    <a href="../mapping/atlas/getting_started/2_the_basics.html">2. The Basics</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                        <li>
+                            <details>
+                            <summary>
+                            <a href="../mapping/atlas/tutorials/index.html">Tutorials</a>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="../mapping/atlas/tutorials/spawning_sosigs.html">Spawning Sosigs</a>
+                                </li>
+                                <li>
+                                    <a href="../mapping/atlas/tutorials/doors_windows.html">Doors and Windows</a>
+                                </li>
+                            </ul>        </details>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../mapping/wurstmod/intro.html">WurstMod</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../scripting/intro.html">Scripting</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../scripting/intro.html">Intro</a>
+                </li>
+                <li>
+                    <a href="../scripting/comparison.html">Comparisons</a>
+                </li>
+                <li>
+                    <a href="../scripting/dnSpy.html">dnSpy</a>
+                </li>
+                <li>
+                    <a href="../scripting/debugging.html">Debugging</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details open="">
+            <summary>
+            <a href="../implementing/the_basics.html" class="active">Implementing</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../implementing/the_basics.html">The Basics</a>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../implementing/modul/creation.html">Modul Weapons</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../implementing/modul/creation.html">Creation</a>
+                        </li>
+                        <li>
+                            <a href="../implementing/modul/id_duping.html">ID Duping</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../implementing/pre-attached_attachments.html">Pre-Attached Attachments</a>
+                </li>
+                <li>
+                    <a href="../implementing/grenades.html" class="active">Grenades</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../asset_replacement/skin_making_basics/basics_1_tools.html">Asset Replacement</a>
+            </summary>
+            <ul>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_1_tools.html">Skin Making Basics 1 - Tools</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_2_meshes.html">Skin Making Basics 2 - Meshes and Textures</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_3_blender.html">Skin Making Basics 3 - Blender</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_4_painting.html">Skin Making Basics 4 - Painting</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_5_exporting.html">Skin Making Basics 5 - Exporting</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/basics_6_hotmods.html">Skin Making Basics 6 - Hotmods</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_basics/extras.html">Extras</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../asset_replacement/skin_making_advanced/stamp.html">Skin Making Advanced</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../asset_replacement/skin_making_advanced/stamp.html">Stamps</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_advanced/engraving.html">Making Engravings</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>
+                    <a href="../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../asset_replacement/skin_making_animated/animated.html">Animated Skins</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_animated/animated_unity.html">Animated Skins - Unity</a>
+                        </li>
+                        <li>
+                            <a href="../asset_replacement/skin_making_animated/animated_hotmod.html">Animated Skins - Hotmodding</a>
+                        </li>
+                    </ul>        </details>
+                </li>
+                <li>
+                    <a href="../asset_replacement/tnh_music/hold_music.html">Take and Hold Music</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <details>
+            <summary>
+            <a href="../thunderstore/uploading.html">Thunderstore Packages</a>
+            </summary>
+            <ul>
+                <li>
+                    <a href="../thunderstore/uploading.html">1. Preparing Your Manifest And Package</a>
+                </li>
+                <li>
+                    <a href="../thunderstore/creating.html">2. Adding Your H3VR Content To Your Package</a>
+                </li>
+                <li>
+                    <a href="../thunderstore/updating.html">Updating Your Thunderstore Package</a>
+                </li>
+                <li>
+                    <a href="../thunderstore/modpacks.html">Making Modpacks</a>
+                </li>
+            </ul>        </details>
+        </li>
+        <li>
+            <a href="../delimods.html">Packing Deli mods</a>
+        </li>
+    </ul></div>
+    </aside>
+    <main class="  ">
+
+
+<p>This guide assumes you know <a href="the_basics.html">the basics</a> of implementation and the common terms used, as well as how to
+navigate the Unity window.</p>
+<h2 id="step-1-materials-and-pre-requisites">Step 1: Materials and Pre-requisites</h2>
+<p>The common ones:</p>
+<ul>
+<li><a href="https://unity3d.com/get-unity/download/archive">Unity 5.6.3</a></li>
+<li><a href="https://drive.google.com/file/d/18P59DJL0tGRSTXaxXknVl9lFiLJ27Y_v/view">AssetStudioGUI</a></li>
+<li><a href="https://drive.google.com/file/d/1bRHZrJxgPmE1PJGR_ty3i78mBfLTZQiB/view?usp=sharing">H3 Unity Template</a></li>
+</ul>
+<p>Other than the tools, you should have the assets for the grenade type of weapon you are creating handy. If you don't
+already have the moving parts separated into separate <code>.obj</code> files or <code>.fbx</code> file, then do that now.</p>
+<p>List of common moving parts:</p>
+<ul>
+<li>Pin(s)</li>
+<li>Lever(s)/Spoon(s)</li>
+</ul>
+<h2 id="step-2-importing-the-reference">Step 2: Importing the reference</h2>
+<p>Once you are inside of your Unity template, hopefully copied from the one you downloaded, you will want to prefab load a
+grenade from H3 that behaves similarly to the one you want to implement. <a href="the_basics.html">The basics</a> guide goes over
+this, but for a specific example lets do it again.</p>
+<p>Open your file explorer and go to your root H3VR folder, then navigate to <code>H3VR/h3vr_data/StreamingAssets/</code>.</p>
+<p>Copy the <code>assets_resources_objectids_weaponry_support</code> and <code>assets_resources_objectids_weaponry_support.manifest</code> files
+into your Unity project, under your <code>Assets/</code> folder.</p>
+<p>You should have empty game object with the prefab loader script component in the unity window. If you don't have one,
+you can right-click in the <code>Hierarchy</code> on the left and click the <code>Create Empty</code> button. Once selected, in
+the <code>Inspector</code> tab on the right, click on the <code>Add Component</code> button and search for the prefab loader script.</p>
+<p>Once you have a prefab loader object ready, fill it out with the fields you need.</p>
+<ol>
+<li>Open the <code>.manifest</code> file in any notepad program.</li>
+<li>Find the <code>.prefab</code> path you want to copy. Note: <code>.asset</code>s cannot be used.</li>
+<li>Fill in your prefab loader object with the path to your asset bundle you are extracting from, and the path you copied
+from its <code>.manifest</code> file.</li>
+</ol>
+<h3 id="prefab-loader-example">Prefab loader example</h3>
+<p>Prefab Path: <code>Assets/assets_resources_objectids_weaponry_support</code></p>
+<p>This is the location of the bundle you copied into your Unity project.</p>
+<p>Prefab_to_Load: <code>Assets/Weaponry/Explosives/PinnedGrenades/Grenades/PinnedGrenade_M67.prefab</code></p>
+<p>This is the path copied from the manifest file.</p>
+<p>Press the pause button then the play button at the top of the screen, then drag the clone from your Hierarchy into your
+assets tray. Press play again.</p>
+<h2 id="step-3-required-changes">Step 3: Required changes</h2>
+<p>Like usual, you need to replace the missing materials of the grenade with your own. <a href="the_basics.html">The basics</a> goes
+over this, and will not be repeated on how to import assets into unity.</p>
+<p>The following things need assets:</p>
+<ul>
+<li>Lever_Real
+<ul>
+<li>This is the lever that pops off.</li>
+</ul>
+</li>
+<li>Lever_Fake
+<ul>
+<li>This is the lever that sits on the grenade normally.</li>
+</ul>
+</li>
+<li>Pin
+<ul>
+<li>This can have multiple objects (Pin, Pin(1), etc.), and are the sticks that are pulled out.</li>
+</ul>
+</li>
+<li>Ring
+<ul>
+<li>Similar to the Pin, this can have multiple items that need changing. These are physics active and flop around.</li>
+</ul>
+</li>
+<li>_Body
+<ul>
+<li>Name changes depending on the prefab used to import. This would be the housing of the grenade.</li>
+</ul>
+</li>
+</ul>
+<p>Double check that you are using Alloy materials for the meshes on these parts, and not standard unity ones.</p>
+<h2 id="step-4-main-script-changes">Step 4: Main script changes</h2>
+<p>Make sure you place your ItemID in the object wrapper here. Make sure in your ItemID that the Asset Name is the path to
+your prefab (such as <code>Assets/MyGrenade/CoolNade.prefab</code>), and you set your category to what you need. Also make sure
+that your Item ID field, Display Name field, and Spawned From Id fields are all the same as your Item ID field in your
+item spawner ID. If you want your item to spawn in take and hold, make sure <code>O Sple</code> is set to true.</p>
+<p>Some notable values:</p>
+<ul>
+<li>Throw Vel Multiplier
+<ul>
+<li>Self explanatory, how much the velocity of the object is multiplied once left from the hand</li>
+</ul>
+</li>
+<li>Throw Ang Multiplier
+<ul>
+<li>A normalizer on throwing angles, keep it at 0.5.</li>
+</ul>
+</li>
+<li>Move Intensity/Rot Intensity
+<ul>
+<li>These may be missing from your script, make sure they equal 1.</li>
+<li>If they are, contact someone who mods for an updated script.</li>
+</ul>
+</li>
+<li>Uses Gravity
+<ul>
+<li>Disable this if you want it to fly straight.</li>
+</ul>
+</li>
+<li>Lever Joint
+<ul>
+<li>Make sure this is set to the Lever_Real in your Hierarchy.</li>
+</ul>
+</li>
+<li>Fake Handle
+<ul>
+<li>Make sure this is set to the Lever_Fake in your Hierarchy.</li>
+</ul>
+</li>
+<li>Real Handle
+<ul>
+<li>Make sure this is set to the Lever_Real in your Hierarchy.</li>
+</ul>
+</li>
+<li>Lever Threshold
+<ul>
+<li>No idea, maybe how much it spins after its popped?</li>
+</ul>
+</li>
+<li>Default fuse
+<ul>
+<li>Fuse time in seconds, range because its not always the same.</li>
+</ul>
+</li>
+<li>Fuse On Spawn
+<ul>
+<li>Automatically pulls its pins when spawns. Think of martyrdom in call of duty.</li>
+</ul>
+</li>
+<li>Fuse Timings
+<ul>
+<li>Reserved for the cyber grenade.</li>
+</ul>
+</li>
+<li>Has Impact Fuse
+<ul>
+<li>Once popped, an impact with something physical will cause the fuse time to be set to 0.</li>
+<li>Still needs a fuse time, will eventually explode (dunno how to get around this right now, more research needed).</li>
+</ul>
+</li>
+<li>Impact Fuse Vel Threshold
+<ul>
+<li>Velocity needed in m/s to achieve a detonation.</li>
+</ul>
+</li>
+<li>Impact Fuse Burn Down
+<ul>
+<li>Rate of how slow the default fuse will fuse (research needed).</li>
+</ul>
+</li>
+<li>Spawn On Splode
+<ul>
+<li>The bread and butter of a grenade, see the next step for more details.</li>
+</ul>
+</li>
+<li>Smoke Emitter
+<ul>
+<li>Spawns a specific smoke emitter object; rarely used.</li>
+</ul>
+</li>
+<li>(Various audio events)
+<ul>
+<li>Make sure you rip these with Assetstudio and place them here, when previewing the prefab you clone you can see
+which clips are needed.</li>
+</ul>
+</li>
+</ul>
+<h2 id="step-5-spawn-on-splode">Step 5: Spawn on Splode</h2>
+<p>This list is a list of objects that spawn at the origin of your grenade once it kills itself. These are used mainly for
+explosion damage and smoke effects.</p>
+<ol>
+<li>Search &quot;wfx&quot; in your Assets tray, then switch to the Asset Store tab.</li>
+<li>Buy (free) the War FX pack and download it into your Unity template.</li>
+</ol>
+<p>These assets are exactly the same as what Anton uses, modified a bit. You can drag them into your Hierarchy and select
+them to see how they look. Double click to focus on their origin, and use the controls in the bottom right of the Scene
+window to start/stop/restart the effect.</p>
+<p>Once you find a nice effect, drag it beside your grenade in your Assets tray then rename it to something relevant.</p>
+<p>There should be a missing item in the spawn on splode list, being the smoke effect (which you can fill in now). The
+other one should be the explosion script. If its missing, make a new empty game object with the <code>Grenade Explosion</code>
+component. You can right click on the cloned one (when you are pause/playing) and click copy component to avoid this as
+well.</p>
+</main>
+    <aside class="affix">
+    <div>
+        <div class="source-links">
+            <a href="https://github.com/H3VR-Modding/wiki/blob/main/src/creating/implementing/grenades.md/#L1">Improve this Doc</a>
+        </div>
+        <div class="affix-toc"></div>
+    </div>
+    </aside>    <footer>
+        <div>H3VR Modding Wiki</div>
+        
+    </footer>
+<script type="text/javascript" src="../../static/scripts/template.js"></script>
+<script type="text/javascript" src="../../static/scripts/main.js"></script>
+</body>
+</html>
